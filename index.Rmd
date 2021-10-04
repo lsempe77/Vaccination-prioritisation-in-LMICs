@@ -1,0 +1,69 @@
+---
+title: "prueba"
+output:
+  pdf_document: default
+  html_document: default
+bibliography: references.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# The next phase of the pandemics: who will bear the brunt?
+
+Goal is to estimate/simulate projected infections and fatalities amongst older persons in LMIC and the (lack of) impact of vaccination uptake.
+
+## Assumptions and limitations
+
+1)  Data in LMICs is still not robust, especially in terms of cases due to testing capacity and quality.
+
+2)  Although we know important facts such as the role of vaccination towards mitigating infections, there is a lot of uncertainty of future due to diverse factors such as the raise of new variants, the seasonality of the infection, geographical outbreaks, among others.
+
+3)  Simulating scenarios with a reasonable range of parameters appears to be a robust way of projecting the future development of the pandemic.
+
+## Empirical strategy
+
+### Data sources
+
+a) We use the Cover-Age-DB database, which offers a standardized count measures by sex and harmonized age groups across the world [@riffe2020].
+
+b) We also use a global excess mortality database [@karlinsky2021].
+
+c) Vaccine uptake (per group age). Explore national databases. If not, work with scenarios
+
+### Methods
+
+The simulations are build in three steps.
+
+1) ***We select countries where the under estimation of the mortality ratio is between the range of .9 and 1.1***. This means that only countries where the current data reflects relatively well excess mortality are taken account for.
+
+2) We estimate Age standardised case fatality rates (CFR) per country. We compare with neighbouring countries to asses if lack of testing may produce bias. 
+
+For example, in case of comparing case fatality rates from Peru, Colombia and Mexico, we observe that CFRs are significantly higher in Peru, which is even higher for older people. 
+
+***We discard countries with CFRs that differ significantly from their neighbours (alternative = use a regional CFR)***
+
+```{r}
+
+per  %>% group_by (Age) %>% filter (!is.na(Deaths)) %>% 
+  mutate (Age = as.factor(Age)) %>%
+  mutate (CFR = Deaths / Cases) %>% 
+  ggplot ( ) + 
+  geom_hline (yintercept = 1, 
+                         linetype = 2, 
+                         colour="darkorange") +
+  geom_line (aes(Date, CFR, colour=Age)) + 
+  theme_classic ( ) + facet_wrap (~Country) + 
+  ylim (0,2) + theme(legend.position = "bottom")
+  
+```
+
+3) We use those parameters (CFR and deaths)  + vaccination uptake to simulate SEEIR models with vaccine 
+
+
+
+
+
+
+References
