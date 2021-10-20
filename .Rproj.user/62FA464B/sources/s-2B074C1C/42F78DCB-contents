@@ -1,0 +1,75 @@
+init <- nimue:::init(squire::get_population("India")$n, seeding_cases = 20000)
+prop <- c(0,0,rep(0.3356796,7),rep(0.6354181,3),rep( 0.5989873,5))
+S_0<-init$S_0
+S_0[,4]<-round(S_0[,1] * prop)
+S_0[,1] <- S_0[,1] - S_0[,4]
+# and update the init
+init$S_0 <- S_0
+
+?run
+
+run1 <- nimue::run(
+  time_period = 365,
+  R0=1.5,
+  country = "India",
+  seeding_cases = 200000,
+  seed = 1,
+  max_vaccine = 4000000*.5,
+  dur_V = 365/.8,
+  dur_R = 365/.8,
+  vaccine_coverage_mat = strategy_matrix("Elderly"),
+  init=init,
+  vaccine_efficacy_infection = rep(0.5, 17),
+  vaccine_efficacy_disease = rep(0.5, 17)
+)
+
+# Format output, selecting a subset and naming the run.
+output1 <- format(run1, compartments = NULL,reduce_age = F) %>%
+  mutate(Run =  "50% y 1.5")
+
+
+run2 <- nimue::run(time_period = 365,
+                   R0=1.5,
+                   country = "India",
+                   seeding_cases = 200000,
+                   seed = 1,
+            max_vaccine = 4000000,
+            dur_V = 365/.8,
+            dur_R = 365/.8,
+            vaccine_coverage_mat = strategy_matrix("Elderly"),
+            init=init,
+            vaccine_efficacy_infection = rep(0.5, 17),
+            vaccine_efficacy_disease = rep(0.5, 17))
+
+output2 <- format(run2, compartments = NULL,reduce_age = F) %>%
+  mutate(Run = "Efficacious vaccine")
+
+
+run3 <- nimue::run(time_period = 365,
+                   R0=1.1,
+                   country = "India",
+                   seeding_cases = 200000,
+                   seed = 1,
+                   max_vaccine = 4000000*.50,
+                   dur_V = 365/.8,
+                   dur_R = 365/.8,
+                   vaccine_coverage_mat = strategy_matrix("Elderly"),
+                   init=init,
+                   vaccine_efficacy_infection = rep(0.5, 17),
+                   vaccine_efficacy_disease = rep(0.5, 17))
+
+output3 <- format(run3, compartments = NULL,reduce_age = F) %>%
+  mutate(Run = "50% y 1.1")
+
+
+bind_rows(output1,output2,output3) %>% filter(compartment=="deaths") %>% 
+  group_by(Run) %>%
+  summarise(d=sum(value,na.rm = T)) 
+
+bind_rows(output1, output2,output3) %>% filter(compartment=="infections") %>%
+  ggplot(., aes(x = t, y = value, col=age_group))  +
+  geom_line(size = 1) + 
+  #ylab("Deaths") + 
+  xlab("Time") + 
+  theme_bw() + facet_wrap(~Run)+
+  scale_y_continuous(labels = scales::comma)

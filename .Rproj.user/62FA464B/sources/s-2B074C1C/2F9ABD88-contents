@@ -1,0 +1,127 @@
+### Load packages ##############################################################
+library(tidyverse)
+library(dplyr)
+library(purrr)
+library(tidyr)
+library(nimue)
+library(furrr)
+library(readxl)
+
+
+### Load function ##############################################################
+#source("R/functions.R")
+
+### Specify runs ###############################################################
+# start time for transmission
+
+t_start <- 1
+countries<-c("India") 
+R0 <-  1.2
+# Vaccine coverage
+coverage <- seq(0, .9, .1)
+
+# transmission
+# NPIs 2020 and 2021
+
+# Vaccine mode of action
+mode <- c("Combined")
+
+# Efficacy 
+efficacy <- 0.9
+
+# Durations of immunity
+duration_V <- 365
+vaccine_coverage_mat <- c("All", "Elderly")
+duration_R <- 365
+
+dur_vacc_delay <- 7
+# Vaccine start time
+vaccine_start <- 1
+
+vaccine_period <- 186
+
+#
+
+vac.India.Age<-c(535710922, 	263777919, 	 167249798) #vac_18_45	vac_45_60	above_60
+pop.India.Age<-c(sum(S_0[3:9]),sum(S_0[10:12]),sum(S_0[13:17]))
+
+(vac.India.Age/pop.India.Age)/2
+
+# Immunosenescence
+
+immunosenescence <- 1
+
+# Seeding cases
+seeding_cases <- c(1e4) # check this number
+
+country_lifespan <-  read_excel("lifespan.xlsx") %>% filter (Country==countries)
+
+
+# Scenario table
+
+scenarios_LS <- expand_grid(
+                            t_start = t_start,
+                            country = countries,
+                            #income_group = income_group,
+                            R0 = R0,
+                         #reduction1 = reduction1,
+                         #reduction2 = reduction2,
+                         coverage = coverage,
+                         mode = mode,
+                         efficacy = efficacy,
+                         #age_target = age_target,
+                         duration_R = duration_R,
+                         duration_V = duration_V,
+                         vaccine_coverage_mat = vaccine_coverage_mat,
+                         vaccine_period = vaccine_period,
+                         dur_vacc_delay = dur_vacc_delay,
+                         vaccine_start = vaccine_start,
+                         #timing1 = timing1,
+                         immunosenescence = immunosenescence,
+                         seeding_cases = seeding_cases)
+
+nrow(scenarios_LS)
+
+gc()
+
+#### Run the model #############################################################
+plan(multisession, workers = availableCores())
+
+
+out <- future_pmap(scenarios_LS, run_scenario_LS, .progress = TRUE)
+
+#### Format output #############################################################
+
+out_format <- format_out_LS(out, scenarios_LS)
+
+variable.names(out_format)
+
+df <- out_format %>% select(-c(15:18))
+
+write.csv(df, "outf2.csv")
+
+out_format %>% #filter(immunosenescence==1)%>%
+ggplot() + geom_point(aes(as.factor(coverage),deaths_averted_all_t,
+                          colour=vaccine_coverage_mat)) +
+  facet_wrap(~seeding_cases) + ggthemes::theme_clean() +
+  scale_y_continuous(labels = scales::comma)
+
+variable.names(out_format)
+
+out_format %>% #filter(immunosenescence==1)%>%
+  ggplot() + geom_point(aes(as.factor(coverage),deaths_averted_2021,
+                            colour=vaccine_coverage_mat)) +
+  facet_wrap(~seeding_cases) + ggthemes::theme_clean() +
+  scale_y_continuous(labels = scales::comma)
+
+
+#
+
+run1 <- run(country = "India",
+            
+            
+            
+            
+            
+            )
+

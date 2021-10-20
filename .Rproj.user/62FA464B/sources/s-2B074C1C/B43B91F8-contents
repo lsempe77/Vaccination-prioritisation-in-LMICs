@@ -1,0 +1,183 @@
+# Set vaccine efficacy against infection or disease
+set_efficacy <- function(mode, efficacy, immunosenescence){
+  ef <- rep(efficacy, 17)
+  
+  if(mode == "Combined"){
+    out <- list(
+      vaccine_efficacy_infection = ef,
+      vaccine_efficacy_disease = rep(0.6, 17))
+    out$vaccine_efficacy_infection[14:17] <- out$vaccine_efficacy_infection[14:17] * immunosenescence
+  }
+  
+  return(out)
+}
+
+# reduce infectiousness children under 10 years
+# reduce_inf_vector <- function(reduce_inf){
+#   rdi <- rep(1, 17)
+#   rdi[1:2] <- reduce_inf
+#   return(rdi)
+# }
+
+# summarise by age and time period
+summarise_by_age <- function(x, t_start, t_end, period){
+  filter(x, t >= t_start, t < t_end) %>%
+    group_by(age_group, compartment) %>%
+    summarise(value = sum(value, na.rm = TRUE), .groups = "drop_last") %>%
+    mutate(period = factor(period))
+} 
+
+# Summarise outputs by age over different time period
+summarise_outputs_age <- function(x, p) {
+  mutate(x, 
+         infections = round(map_dbl(output_age, pull_total, outcome = "infections", time_period = p), 2),
+         hospitalisations = round(map_dbl(output_age, pull_total, outcome = "hospitalisations", time_period = p), 2),
+         deaths = round(map_dbl(output_age, pull_total, outcome = "deaths", time_period = p), 2),
+         yll = round(map_dbl(output_age, summarise_yll, time_period = p), 2),
+         infections_cf = round(map_dbl(output_age_cf, pull_total, outcome = "infections", time_period = p), 2),
+         hospitalisations_cf = round(map_dbl(output_age_cf, pull_total, outcome = "hospitalisations", time_period = p), 2),
+         deaths_cf = round(map_dbl(output_age_cf, pull_total, outcome = "deaths", time_period = p), 2),
+         yll_cf = round(map_dbl(output_age_cf, summarise_yll, time_period = p), 2),
+         infections_averted = infections_cf - infections,
+         hospitalisations_averted = hospitalisations_cf - hospitalisations,
+         deaths_averted = deaths_cf - deaths,
+         deaths_averted_prop = deaths_averted / deaths_cf,
+         years_life_saved = yll_cf - yll,
+         vaccine_n = round(map_dbl(output_age, pull_total, outcome = "vaccines", time_period = p)))
+}
+
+# Pull sum totals
+pull_total <- function(x, outcome, time_period){
+  filter(x, compartment == outcome, period == time_period) %>%
+    pull(value) %>%
+    sum()
+}
+
+# Estimate total years of life lost
+summarise_yll <- function(x, lifespan=69.656, time_period){
+  filter(x, compartment == "deaths", period == time_period) %>%
+    mutate(mid_age = (((as.integer(age_group) - 1) * 5) + 2.5),
+           yll = pmax(0, (lifespan - mid_age) * value)) %>%
+    pull(yll) %>%
+    sum()
+}
+
+###
+
+
+run_scenario_LS <- function(R0 = 3,
+                            #target_pop = 50e6,
+                            #income_group = income_group,
+                            country = countries,
+                            hs_constraints = "Present",
+                            coverage = 0,
+                            varying_coverage = 0,
+                            #age_target = "1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1",
+                            vaccine_coverage_mat = NA,
+                            mode = "Infection",
+                            efficacy = 0.9,
+                            vaccine_period = 30,
+                            vaccine_start = 365 - 60,
+                            #dt = 0.1,
+                            immunosenescence = 1,
+                            duration_R = Inf,
+                            duration_V = 5000,
+                            dur_vacc_delay = 7,
+                            seeding_cases = 60,
+                            t_start = 60,
+                            reduce_inf = 1,
+                            coverage_children = 0,
+                            coverage_middle = 0,
+                            coverage_old = 0
+){
+  # R0
+  R0 <- R0
+  # Population and mixing
+  pop <- squire::get_population(country = country)$n
+  # pop_standardise <- target_pop / sum(pop)
+  # pop <- pop * pop_standardise
+  mm <- squire::get_mixing_matrix(country = country)
+  # Hospital capacity
+  #hc <- get_capacity(country = country, pop = pop, hs_constraints = hs_constraints)
+  # Poorer health outcomes for LMICs and LICs
+  #pnsdt = get_prob_non_severe_death_treatment(income_group, hs_constraints)
+  hc<-squire::get_healthcare_capacity(country = "India")
+  
+  # Vaccine parameters
+  # Efficacy
+  efficacy <- set_efficacy(efficacy = efficacy, mode = mode, immunosenescence = immunosenescence)
+  
+  # reduce infectiousness in children under 10 years old
+  #rel_inf <- reduce_inf_vector(reduce_inf)
+  
+  # if varying coverage by age group, get values
+  if (varying_coverage == 1){
+    coverage <- c(rep(coverage_children, 3), rep(coverage_middle, 10), rep(coverage_old, 4))
+  }
+  
+  # get vaccine age-targeting strategy
+  
+  # if (is.na(age_target) == 0){
+  #   m1 <- (as.matrix(t(as.numeric(unlist(strsplit(age_target, "_")))))) * coverage
+  # } else if (is.na(age_target) == 1 & varying_coverage == 0){
+  #   m1 <- strategy_matrix(vaccine_coverage_mat, max_coverage = coverage)
+  # } else {
+  #   stop("If fixed strategy matrix specified, coverage cannot be a vector of values and should represent the maximum coverage.")
+  # }
+  # 
+  m1 <- strategy_matrix(vaccine_coverage_mat, max_coverage = coverage)
+  max_vaccine = c(0, max(coverage) * sum(pop) / vaccine_period)
+  tt_vaccine = c(0, vaccine_start)
+  
+  #
+  init <- nimue:::init(squire::get_population("India")$n, seeding_cases = 20000)
+  prop <- c(0,0,rep(0.3356796,7),rep(0.6354181,3),rep( 0.5989873,5))
+  S_0[,4]<-round(S_0[,1] * prop)
+  S_0[,1] <- S_0[,1] - S_0[,4]
+  # and update the init
+  init$S_0 <- S_0
+  
+  # Run
+  r1 <- nimue::run(
+    time_period = (365 * 3),
+    country = countries,
+    R0 = R0, 
+    population = pop,
+    contact_matrix_set = mm,
+    hosp_bed_capacity = hc$hosp_beds,
+    ICU_bed_capacity = hc$ICU_beds,
+    #prob_non_severe_death_treatment = pnsdt,
+    seeding_cases = seeding_cases,
+    seed = 1,
+    #dt = dt,
+    max_vaccine = max_vaccine,
+    tt_vaccine = tt_vaccine,
+    dur_V = duration_V,
+    dur_vaccine_delay = dur_vacc_delay,
+    vaccine_efficacy_infection = efficacy$vaccine_efficacy_infection,
+    vaccine_efficacy_disease = efficacy$vaccine_efficacy_disease,
+    dur_R = duration_R,
+    vaccine_coverage_mat = m1,
+    init=init
+    )
+  
+  # Create output: 1) wrt time, 2) summaries by age
+  o1 <- nimue::format(r1) %>%
+    mutate(t = t + t_start)
+  
+  x <- nimue::format(r1,
+                     compartments = NULL,
+                     summaries = c("deaths", "infections", "vaccines", "hospitalisations"),
+                     reduce_age = FALSE) %>%
+    mutate(t = t + t_start)
+  
+  value_all_t <- summarise_by_age(x, 1, max(x$t), "all_t")
+  value_2021 <- summarise_by_age(x, 366, 731, 2021)
+  value_2022 <- summarise_by_age(x, 731, 1096, 2022)
+  
+  o2 <- rbind(value_all_t,
+              value_2021,
+              value_2022)
+  
+  tibble(output = list(o1), output_age = list(o2))
+}

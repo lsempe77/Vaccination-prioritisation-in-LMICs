@@ -1,0 +1,627 @@
+{
+    "sources": [
+        {
+            "DOI": "10.34740/KAGGLE/DSV/2721047",
+            "URL": "https://www.kaggle.com/dsv/2721047",
+            "author": [
+                {
+                    "literal": "Our World in Data"
+                }
+            ],
+            "id": "OurWorldinData2021",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021
+                    ]
+                ]
+            },
+            "publisher": "Kaggle",
+            "title": "COVID vaccination in world (updated daily)",
+            "type": ""
+        },
+        {
+            "DOI": "10.1016/j.vaccine.2021.04.002",
+            "URL": "http://dx.doi.org/10.1016/j.vaccine.2021.04.002",
+            "author": [
+                {
+                    "family": "Hogan",
+                    "given": "Alexandra B."
+                },
+                {
+                    "family": "Winskill",
+                    "given": "Peter"
+                },
+                {
+                    "family": "Watson",
+                    "given": "Oliver J."
+                },
+                {
+                    "family": "Walker",
+                    "given": "Patrick G. T."
+                },
+                {
+                    "family": "Whittaker",
+                    "given": "Charles"
+                },
+                {
+                    "family": "Baguelin",
+                    "given": "Marc"
+                },
+                {
+                    "family": "Brazeau",
+                    "given": "Nicholas F."
+                },
+                {
+                    "family": "Charles",
+                    "given": "Giovanni D."
+                },
+                {
+                    "family": "Gaythorpe",
+                    "given": "Katy A. M."
+                },
+                {
+                    "family": "Hamlet",
+                    "given": "Arran"
+                },
+                {
+                    "family": "Knock",
+                    "given": "Edward"
+                },
+                {
+                    "family": "Laydon",
+                    "given": "Daniel J."
+                },
+                {
+                    "family": "Lees",
+                    "given": "John A."
+                },
+                {
+                    "family": "Løchen",
+                    "given": "Alessandra"
+                },
+                {
+                    "family": "Verity",
+                    "given": "Robert"
+                },
+                {
+                    "family": "Whittles",
+                    "given": "Lilith K."
+                },
+                {
+                    "family": "Muhib",
+                    "given": "Farzana"
+                },
+                {
+                    "family": "Hauck",
+                    "given": "Katharina"
+                },
+                {
+                    "family": "Ferguson",
+                    "given": "Neil M."
+                },
+                {
+                    "family": "Ghani",
+                    "given": "Azra C."
+                }
+            ],
+            "container-title": "Vaccine",
+            "id": "hogan2021",
+            "issue": "22",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021,
+                        5
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "2995-3006",
+            "title": "Within-country age-based prioritisation, global allocation, and public health impact of a vaccine against SARS-CoV-2: A mathematical modelling analysis",
+            "title-short": "Within-country age-based prioritisation, global allocation, and public health impact of a vaccine against SARS-CoV-2",
+            "type": "article-journal",
+            "volume": "39"
+        },
+        {
+            "DOI": "10.1093/geront/gnaa153",
+            "URL": "http://dx.doi.org/10.1093/geront/gnaa153",
+            "author": [
+                {
+                    "family": "Lloyd-Sherlock",
+                    "given": "Peter"
+                },
+                {
+                    "family": "Sempe",
+                    "given": "Lucas"
+                },
+                {
+                    "family": "McKee",
+                    "given": "Martin"
+                },
+                {
+                    "family": "Guntupalli",
+                    "given": "Aravinda"
+                }
+            ],
+            "container-title": "The Gerontologist",
+            "editor": [
+                {
+                    "family": "Meeks",
+                    "given": "Suzanne"
+                }
+            ],
+            "id": "lloyd-sherlock2020",
+            "issue": "2",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020,
+                        10,
+                        6
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "141-144",
+            "title": "Problems of Data Availability and Quality for COVID-19 and Older People in Low- and Middle-Income Countries",
+            "type": "article-journal",
+            "volume": "61"
+        },
+        {
+            "DOI": "10.1038/s41467-021-21444-5",
+            "URL": "http://dx.doi.org/10.1038/s41467-021-21444-5",
+            "author": [
+                {
+                    "family": "Wheatley",
+                    "given": "Adam K."
+                },
+                {
+                    "family": "Juno",
+                    "given": "Jennifer A."
+                },
+                {
+                    "family": "Wang",
+                    "given": "Jing J."
+                },
+                {
+                    "family": "Selva",
+                    "given": "Kevin J."
+                },
+                {
+                    "family": "Reynaldi",
+                    "given": "Arnold"
+                },
+                {
+                    "family": "Tan",
+                    "given": "Hyon-Xhi"
+                },
+                {
+                    "family": "Lee",
+                    "given": "Wen Shi"
+                },
+                {
+                    "family": "Wragg",
+                    "given": "Kathleen M."
+                },
+                {
+                    "family": "Kelly",
+                    "given": "Hannah G."
+                },
+                {
+                    "family": "Esterbauer",
+                    "given": "Robyn"
+                },
+                {
+                    "family": "Davis",
+                    "given": "Samantha K."
+                },
+                {
+                    "family": "Kent",
+                    "given": "Helen E."
+                },
+                {
+                    "family": "Mordant",
+                    "given": "Francesca L."
+                },
+                {
+                    "family": "Schlub",
+                    "given": "Timothy E."
+                },
+                {
+                    "family": "Gordon",
+                    "given": "David L."
+                },
+                {
+                    "family": "Khoury",
+                    "given": "David S."
+                },
+                {
+                    "family": "Subbarao",
+                    "given": "Kanta"
+                },
+                {
+                    "family": "Cromer",
+                    "given": "Deborah"
+                },
+                {
+                    "family": "Gordon",
+                    "given": "Tom P."
+                },
+                {
+                    "family": "Chung",
+                    "given": "Amy W."
+                },
+                {
+                    "family": "Davenport",
+                    "given": "Miles P."
+                },
+                {
+                    "family": "Kent",
+                    "given": "Stephen J."
+                }
+            ],
+            "container-title": "Nature Communications",
+            "id": "wheatley2021",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021,
+                        2,
+                        19
+                    ]
+                ]
+            },
+            "language": "en",
+            "title": "Evolution of immune responses to SARS-CoV-2 in mild-moderate COVID-19",
+            "type": "article-journal",
+            "volume": "12"
+        },
+        {
+            "DOI": "10.3389/fimmu.2020.01748",
+            "URL": "http://dx.doi.org/10.3389/fimmu.2020.01748",
+            "author": [
+                {
+                    "family": "Cunha",
+                    "given": "Lucas Leite"
+                },
+                {
+                    "family": "Perazzio",
+                    "given": "Sandro Felix"
+                },
+                {
+                    "family": "Azzi",
+                    "given": "Jamil"
+                },
+                {
+                    "family": "Cravedi",
+                    "given": "Paolo"
+                },
+                {
+                    "family": "Riella",
+                    "given": "Leonardo Vidal"
+                }
+            ],
+            "container-title": "Frontiers in Immunology",
+            "id": "cunha2020",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020,
+                        8,
+                        7
+                    ]
+                ]
+            },
+            "title": "Remodeling of the immune response with aging: Immunosenescence and its potential impact on COVID-19 immune response",
+            "title-short": "Remodeling of the immune response with aging",
+            "type": "article-journal",
+            "volume": "11"
+        },
+        {
+            "DOI": "10.12688/wellcomeopenres.16992.1",
+            "URL": "http://dx.doi.org/10.12688/wellcomeopenres.16992.1",
+            "author": [
+                {
+                    "family": "Imai",
+                    "given": "Natsuko"
+                },
+                {
+                    "family": "Hogan",
+                    "given": "Alexandra B."
+                },
+                {
+                    "family": "Williams",
+                    "given": "Lucy"
+                },
+                {
+                    "family": "Cori",
+                    "given": "Anne"
+                },
+                {
+                    "family": "Mangal",
+                    "given": "Tara D."
+                },
+                {
+                    "family": "Winskill",
+                    "given": "Peter"
+                },
+                {
+                    "family": "Whittles",
+                    "given": "Lilith K."
+                },
+                {
+                    "family": "Watson",
+                    "given": "Oliver J."
+                },
+                {
+                    "family": "Knock",
+                    "given": "Edward S."
+                },
+                {
+                    "family": "Baguelin",
+                    "given": "Marc"
+                },
+                {
+                    "family": "Perez-Guzman",
+                    "given": "Pablo N."
+                },
+                {
+                    "family": "Gaythorpe",
+                    "given": "Katy A. M."
+                },
+                {
+                    "family": "Sonabend",
+                    "given": "Raphael"
+                },
+                {
+                    "family": "Ghani",
+                    "given": "Azra C."
+                },
+                {
+                    "family": "Ferguson",
+                    "given": "Neil M."
+                }
+            ],
+            "container-title": "Wellcome Open Research",
+            "id": "imai2021",
+            "issued": {
+                "date-parts": [
+                    [
+                        2021,
+                        7,
+                        19
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "185",
+            "title": "Interpreting estimates of coronavirus disease 2019 (COVID-19) vaccine efficacy and effectiveness to inform simulation studies of vaccine impact: a systematic review",
+            "title-short": "Interpreting estimates of coronavirus disease 2019 (COVID-19) vaccine efficacy and effectiveness to inform simulation studies of vaccine impact",
+            "type": "article-journal",
+            "volume": "6"
+        },
+        {
+            "DOI": "10.1126/science.abc0035",
+            "URL": "http://dx.doi.org/10.1126/science.abc0035",
+            "author": [
+                {
+                    "family": "Walker",
+                    "given": "Patrick G. T."
+                },
+                {
+                    "family": "Whittaker",
+                    "given": "Charles"
+                },
+                {
+                    "family": "Watson",
+                    "given": "Oliver J."
+                },
+                {
+                    "family": "Baguelin",
+                    "given": "Marc"
+                },
+                {
+                    "family": "Winskill",
+                    "given": "Peter"
+                },
+                {
+                    "family": "Hamlet",
+                    "given": "Arran"
+                },
+                {
+                    "family": "Djafaara",
+                    "given": "Bimandra A."
+                },
+                {
+                    "family": "Cucunubá",
+                    "given": "Zulma"
+                },
+                {
+                    "family": "Olivera Mesa",
+                    "given": "Daniela"
+                },
+                {
+                    "family": "Green",
+                    "given": "Will"
+                },
+                {
+                    "family": "Thompson",
+                    "given": "Hayley"
+                },
+                {
+                    "family": "Nayagam",
+                    "given": "Shevanthi"
+                },
+                {
+                    "family": "Ainslie",
+                    "given": "Kylie E. C."
+                },
+                {
+                    "family": "Bhatia",
+                    "given": "Sangeeta"
+                },
+                {
+                    "family": "Bhatt",
+                    "given": "Samir"
+                },
+                {
+                    "family": "Boonyasiri",
+                    "given": "Adhiratha"
+                },
+                {
+                    "family": "Boyd",
+                    "given": "Olivia"
+                },
+                {
+                    "family": "Brazeau",
+                    "given": "Nicholas F."
+                },
+                {
+                    "family": "Cattarino",
+                    "given": "Lorenzo"
+                },
+                {
+                    "family": "Cuomo-Dannenburg",
+                    "given": "Gina"
+                },
+                {
+                    "family": "Dighe",
+                    "given": "Amy"
+                },
+                {
+                    "family": "Donnelly",
+                    "given": "Christl A."
+                },
+                {
+                    "family": "Dorigatti",
+                    "given": "Ilaria"
+                },
+                {
+                    "dropping-particle": "van",
+                    "family": "Elsland",
+                    "given": "Sabine L."
+                },
+                {
+                    "family": "FitzJohn",
+                    "given": "Rich"
+                },
+                {
+                    "family": "Fu",
+                    "given": "Han"
+                },
+                {
+                    "family": "Gaythorpe",
+                    "given": "Katy A. M."
+                },
+                {
+                    "family": "Geidelberg",
+                    "given": "Lily"
+                },
+                {
+                    "family": "Grassly",
+                    "given": "Nicholas"
+                },
+                {
+                    "family": "Haw",
+                    "given": "David"
+                },
+                {
+                    "family": "Hayes",
+                    "given": "Sarah"
+                },
+                {
+                    "family": "Hinsley",
+                    "given": "Wes"
+                },
+                {
+                    "family": "Imai",
+                    "given": "Natsuko"
+                },
+                {
+                    "family": "Jorgensen",
+                    "given": "David"
+                },
+                {
+                    "family": "Knock",
+                    "given": "Edward"
+                },
+                {
+                    "family": "Laydon",
+                    "given": "Daniel"
+                },
+                {
+                    "family": "Mishra",
+                    "given": "Swapnil"
+                },
+                {
+                    "family": "Nedjati-Gilani",
+                    "given": "Gemma"
+                },
+                {
+                    "family": "Okell",
+                    "given": "Lucy C."
+                },
+                {
+                    "family": "Unwin",
+                    "given": "H. Juliette"
+                },
+                {
+                    "family": "Verity",
+                    "given": "Robert"
+                },
+                {
+                    "family": "Vollmer",
+                    "given": "Michaela"
+                },
+                {
+                    "family": "Walters",
+                    "given": "Caroline E."
+                },
+                {
+                    "family": "Wang",
+                    "given": "Haowei"
+                },
+                {
+                    "family": "Wang",
+                    "given": "Yuanrong"
+                },
+                {
+                    "family": "Xi",
+                    "given": "Xiaoyue"
+                },
+                {
+                    "family": "Lalloo",
+                    "given": "David G."
+                },
+                {
+                    "family": "Ferguson",
+                    "given": "Neil M."
+                },
+                {
+                    "family": "Ghani",
+                    "given": "Azra C."
+                }
+            ],
+            "container-title": "Science",
+            "id": "walker2020",
+            "issue": "6502",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020,
+                        6,
+                        12
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "413-422",
+            "title": "The impact of COVID-19 and strategies for mitigation and suppression in low- and middle-income countries",
+            "type": "article-journal",
+            "volume": "369"
+        }
+    ],
+    "project_biblios": []
+}

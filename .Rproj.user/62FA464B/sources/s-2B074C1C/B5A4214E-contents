@@ -1,0 +1,12 @@
+r1 <- nimue::run(time_period = 365,
+                 country = "India",
+                 R0 = 1.1, 
+                 seeding_cases = seeding_cases,
+                 max_vaccine = max_vaccine,
+                 dur_V = 365,
+                 dur_R = 365,
+                 vaccine_coverage_mat = strategy_matrix(vaccine_coverage_mat,max_coverage = coverage),
+                 init=init,
+                 vaccine_efficacy_infection = rep(0.5, 17),
+                 vaccine_efficacy_disease = rep(0.9, 17)
+)

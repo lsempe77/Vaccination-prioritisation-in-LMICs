@@ -1,0 +1,217 @@
+library(patchwork)
+library(tidyverse)
+library(lavaan)
+library(readxl)
+library(ggpubr)
+library(corrplot)
+library(psych)
+
+ratones <- read_excel("Planilla general para estadística-variables.xlsx", 
+                      col_types = c("numeric", "text", "numeric", 
+                                    "text", "text", "text", "text", "text", 
+                                    "text", "numeric", "numeric", "numeric", 
+                                    "numeric", "numeric", "numeric"))
+summary(ratones)
+head(ratones)
+
+#La idea sería tener un factor de "autismo" que se construya 
+#con valores bajos de SI index (autista = bajo nivel de socialibidad)
+#y Y-alt (autista = pocas alternancias), 
+#y valores altos de SG (autista = mucho), SG-OF (=), TST (=) y FST (=)
+
+
+
+
+
+ratones2<-ratones
+
+ratones2$OBSERVACIONES<-NULL
+ratones2$cFos<-NULL
+
+  
+ratones_complete <- ratones2[complete.cases(ratones2), ] # Store the complete cases subset in a new data frame
+
+ratones_complete <- ratones_complete %>% rename (SI = "SI index",
+                                                 SG_OF = "SG-OF",
+                                                 YALT = "Y-alt",
+                                                 t_post="trat post",
+                                                 t_pre="trat pre")
+
+cor.test(ratones_complete$SG,ratones_complete$SG_OF)
+cor.test(ratones_complete$TST,ratones_complete$FST)
+
+ratones_complete$SImil<-ratones_complete$SI*100
+
+
+
+datamatrix <- cor(ratones_complete[,c(8:13)])
+
+?corrplot
+
+corrplot(datamatrix, method="number",
+         type="upper")
+
+KMO(r=cor(ratones_complete[,c(8:13)]))
+
+#e factorability of the sample data is KMO ≥ 60. The total KMO is 0.83,
+
+cortest.bartlett(ratones_complete[,c(8:13)])
+
+#Small values (8.84e-290 < 0.05) of the significance level indicate that a factor analysis may be useful with our data.
+det(cor(ratones_complete[,c(8:13)]))
+    
+
+fafitfree <- fa(ratones_complete[,c(8:13)],nfactors = ncol(ratones_complete[,c(8:13)]), rotate = "none")
+n_factors <- length(fafitfree$e.values)
+scree     <- data.frame(
+  Factor_n =  as.factor(1:n_factors), 
+  Eigenvalue = fafitfree$e.values)
+ggplot(scree, aes(x = Factor_n, y = Eigenvalue, group = 1)) + 
+  geom_point() + geom_line() +
+  xlab("Number of factors") +
+  ylab("Initial eigenvalue") +
+  labs( title = "Scree Plot", 
+        subtitle = "(Based on the unreduced correlation matrix)") + theme_minimal() 
+  
+
+
+library(nFactors)
+
+parallel <- fa.parallel(ratones_complete[,c(8:13)])
+
+parallel
+
+#
+?fa
+
+fa.none <- fa(r=ratones_complete[,c(8:13)],
+              nfactors = 2, 
+              fm="pa", # type of factor analysis we want to use (“pa” is principal axis factoring)
+              rotate="none") # none rotation
+
+summary(fa.none)
+
+
+str(fa.none$loadings)
+class(fac$loadings)
+
+xtable::xtable(unclass(fa.none$loadings))
+
+factanal.none <- factanal(ratones_complete[,c(8:13)], factors=1, scores = c("regression"), rotation = "varimax")
+print(factanal.none)
+
+fa.diagram(fa.none)
+
+fa.diagram(fa.none)
+
+#
+table(ratones_complete$t_post)
+
+# ratones_complete <- ratones_complete %>%
+#   mutate (t_pre = case_when(t_pre=="sal" ~ 0,
+#                             T ~1),
+#           t_post = case_when(t_post=="control" ~ 0,
+#                             T ~1))
+# 
+# ratones_complete$int<-ratones_complete$t_pre*ratones_complete$t_post
+
+variable.names(ratones_complete)
+
+model1 <-'aut1 =~  SG + SG_OF + TST +  FST + YALT  + SImil ' 
+
+fit1 <- cfa(model1,data=ratones_complete,estimator="MLR")
+
+varTable(fit1)
+summary(fit1)
+
+
+fitmeasures(fit1)
+
+semTable::semTable(fit1,type = "csv")
+
+#
+?lavPredict
+
+idx <- lavInspect(fit1, "case.idx")
+fscores <- lavPredict(fit1)
+## loop over factors
+for (fs in colnames(fscores)) {
+  ratones_complete[idx, fs] <- fscores[ , fs]
+}
+head(ratones_complete)
+
+hist(ratones_complete$aut1)
+
+
+ratones_complete$t_pre<-as.factor(ratones_complete$t_pre)
+
+
+ratones_complete$t_post<-as.factor(ratones_complete$t_post)
+
+
+ggplot (ratones_complete) + geom_point(aes(SI,YALT)) + theme_minimal()
+
+ggplot (ratones_complete) + geom_point(aes(SI,SG_OF)) + theme_minimal()
+
+ggplot (ratones_complete) + geom_point(aes(SI,TST)) + theme_minimal()
+
+ggplot (ratones_complete) + geom_point(aes(SI,aut1,colour= t_post))+ facet_wrap(~`trat pre`)+
+   theme_minimal()
+
+
+hist(ratones_complete$FST)
+
+fit1<-lm(data=ratones_complete, aut1 ~  t_pre*t_post )
+
+fit2<-lm(data=ratones_complete, aut1 ~  t_pre*t_post + madre)
+
+stargazer::stargazer(fit1,fit2,type="text")
+
+
+variable.names(ratones_complete)
+
+
+p1<-ggplot (ratones_complete) + geom_boxplot(aes( t_pre,SI,colour=t_post)) + theme_minimal()
+p2<-ggplot (ratones_complete) + geom_boxplot(aes( t_pre,SG,colour=t_post)) + theme_minimal()
+p3<-ggplot (ratones_complete) + geom_boxplot(aes( t_pre,SG_OF,colour=t_post)) + theme_minimal()
+p4<-ggplot (ratones_complete) + geom_boxplot(aes( t_pre,YALT,colour=t_post)) + theme_minimal()
+p5<-ggplot (ratones_complete) + geom_boxplot(aes( t_pre,TST,colour=t_post)) + theme_minimal()
+p6<-ggplot (ratones_complete) + geom_boxplot(aes( t_pre,FST,colour=t_post)) + theme_minimal()
+p7<-ggplot (ratones_complete,aes( t_pre,aut1,colour=t_post)) + geom_boxplot() + theme_minimal()
+
+
+
+
+p1+p2+p3+p4+p5+p6
+
+
+mod1<-lm(data=ratones_complete,
+         aut1 ~  t_pre*t_post + as.factor(madre)+as.factor(as.character(jaula)))
+
+
+anv<-aov(mod1)
+TUKEY <- TukeyHSD(anv)
+summary(TUKEY)
+
+
+mod2<-lm(data=ratones_complete,aut1 ~  t_pre*t_post)
+
+anv2<-aov(mod2)
+TUKEY2 <- TukeyHSD(anv2)
+summary(TUKEY2)
+
+library(ggplot2)
+
+library(ggpubr)
+
+my_comparisons <- list(c("sal","vpa"))
+
+p7
+
+ggplot (ratones_complete,aes( t_pre,aut1,colour=t_post)) + geom_boxplot() + 
+  theme_minimal() +
+  stat_compare_means (label.y = 40,method = "anova")
+
+
+# Change method
+
