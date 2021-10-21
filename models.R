@@ -1,5 +1,12 @@
+# India
+
+#Upload data from official vaccination  website
+
 vaccination_India <-  read_excel("dashboard_export_19oct.xlsx")
 
+#Data wrangling
+
+## add column with week numbers
 vaccination_India$week<-c(seq(3,41,1))
 
 vac.India.Age<-vaccination_India %>% 
@@ -9,15 +16,16 @@ vac.India.Age<-vaccination_India %>%
                                 T ~ '60+')) %>% group_by(Age_group) %>% 
   summarise(vac.total=sum(value,na.rm=T)) %>% pull(vac.total) 
 
+# Functions to be used
 
-# Pull sum totals
+## Pull sum totals
 pull_total <- function(x, outcome, time_period){
   filter(x, compartment == outcome, period == time_period) %>%
     pull(value) %>%
     sum()
 }
 
-# Estimate total years of life lost
+## Estimate total years of life lost
 summarise_yll <- function(x, lifespan=69.656, time_period){
   filter(x, compartment == "deaths", period == time_period) %>%
     mutate(mid_age = (((as.integer(age_group) - 1) * 5) + 2.5),
@@ -53,6 +61,7 @@ summarise_by_age <- function(x, t_start, t_end, period){
     mutate(period = factor(period))
 } 
 
+
 run_scenario_LS <- function(R0=R0,
                             coverage=coverage,
                             country = country,
@@ -63,7 +72,7 @@ run_scenario_LS <- function(R0=R0,
                             
 {
 
-  init <- nimue:::init(squire::get_population("India")$n, seeding_cases = 100000)
+  init <- nimue:::init(squire::get_population("India")$n, seeding_cases = 1000000)
   
   prop <- c(0,0,rep(0.333,7),rep(0.619,3),rep( 0.573,5)) # prop vaccinated (1 or 2 dosis) from https://dashboard.cowin.gov.in/
   S_0<-init$S_0
@@ -100,43 +109,10 @@ r1 <- nimue::run(time_period = 365,
           tibble(output = list(value_all_t))
 }
 
-#
-
-init <- nimue:::init(squire::get_population("India")$n, seeding_cases = 100000)
-S_0<-init$S_0
-
-coverage=c(seq(.68,.96,.02))
-R0=c(seq(1.1,2,.1))
-country = c("India")
-seeding_cases = 1000000
-max_vaccine = c(3000000,4000000,5000000)
-vaccine_coverage_mat=c("All","Elderly")
-
-
-
-scenarios_LS <- expand_grid(
-  coverage=coverage,
-  country = country,
-  R0 = R0,
-  max_vaccine = max_vaccine,
-  vaccine_coverage_mat = vaccine_coverage_mat,
-  seeding_cases = seeding_cases)
-
-nrow(scenarios_LS)
-
-#
-
-plan(multisession, workers = availableCores())
-
-
-out <- future_pmap(scenarios_LS, run_scenario_LS, .progress = TRUE)
-
-#
-
 format_out_LS <- function(out, scenarios){
   
   out1 <- bind_cols(scenarios, bind_rows(out))
-
+  
   if ("coverage" %in% colnames(out1)) {
     outcf <- filter(out1, coverage == .68) %>%
       select(-coverage) %>%
@@ -147,37 +123,65 @@ format_out_LS <- function(out, scenarios){
     
     m <- ncol(summaries)+1
     n <- ncol(summaries)+14
-  summarise_all_t <- summarise_outputs_age(summaries, p = "all_t")
+    summarise_all_t <- summarise_outputs_age(summaries, p = "all_t")
   }
 }
 
+# Matrix of scenarios
+
+## Paramater models
+
+coverage=c(seq(.68,.96,.02))
+R0=c(seq(1.1,2,.1))
+country = c("India")
+seeding_cases = 1000000
+max_vaccine = c(3000000,4000000,5000000)
+vaccine_coverage_mat=c("All","Elderly")
+
 #
 
+scenarios_LS <- expand_grid(
+  coverage=coverage,
+  country = country,
+  R0 = R0,
+  max_vaccine = max_vaccine,
+  vaccine_coverage_mat = vaccine_coverage_mat,
+  seeding_cases = seeding_cases)
+
+nrow(scenarios_LS) # number of scenarios
+
+# parallel processing
+
+plan(multisession, workers = availableCores())
+
+# Run all models
+out <- future_pmap(scenarios_LS, run_scenario_LS, .progress = TRUE)
+
+# Extract outputs
 
 out_format <- format_out_LS(out, scenarios_LS)
 
-#
+# compute % population vaccinated
 
-init <- nimue:::init(squire::get_population("India")$n, seeding_cases = 100000)
-prop <- c(0,0,rep(0.333,7),rep(0.619,3),rep( 0.573,5)) # prop vaccinated (1 or 2 dosis) from https://dashboard.cowin.gov.in/
-S_0<-init$S_0
-S_0[,4]<-round(S_0[,1] * prop *.9) # 10% of vaccinated not having inmunity considering 1 year of inmunity
+init2 <- nimue:::init(squire::get_population("India")$n, seeding_cases = 100000)
+bprop <- c(0,0,rep(0.333,7),rep(0.619,3),rep( 0.573,5)) # prop vaccinated (1 or 2 dosis) from https://dashboard.cowin.gov.in/
+bS_0<-init2$S_0
+bS_0[,4]<-round(bS_0[,1] * bprop *.9) # 10% of vaccinated not having inmunity considering 1 year of inmunity
 #  146,712,438.00 vaccines in the first 4 months of 2020 
-S_0[,4] <-S_0[,4]/2 # divide SUSCEPTIBLE already vaccinated by two because of 2 dosis
-S_0[,5] <-S_0[,1]
-S_0[,1] <- S_0[,1] - S_0[,4]
-S_0[3:17,1] <- S_0[3:17,1]
+bS_0[,4] <-bS_0[,4]/2 # divide SUSCEPTIBLE already vaccinated by two because of 2 dosis
+bS_0[,5] <-bS_0[,1]
+bS_0[,1] <- bS_0[,1] - bS_0[,4]
+bS_0[3:17,1] <- bS_0[3:17,1]
 # and update the init
-init$S_0 <- S_0
+init2$S_0 <- bS_0
 
-(sum(vac.India.Age)/2)/sum(init$S_0[,5]) # 0.3434736
+(sum(vac.India.Age)/2)/sum(init2$S_0[,5]) # 0.3434736 => 34.3% population vaccinated
 
 
-#
-
+# Adjust model vaccine coverage to population coverage
 
 out_format <- out_format %>% 
-  mutate(final_coverage = (sum(init$S_0[,4]) + vaccine_n) / (sum(init$S_0[,5])))
+  mutate(final_coverage = (sum(init2$S_0[,4]) + vaccine_n) / (sum(init2$S_0[,5])))
 
 summary(out_format$final_coverage)
 
@@ -186,8 +190,6 @@ ggplot(out_format)+ geom_point(aes(coverage,final_coverage)) + theme_light() +
   scale_x_continuous(breaks = seq(.3,1,.02))+
   scale_y_continuous(breaks = seq(.4,1,.02))+
 geom_vline(xintercept=.96)  + geom_hline(yintercept=0.9)
-
-  
 
 
 out_format %>% 
@@ -204,7 +206,9 @@ out_format %>%
                        labels = c("No prioritisation", "Older People"))+
   scale_shape_discrete("Mean maximum vaccines per day",
                       labels = c("3 million", "4 million", "5 million"))
-##
+
+
+## Extract data per age groups (not used in the analysis right now)
 
 out_format_unnest_cf<-out_format %>% select(c(1:6,8)) %>% 
   unnest(output_cf) %>% rename(value_cf = value)
@@ -219,8 +223,6 @@ final_coverage <- out_format %>%
   group_by(coverage)  %>% 
   summarise (coverage=mean(coverage),
              final_coverage=round(mean(final_coverage),2))
-
-final_coverage
 
 out_format_unnest_final <- out_format_unnest_final %>% left_join(final_coverage)
   
@@ -240,6 +242,8 @@ t21<-out_format_unnest_final %>% filter(compartment == "deaths") %>%
   group_by(coverage,R0,vaccine_coverage_mat,max_vaccine) %>%
   summarise(dif=sum(dif))
 
+
+# test if extraction is correct
 
 max(t21$dif) # highest - 3955593
 max(out_format$deaths_averted)#  3955593
