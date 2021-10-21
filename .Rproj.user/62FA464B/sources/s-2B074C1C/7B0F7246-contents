@@ -1,2 +1,0 @@
-writeLines('PATH="C:\\rtools40\\usr\\bin;C:\\rtools40"', con = "~/.Renviron")
-Sys.which("make")
