@@ -3,7 +3,7 @@ format_out_LS_Peru <- function(out, scenarios){
   out1 <- bind_cols(scenarios, bind_rows(out))
   
   if ("coverage" %in% colnames(out1)) {
-    outcf <- filter(out1, coverage == .77) %>%
+    outcf <- filter(out1, coverage == .68) %>%
       select(-coverage) %>%
       rename(output_cf = output) %>%
       unique()
@@ -129,8 +129,8 @@ run_scenario_LS_Peru <- function(R0=R0,
 
 ## Paramater models
 
-coverage_peru=c(seq(.77,.95,.01))
-R0_peru=c(seq(1.1,2,.1))
+coverage_peru=c(seq(.68,.96,.02))
+R0_peru=c(seq(1.1,1.8,.1))
 # seed1_peru=c(17+8^(seq(1,5,1))) # 5 pseudo random seeds
 # seed2_peru=c(46+7^(seq(1,5,1))) # 5 pseudo random seeds
 country_peru = c("Peru")

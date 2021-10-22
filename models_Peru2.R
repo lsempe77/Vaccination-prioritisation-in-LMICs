@@ -37,7 +37,8 @@ out_format_peru %>%
 
 
 
-#ggplot(out_format_peru)+ geom_point(aes(coverage,final_coverage)) + theme_light()
+# ggplot(out_format_peru)+ geom_point(aes(coverage,final_coverage)) + theme_light()+
+#   geom_hline(yintercept = .55)
 
 
 

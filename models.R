@@ -132,7 +132,7 @@ format_out_LS <- function(out, scenarios){
   out1 <- bind_cols(scenarios, bind_rows(out))
   
   if ("coverage" %in% colnames(out1)) {
-    outcf <- filter(out1, coverage == .72) %>%
+    outcf <- filter(out1, coverage == .7) %>%
       select(-coverage) %>%
       rename(output_cf = output) %>%
       unique()
@@ -149,16 +149,16 @@ format_out_LS <- function(out, scenarios){
 
 ## Paramater models
 
-coverage=c(seq(.72,.95,.01))
-R0=c(seq(1.1,2,.1))
+coverage=c(seq(.7,.96,.02))
+R0=c(seq(1.1,1.8,.1))
 seed1=c(92+5^(seq(1,5,1))) # 5 pseudo random seeds
 seed2=c(81+2^(seq(1,5,1))) # 5 pseudo random seeds
 country = c("India")
 max_vaccine = c(4000000/2,5000000/2,6000000/2)
 vaccine_coverage_mat=c("All","Elderly")
 
-seed1=123
-seed2=456
+seed1 = 123
+seed2 = 456
 
 #
 
@@ -250,11 +250,12 @@ init2$S_0 <- bS_0
 out_format <- out_format %>% 
   mutate(final_coverage = (sum(init2$S_0[,4]) + vaccine_n) / (sum(init2$S_0[,5])))
 
-# summary(out_format$final_coverage)
-# 
-# ggplot(out_format)+ geom_point(aes(coverage,final_coverage)) + theme_light() +
-#   geom_hline(yintercept=0.4)+ 
-#   geom_hline(yintercept=0.9)
+summary(out_format$final_coverage)
+
+ggplot(out_format)+ geom_point(aes(coverage,final_coverage)) + theme_light() +
+  geom_hline(yintercept=0.4) +
+  geom_hline(yintercept=0.9) +
+  scale_x_continuous(limits = c(.6,1))
 
 
 

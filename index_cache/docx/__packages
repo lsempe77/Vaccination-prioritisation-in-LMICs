@@ -1,0 +1,17 @@
+base
+bookdown
+tidyverse
+ggplot2
+tibble
+tidyr
+readr
+purrr
+dplyr
+stringr
+forcats
+nimue
+readxl
+gtsummary
+future
+furrr
+flextable
