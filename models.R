@@ -36,8 +36,14 @@ pull_total <- function(x, outcome, time_period){
     sum()
 }
 
+lifespan <- read_excel("lifespan.xlsx")
+
+india_lifespan <-lifespan %>% filter (Country=="India")%>% pull(lifespan)
+
+
+
 ## Estimate total years of life lost
-summarise_yll <- function(x, lifespan=69.656, time_period){
+summarise_yll <- function(x, lifespan=india_lifespan, time_period){
   filter(x, compartment == "deaths", period == time_period) %>%
     mutate(mid_age = (((as.integer(age_group) - 1) * 5) + 2.5),
            yll = pmax(0, (lifespan - mid_age) * value)) %>%
@@ -88,7 +94,6 @@ run_scenario_LS <- function(R0=R0,
   prop <- c(0,0,rep(0.333,7),rep(0.619,3),rep( 0.573,5)) # prop vaccinated (1 or 2 dosis) from https://dashboard.cowin.gov.in/
   S_0<-init$S_0
   S_0[,4]<-round(S_0[,1] * prop *.9) # 10% of vaccinated not having inmunity considering 1 year of inmunity
-                                      #  146,712,438.00 vaccines in the first 4 months of 2020 =	15.5 
   S_0[,4] <-S_0[,4]/2 # divide SUSCEPTIBLE already vaccinated by two because of 2 dosis
   S_0[,5] <-S_0[,1]
   S_0[,1] <- S_0[,1] - S_0[,4]
@@ -121,12 +126,13 @@ r1 <- nimue::run(time_period = 365,
           tibble(output = list(value_all_t))
 }
 
+
 format_out_LS <- function(out, scenarios){
   
   out1 <- bind_cols(scenarios, bind_rows(out))
   
   if ("coverage" %in% colnames(out1)) {
-    outcf <- filter(out1, coverage == .68) %>%
+    outcf <- filter(out1, coverage == .72) %>%
       select(-coverage) %>%
       rename(output_cf = output) %>%
       unique()
@@ -143,15 +149,19 @@ format_out_LS <- function(out, scenarios){
 
 ## Paramater models
 
-coverage=c(seq(.68,.96,.02))
+coverage=c(seq(.72,.95,.01))
 R0=c(seq(1.1,2,.1))
 seed1=c(92+5^(seq(1,5,1))) # 5 pseudo random seeds
-seed2=c(81+2^(seq(6,10,1))) # 5 pseudo random seeds
+seed2=c(81+2^(seq(1,5,1))) # 5 pseudo random seeds
 country = c("India")
-max_vaccine = c(3000000,4000000,5000000)
+max_vaccine = c(4000000/2,5000000/2,6000000/2)
 vaccine_coverage_mat=c("All","Elderly")
 
+seed1=123
+seed2=456
+
 #
+
 
 scenarios_LS_1 <- expand_grid(
   coverage=coverage,
@@ -176,7 +186,7 @@ nrow(scenarios_LS_2)
 
 # parallel processing
 
-plan(multisession, workers = availableCores())
+#plan(multisession, workers = availableCores())
 
 # Run all models for first 5 seeds
 
@@ -240,13 +250,11 @@ init2$S_0 <- bS_0
 out_format <- out_format %>% 
   mutate(final_coverage = (sum(init2$S_0[,4]) + vaccine_n) / (sum(init2$S_0[,5])))
 
-summary(out_format$final_coverage)
-
-ggplot(out_format)+ geom_point(aes(coverage,final_coverage)) + theme_light() +
-  geom_hline(yintercept=0.3434736)+ 
-  scale_x_continuous(breaks = seq(.3,1,.02))+
-  scale_y_continuous(breaks = seq(.4,1,.02))+
-geom_vline(xintercept=.96)  + geom_hline(yintercept=0.9)
+# summary(out_format$final_coverage)
+# 
+# ggplot(out_format)+ geom_point(aes(coverage,final_coverage)) + theme_light() +
+#   geom_hline(yintercept=0.4)+ 
+#   geom_hline(yintercept=0.9)
 
 
 
