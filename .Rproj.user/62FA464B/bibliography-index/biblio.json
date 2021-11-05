@@ -621,6 +621,69 @@
             "title": "The impact of COVID-19 and strategies for mitigation and suppression in low- and middle-income countries",
             "type": "article-journal",
             "volume": "369"
+        },
+        {
+            "DOI": "10.1056/nejmsb2005114",
+            "URL": "http://dx.doi.org/10.1056/NEJMsb2005114",
+            "author": [
+                {
+                    "family": "Emanuel",
+                    "given": "Ezekiel J."
+                },
+                {
+                    "family": "Persad",
+                    "given": "Govind"
+                },
+                {
+                    "family": "Upshur",
+                    "given": "Ross"
+                },
+                {
+                    "family": "Thome",
+                    "given": "Beatriz"
+                },
+                {
+                    "family": "Parker",
+                    "given": "Michael"
+                },
+                {
+                    "family": "Glickman",
+                    "given": "Aaron"
+                },
+                {
+                    "family": "Zhang",
+                    "given": "Cathy"
+                },
+                {
+                    "family": "Boyle",
+                    "given": "Connor"
+                },
+                {
+                    "family": "Smith",
+                    "given": "Maxwell"
+                },
+                {
+                    "family": "Phillips",
+                    "given": "James P."
+                }
+            ],
+            "container-title": "New England Journal of Medicine",
+            "id": "emanuel2020",
+            "issue": "21",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020,
+                        5,
+                        21
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "2049-2055",
+            "title": "Fair Allocation of Scarce Medical Resources in the Time of Covid-19",
+            "type": "article-journal",
+            "volume": "382"
         }
     ],
     "project_biblios": []

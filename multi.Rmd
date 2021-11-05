@@ -1,0 +1,374 @@
+---
+title: "Simulation of vaccination scenarios in `r country`"
+author: "Lucas Sempe"
+output:
+  bookdown::word_document2
+bibliography: references.bib
+---
+
+```{r setup, include=FALSE,echo=F,tinytex.verbose = TRUE, warning=F}
+
+knitr::opts_chunk$set(echo = FALSE, warning = F,
+                      message = F, tinytex.verbose = TRUE,
+  cache = F,fig.width = 8, dpi=300,
+  digits = 1, OutDec = ",")
+
+knitr:: knit_hooks$set(inline = function(x) {
+if(is.character(x)){
+return(x)
+}else{
+return(prettyNum(x, big.mark=","))
+}
+})
+
+library(tidyverse)
+library(nimue)
+library(readxl)
+library(gtsummary)
+library(future)
+library(furrr)
+library(patchwork)
+library(flextable)
+
+```
+
+
+```{r}
+
+source("functions_final.R")
+
+source("calibrate_deaths.R")
+
+```
+
+```{r}
+
+source("countries.R")
+
+```
+
+# Introduction
+
+A year after the launch of the COVID-19 vaccine immunisation process across countries, we note two facts. Vaccines have been proved very effective against existing variants of COVID-19 both in terms of preventing the acquisition of severe disease, hospitalisation and death; and also in terms of slowing down the spread of infections [@imai2021].
+
+Although the way out of the pandemics requires a worldwide solution, we note that the vaccine roll-out has been very inequality across countries. While many developed nations will reach high vaccination coverages by the end of 2021, many low- and middle- income countries (LMICs) are still lagging in their vaccination process.
+
+Until the vaccination coverage reaches the vast majority of the worldwide population, there will still be high uncertainty on the future development of the pandemics during the next years. Many factors may play a role as drivers of local or global outbreaks. Many countries have been already through more than one epidemic wave explained by factors such as the appearance of new variants or the easing of non-pharmaceutical interventions.
+
+Considering this uncertainty, in this paper, we simulate various scenarios to capture the potential magnitude lack of age prioritisation on the number of infections, hospitalisations and deaths in 2021. This uncertainty increases in LMICs, where epidemiological data is still not robust [@lloyd-sherlock2020].
+
+These scenarios are built to answer to an ethical framework that aims to find the best possible allocation of COVID-19 vaccines. Our ethical guidelines are the following: we aim to maximise societal health benefits; prioritise those worst-off without the vaccines; and promote equality, where individuals under circumstances shall be treated equally [@emanuel2020]. These principles become operational in terms of saving the most lives; prioritise the most vulnerable populations such as older and immunodeficient people; and protecting health workers.
+
+# Empirical strategy
+
+We simulated models based on a previously developed extended age-structured stochastic compartmental model of SARS-CoV-2 transmission [@hogan2021; @walker2020]. The model considers the progression of the population across transmission compartments (susceptible, exposed, infected, recovered), clinical pathways (need for hospitalisation, oxygen and/or intensive care) and vaccination uptake considering factors such as vaccine availability, prioritisation and coverage. The infection transmission model also considers age-based contact matrices and loss of acquired immunity. It also considers the efficacy of the vaccine both against infection and severe disease.
+
+Each model provides the following outcomes: hospitalisations, deaths, and years of life saved. We then compare results with a counterfactual model that represents the country FVC in October 2021 in addition to 5%. The comparison between those models provides our outcomes of interest: hospitalisations averted, deaths averted, the proportion of deaths averted, years life saved and the number of vaccines.
+
+Our simulations have some fixed parameters across all models. The time period for the analysis is 365 days, which represents the year 2022. The mean duration of naturally acquired immunity and vaccine-derived immunity is set to 365 days. The vaccine efficacy to prevent infections is set as 60% whereas the efficacy against severe disease that requires hospitalisations is set as 90% across all age groups.
+
+All models start with 200,000 infected cases. It is important to note that the number of infected patients at the start did not change the results significantly. Details of additional parameters such as hospital capacity and ICU and parameters by age groups such as probabilities of hospitalisation, probability of severe disease, among others, are found in the Appendix. Epidemiological and vaccination parameters were compiled by Hogan et al [-@hogan2021] and updated in the R package ['nimue'](https://github.com/mrc-ide/nimue), where original sources are given. Basic reproduction numbers (R0) and mortality data is collected from Our World in Data [@OurWorldinData2021]. 
+
+The scenarios are built based on varying parameters chosen to simulate critical factors affecting the evolution of the pandemics and the vaccination process. The changing parameters are:
+
+-   We model two different vaccination approaches. The first disaggregates the population into 5-year groups (where people over 80 are considered in one group) and prioritises sequentially the oldest age groups until a maximum set coverage is reached. For example, if we set the maximum coverage in 80%, the first age group to be solely vaccinated will be those over 85 years old until it reaches 80% of the age group population. Then, the following group, those aged 80 to 84 will follow on the vaccination process. This occurs until the whole eligible population is covered up to 80%. The second strategy does not prioritise any age groups and allows everyone to be vaccinated at the same time. This is consistent with an ongoing vaccination process in some countries where vaccines are offered simultaneously to the total adult population.
+
+-   The model considers maximum vaccine coverage (MVC) for each age group. After the modelling phase, the MVC is adjusted by the number of susceptible by each age group to facilitate the interpretation of results. This gives us a parameter that represents the final estimation of vaccine coverage (FVC).
+
+-   A constant basic reproduction number (R0) ranging from 1.1 to 1.7 by 0.1. This assumes the pandemics is not suppressed during 2020.
+
+-   A number of maximum vaccines given per day (VD). The VD also varies is computed as the average of vaccination per day, and then doubled and tripled. VD is halved to account that these models do not consider for the application of two doses by each person.
+
+Because of the ongoing vaccination, the number of people in the first state of the transmission model (those susceptible to the disease, $S_{{0}_{age-group}}$) is adjusted by the number of vaccines given, ${\#Vaccines}$. Considering that a proportion of people that will likely lose the acquired immunity during 2022, $\%{inmunity-loss}$, which represents 10% of the already vaccinated population, we assume to be on the initial susceptible state during 2021.
+
+We model countries where there is no disaggregated data for age groups and number of doses received, the parameter ${\#Vaccines}$ is halved to estimate the number of people and the initial number of susceptible is computed as follows:
+
+$$S_{{0}_{age-group}} = \Bigg(Population - \frac{\# Vaccines}{2}\Bigg)*\%{inmunity-loss}$$
+
+Each outcome of interest is computed as the difference between the counterfactual and the simulated scenario as follows:
+
+$$Outcome = Outcome_{counterfactual} - Outcome_{scenario}$$
+
+# Results
+
+To the current date, `r country` reports `r deaths` deaths during the two-wave epidemic in the country with a peak of weekly deaths of `r deaths_peek` deaths during week `r week_peek`. Rt ranges from  `r avg_rt_min` to `r avg_rt_max` across time (see Figure \@ref(fig:mortality)). We observe a lack of correspondence between both (which also occurs if the mortality data is lagged by weeks or a month), which raises concerns regarding the quality of the data.
+
+```{r mortality, fig.cap="7-day rolling average of reported deaths and R0 "}
+
+plots<-p1 + p2
+
+plots
+
+
+
+```
+
+The official weekly vaccinations uptake is presented in the Figure \@ref(fig:vaccines-current). Based on current data, the VD parameter is the average for the last four months, `r ave_vac_text`. We work with scenarios where the average is multiplied by five, ten and by `r multipl_vaccine`, which represents the number of times the average has to be multiplied to cover 80% of the population during 180 days. This means we set range of maximum vaccines per day from `r pop_ave_vac_text` to `r pop_ave4_vac_text` people vaccinated per day, which represents `r ave_vac_text` to `r ave4_vac_text` daily doses.
+
+```{r vaccines-current, fig.cap="Weekly vaccinations"}
+
+
+plot_vaccines
+
+```
+
+The combination of the different parameters provide `r scenarios` different scenarios. The MVC parameter for all age groups was set in a range from `r min_coverage_text`%, set as the baseline, to `r max_coverage_text`. This is equivalent to a FVC ranging from `r final_coverage_min_text`% to `r final_coverage_max_text`%. 
+
+```{r}
+
+ta<-out_format %>% filter(final_coverage>min_coverage)%>% 
+  mutate(final_coverage = round(final_coverage,2))%>%
+  select(final_coverage,R0,vaccine_coverage_mat,max_vaccine,deaths_averted) %>%
+  group_by(final_coverage,R0,max_vaccine,vaccine_coverage_mat) %>%
+  mutate(deaths_averted=mean(deaths_averted,na.rm = T)) %>% 
+    group_by(final_coverage,R0,max_vaccine) %>%
+  mutate(dif.deaths_averted = deaths_averted-lag(deaths_averted)) %>%
+  filter(vaccine_coverage_mat=="Elderly")%>% ungroup %>%
+  summarise(pos = sum(dif.deaths_averted>0,na.rm=T), # older better
+         neg = sum(dif.deaths_averted<0,na.rm=T))
+
+if (ta$pos > ta$neg) {
+  
+  par1<-"In the majority of cases, the prioritisation of older people in the vaccination strategy leads to increasing returns in numbers of deaths averted in comparison to an age-blind vaccination strategy."
+} else {
+    
+    par1<-"In the majority of cases, models suggests that prioritising the vaccination of older age groups does not lead to increasing returns in numbers of deaths averted"
+  }
+
+
+te<-out_format %>% filter(final_coverage>min_coverage)%>% 
+  mutate(final_coverage = round(final_coverage,2))%>%
+  select(final_coverage,R0,vaccine_coverage_mat,max_vaccine,deaths_averted) %>%
+  group_by(R0,max_vaccine,vaccine_coverage_mat,final_coverage) %>%
+  mutate(deaths_averted=mean(deaths_averted,na.rm = T)) %>% 
+    group_by(R0,max_vaccine,vaccine_coverage_mat) %>%
+  mutate(dif.deaths_averted = deaths_averted-lag(deaths_averted)) %>%
+  ungroup %>% filter(!is.na(dif.deaths_averted))%>%
+  summarise(pos = sum(dif.deaths_averted>0,na.rm=T), # >R0 more impact of vaccination
+            neg = sum(dif.deaths_averted<0,na.rm=T))
+
+if (te$pos > te$neg) {
+  
+  par2<-"A higher age-group vaccine coverage also leads to increasing returns in numbers of deaths"
+} else {
+    
+    par2<-"The models suggest that a higher vaccine coverage does not show a higher number of lives saved"
+  }
+
+# ti<-out_format %>% filter(final_coverage>min_coverage)%>% 
+#   mutate(final_coverage = round(final_coverage,2))%>%
+#   select(final_coverage,R0,vaccine_coverage_mat,max_vaccine,deaths_averted) %>%
+#   filter(vaccine_coverage_mat== "All") %>%
+#   group_by(R0,max_vaccine,final_coverage) %>%
+#   mutate(deaths_averted=mean(deaths_averted,na.rm = T)) 
+# 
+# ti2<-out_format %>% filter(final_coverage>min_coverage)%>% 
+#   mutate(final_coverage = round(final_coverage,2))%>%
+#   select(final_coverage,R0,vaccine_coverage_mat,max_vaccine,deaths_averted) %>%
+#   filter(vaccine_coverage_mat== "Elderly") %>%
+#   group_by(R0,max_vaccine,final_coverage) %>%
+#   mutate(deaths_averted=mean(deaths_averted,na.rm = T)) 
+
+if (deaths_averted<0) {
+  par3<-"Models between vaccination strategies in higher R0 scenarios does not suggest differences on the number of deaths averted"} else {
+    
+  par3<-knit_expand(text="Models between vaccination strategies in higher R0 scenarios suggest differences up to {{deaths_averted}} deaths averted")
+                             
+}
+
+
+
+
+```
+
+
+Figure \@ref(fig:simulations-ideal) presents eight panels with basic reproduction numbers ranging from `r R0_min` to `r R0_max`. `r par1`. `r par2`. `r par3`.
+
+```{r simulations-ideal, fig.cap="Deaths averted based on simulated scenarios "}
+
+values_labels <-out_format %>%  ungroup %>%
+  distinct(max_vaccine) %>%
+  arrange(max_vaccine) %>%
+  mutate (max_vaccine=as.factor(max_vaccine)) %>%
+            pull (max_vaccine)
+
+if (multipl_vaccine < 1){
+    values_labels<-values_labels[c(4,1,2,3)] 
+} else if (multipl_vaccine > 10){
+    values_labels<-values_labels[c(1,2,3,4)] 
+} else if (multipl_vaccine <5 ){ 
+    values_labels<-values_labels[c(1,4,2,3)] 
+} else {
+    values_labels<-values_labels[c(1,2,4,3)] 
+}
+
+
+out_format %>% filter(final_coverage>min_coverage)%>%
+  group_by(final_coverage,R0,vaccine_coverage_mat,max_vaccine) %>%
+  mutate(deaths_averted=mean(deaths_averted))%>%
+  ggplot() + geom_point(aes(final_coverage,deaths_averted,
+                            colour=vaccine_coverage_mat,
+                            shape=as.factor(max_vaccine)))+
+  facet_wrap(~R0) + theme_light() +
+  scale_y_continuous(labels = scales::comma) +
+   scale_x_continuous(labels = scales::percent,
+                      breaks =  scales::breaks_width(.2)) +
+  theme(legend.position = "bottom", legend.box="vertical", 
+        legend.margin=margin()) + 
+  labs(title = "Simulations of Vaccination models ",
+       caption = "Data source: Authors' own")+
+  xlab("Population maximum coverage") +  ylab("Deaths averted") + 
+   scale_colour_manual("Vaccine prioritisation",
+                       values = c("darkgreen", "darkorange"), 
+                       labels = c("No priority", "Older People"))+
+  scale_shape_discrete("Mean vaccines/day",  
+                            breaks=values_labels,
+                       label = c("Historical average",
+                                 "Average x5","Average x10", "Needed to cover 80%"))
+
+```
+
+<!-- chequear estas frases -->
+
+Figure \@ref(fig:infections-ideal) presents the same simulated scenarios to compute the potential number of infections averted. In this case, the R0 parameter plays a major role, where lower reproduction rates represent higher numbers of infections averted. Models, where older people are prioritised, also show a higher aversion in the infections. The higher number of vaccines per day also affects positively the number of infections averted.
+
+
+```{r infections-ideal, fig.cap="Infections averted based on simulated scenarios "}
+
+out_format %>%  filter(final_coverage>min_coverage)%>%
+  group_by(final_coverage,R0,vaccine_coverage_mat,max_vaccine) %>%
+  mutate(infections_averted=mean(infections_averted))%>%
+  ggplot() + geom_point(aes(final_coverage,infections_averted,
+                            colour=vaccine_coverage_mat,
+                            shape=as.factor(max_vaccine)))+
+  facet_wrap(~R0,ncol = 4) + theme_light() +
+  scale_y_continuous(labels = scales::comma) +
+   scale_x_continuous(labels = scales::percent,
+                      breaks =  scales::breaks_width(.2)) +
+  theme(legend.position = "bottom", legend.box="vertical", legend.margin=margin()) + 
+  labs(title = "Simulations of Vaccination models ",
+       caption = "Data source: Authors' own")+
+  xlab("Population maximum coverage") +  ylab("Infections averted") + 
+   scale_colour_manual("Vaccine prioritisation",values = c("darkgreen", "darkorange"), 
+                       labels = c("No priority", "Older People"))+
+   scale_shape_discrete("Mean vaccines/day",
+                       breaks=values_labels,
+                  label = c("Historical average",
+                                 "Average x5","Average x10", "Needed to cover 80%"))
+
+```
+
+```{r}
+
+ideal<- out_format %>% select(final_coverage,R0,max_vaccine,vaccine_coverage_mat,                           infections_averted,hospitalisations_averted,
+deaths_averted,deaths_averted_prop,vaccine_n) %>% 
+   filter(final_coverage>min_coverage)%>%
+  mutate(final_coverage=round(final_coverage,2)) %>% ungroup %>%
+  filter (R0==1.1) %>% 
+     filter(final_coverage == max(final_coverage))%>%
+  group_by(final_coverage,R0,max_vaccine,vaccine_coverage_mat) %>%
+  summarise(infections_averted=mean(infections_averted),
+    hospitalisations_averted= mean(hospitalisations_averted),
+deaths_averted=mean(deaths_averted),
+deaths_averted_prop=mean(deaths_averted_prop))
+
+ideal<-flextable::flextable(ideal) 
+
+ideal <- set_formatter( x = ideal,
+                        infections_averted=function(x) sprintf("%.0f", x),
+        max_vaccine = function(x) sprintf("%.0f", x),
+                vaccine_n = function(x) sprintf("%.0f", x))
+
+```
+
+```{r}
+
+ideal2<- out_format %>% select(final_coverage,R0,max_vaccine,vaccine_coverage_mat,                           infections_averted,hospitalisations_averted,
+deaths_averted,deaths_averted_prop,vaccine_n) %>% 
+   filter(final_coverage>min_coverage)%>%
+  mutate(final_coverage=round(final_coverage,2)) %>% group_by(final_coverage) %>%
+  filter (final_coverage==max(final_coverage)) %>% 
+  group_by(final_coverage,R0,max_vaccine,vaccine_coverage_mat) %>%
+  summarise(infections_averted=mean(infections_averted),
+    hospitalisations_averted= mean(hospitalisations_averted),
+deaths_averted=mean(deaths_averted),
+deaths_averted_prop=mean(deaths_averted_prop))
+
+
+ideal_deaths_averted_elderly<-ideal2 %>% ungroup %>% filter(vaccine_coverage_mat == "Elderly") %>%
+  filter(deaths_averted==max(deaths_averted)) %>% 
+  mutate(deaths_averted=round(deaths_averted)) %>%
+  pull(deaths_averted)
+
+ideal_deaths_averted_all<-ideal2 %>% ungroup %>% filter(vaccine_coverage_mat == "All") %>%
+  filter(deaths_averted==max(deaths_averted)) %>% 
+  mutate(deaths_averted=round(deaths_averted)) %>%
+  pull(deaths_averted)
+
+
+if (ideal_deaths_averted_elderly > ideal_deaths_averted_all) {
+
+prop_deaths_averted<-ideal2 %>% ungroup %>% filter(vaccine_coverage_mat == "Elderly") %>%
+  filter(deaths_averted==max(deaths_averted)) %>% 
+  mutate(deaths_averted_prop=round(deaths_averted_prop*100,1)) %>%
+  pull(deaths_averted_prop)
+
+nvac_deaths_averted<-ideal2 %>% ungroup %>% filter(vaccine_coverage_mat == "Elderly") %>%
+  filter(deaths_averted==max(deaths_averted)) %>%
+    mutate(max_vaccine=round(max_vaccine/2)) %>%
+  pull(max_vaccine)  
+
+par4 <- knit_expand(text="In this case, {{prop_deaths_averted}}% of deaths averted if {{nvac_deaths_averted}} people are vaccinated per day, prioritising older people's vaccination. This represents {{ideal_deaths_averted_elderly}} deaths averted. Under a lack of a vaccination strategy, deaths saved falls to {{ideal_deaths_averted_all}}")
+
+} else {
+  
+  prop_deaths_averted<-ideal2 %>% ungroup %>% filter(vaccine_coverage_mat == "All") %>%
+  filter(deaths_averted==max(deaths_averted)) %>% 
+  mutate(deaths_averted_prop=round(deaths_averted_prop*100,1)) %>%
+  pull(deaths_averted_prop)
+
+nvac_deaths_averted<-ideal2 %>% ungroup %>% filter(vaccine_coverage_mat == "All") %>%
+  filter(deaths_averted==max(deaths_averted)) %>%
+    mutate(max_vaccine=round(max_vaccine/2)) %>%
+  pull(max_vaccine)  
+
+
+par4<- knit_expand(text="In this case, {{prop_deaths_averted}}% of deaths averted if {{nvac_deaths_averted}} people are vaccinated per day, prioritising older people's vaccination. This represents {{ideal_deaths_averted_all}} deaths averted. Under a lack of a vaccination strategy, deaths saved falls to {{ideal_deaths_averted_elderly}}")
+
+}
+  
+```
+
+Table \@ref(tab:vaccination-ideal) shows a conservative scenario where `r final_coverage_max_text`% of the population is immunised across 2022. The scenario implies an R0 equal to 1.1. `r par4`.
+
+```{r vaccination-ideal, tab.cap="Scenario with 80% of population coverage and R0 = 1.1"}
+
+ideal
+
+```
+
+Figure \@ref(fig:older) presents the same simulated scenarios to compute the potential number of infections, hospitalisations and deaths averted for two age groups, those from 60 to 75 and those over 75. We find the maximum number of averted infections, hospitalisations and deaths for the age group 60-75 is `r max_older_infections[1]`, `r max_older_hospitalisations[1]`, and `r max_older_deaths[1]`, respectively. The maximum averted figures for the oldest group are `r max_older_infections[2]` infections, `r max_older_hospitalisations[2]` hospitalisations, and `r max_older_deaths[2]` deaths.
+
+```{r older, fig.cap= "Scenarios of Infections, Hospitalisations and deaths averted"}
+
+out_format_older %>% filter(compartment != "vaccines" &
+                                      vaccine_coverage_mat == "Elderly" ) %>%
+    filter(final_coverage>min_coverage)%>%
+     group_by(R0,max_vaccine,compartment,age,final_coverage) %>%
+  mutate(max_vaccine = as.factor(max_vaccine),
+         R0=as.factor(R0),
+         final_coverage=as.factor(final_coverage)) %>%
+  ggplot() + geom_point(aes(R0,dif,shape=max_vaccine,colour=final_coverage)) +
+  facet_grid(compartment~age,scales = "free") + 
+  scale_y_continuous(labels = scales::comma) +
+  scale_shape_discrete(name= "Maximum vaccines per day",
+                        breaks=values_labels,
+ label = c("Historical average",
+                                 "Average x5","Average x10", "Needed to cover 80%")) + ylab("Averted") + 
+  theme_minimal() +
+  xlab("R0 scenario") +
+    ggtitle("Scenarios of Infections, Hospitalisations and deaths averted")
+
+```
+
+# References

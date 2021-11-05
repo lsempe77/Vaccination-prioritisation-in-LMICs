@@ -15,3 +15,7 @@ gtsummary
 future
 furrr
 flextable
+cowplot
+shiny
+squire
+patchwork

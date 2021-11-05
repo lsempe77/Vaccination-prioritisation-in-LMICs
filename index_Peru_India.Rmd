@@ -1,0 +1,658 @@
+---
+title: "Simulation of vaccination scenarios in low- and middle- countries"
+author: 
+  - "Lucas Sempe"
+  - "Aravinda Guntupalli"
+  - "Peter Lloyd-Sherlock"
+output:
+  bookdown::word_document2:
+bibliography: references.bib
+---
+
+```{r setup, include=FALSE}
+
+knitr::opts_chunk$set(echo = F,message = F, comment = F, warning = F,
+                      dpi=500,fig.width=8)
+
+library(bookdown)
+library(tidyverse)
+library(nimue)
+library(readxl)
+library(gtsummary)
+library(future)
+library(furrr)
+library(flextable)
+
+age_groups<-c(
+"0 to 4",
+"5 to 9",
+"10 to 14",	
+"15 to 19",	
+"20 to 24",
+"25 to 29",	
+"30 to 34",	
+"35 to 39",	
+"40 to 44",	
+"45 to 49",	
+"50 to 54",	
+"55 to 59",	
+"60 to 64",	
+"65 to 69",	
+"70 to 74",	
+"75 to 79",	
+"80+")
+
+```
+
+```{r, cache=T}
+
+source("models.R", local = knitr::knit_global())
+
+```
+
+# Introduction
+
+A year after the launch of the COVID-19 vaccine immunisation process across countries, we note two facts. Vaccines have been proved very effective against existing variants of COVID-19 both in terms of preventing the acquisition of severe disease, hospitalisation and death; and also in terms of slowing down the spread of infections [@imai2021].
+
+Although the way out of the pandemics requires a worldwide solution, we note that the vaccine roll-out has been very inequality across countries. While many developed nations will reach high vaccination coverages by the end of 2021, many low- and middle- income countries (LMICs) are still lagging in their vaccination process.
+
+Until the vaccination coverage reaches the vast majority of the worldwide population, there will still be high uncertainty on the future development of the pandemics during the next years. Many factors may play a role as drivers of local or global outbreaks. Many countries have been already through more than one epidemic wave explained by factors such as the appearance of new variants or the easing of non-pharmaceutical interventions.
+
+Considering this uncertainty, in this paper, we simulate various scenarios to capture the potential magnitude lack of age prioritisation on the number of infections, hospitalisations and deaths in 2021. This uncertainty increases in LMICs, where epidemiological data is still not robust [@lloyd-sherlock2020].
+
+These scenarios are built to answer to an ethical framework that aims to find the best possible allocation of COVID-19 vaccines. Our ethical guidelines are the following: we aim to maximise societal health benefits; prioritise those worst-off without the vaccines; and promote equality, where individuals under circumstances shall be treated equally [@emanuel2020]. These principles become operational in terms of saving the most lives, then the most life-years; prioritise the most vulnerable populations such as older and immunodeficient people; and protecting health workers.
+
+# Empirical strategy
+
+We simulated models based on a previously developed extended age-structured stochastic compartmental model of SARS-CoV-2 transmission [@hogan2021; @walker2020]. The model considers the progression of the population across transmission compartments (susceptible, exposed, infected, recovered), clinical pathways (need for hospitalisation, oxygen and/or intensive care) and vaccination uptake considering factors such as vaccine availability, prioritisation and coverage. The infection transmission model also considers age-based contact matrices and loss of acquired immunity. It also considers the efficacy of the vaccine both against infection and severe disease.
+
+Each model provides the following outcomes: hospitalisations, deaths, and years of life saved. We then compare results with a counterfactual model that represents the country FVC in October 2021 in addition to 5%. The comparison between those models provides our outcomes of interest: hospitalisations averted, deaths averted, the proportion of deaths averted, years life saved and the number of vaccines.
+
+Our simulations have some fixed parameters across all models. The time period for the analysis is 365 days, which represents the year 2022. The mean duration of naturally acquired immunity and vaccine-derived immunity is set to 365 days. The vaccine efficacy to prevent infections is set as 50% whereas the efficacy against severe disease that requires hospitalisations is set as 90% across all age groups.
+
+All models start with 200,000 infected cases, which is equivalent to 10 days of official data in India and Peru during October 2021. It is important to note that the number of infected patients at the start did not change the results significantly. Details of additional parameters such as hospital capacity and ICU and parameters by age groups such as probabilities of hospitalisation, probability of severe disease, among others, are found in the Appendix. Epidemiological and vaccination parameters were compiled by Hogan et al [-@hogan2021] and updated in the R package ['nimue'](https://github.com/mrc-ide/nimue), where original sources are given. Basic reproduction numbers (R0) and mortality data is collected from Our World in Data [@OurWorldinData2021]. Finally, data on the age-specific vaccine uptake was collected from national databases[^1].
+
+[^1]: <https://dashboard.cowin.gov.in/>; <https://www.minsa.gob.pe/reunis/data/vacunas-covid19.asp>
+
+The scenarios are built based on varying parameters chosen to simulate critical factors affecting the evolution of the pandemics and the vaccination process. The changing parameters are:
+
+-   We model two different vaccination approaches. The first disaggregates the population into 5-year groups (where people over 80 are considered in one group) and prioritises sequentially the oldest age groups until a maximum set coverage is reached. For example, if we set the maximum coverage in 80%, the first age group to be solely vaccinated will be those over 85 years old until it reaches 80% of the age group population. Then, the following group, those aged 80 to 84 will follow on the vaccination process. This occurs until the whole eligible population is covered up to 80%. The second strategy does not prioritise any age groups and allows everyone to be vaccinated at the same time. This is consistent with an ongoing vaccination process in some countries where vaccines are offered simultaneously to the total adult population.
+
+-   The model considers maximum vaccine coverage (MVC) for each age group. After the modelling phase, the MVC is adjusted by the number of susceptible by each age group to facilitate the interpretation of results. This gives us a parameter that represents the final estimation of vaccine coverage (FVC).
+
+-   A constant basic reproduction number (R0), based on conservative projections ranging from 1.1 to 1.8 by 0.1. This assumes the pandemics is not suppressed during 2020.
+
+-   A number of maximum vaccines given per day (VD). The VD also varies for each country and reflects a plausible range of vaccinated people per day based on historical data. VD is halved to account that these models do not consider for the application of two doses by each person.
+
+Because of the ongoing vaccination, the number of people in the first state of the transmission model (those susceptible to the disease, $S_{{0}_{age-group}}$) is adjusted by the number of vaccines given, ${\#Vaccines}$. Considering that a proportion of people that will likely lose the acquired immunity during 2022, $\%{inmunity-loss}$, which represents 10% of the already vaccinated population, we assume to be on the initial susceptible state during 2021.
+
+In countries such as India where there is no disaggregated data for age groups and number of doses received, the parameter ${\#Vaccines}$ is halved to estimate the number of people and the initial number of susceptible is computed as follows:
+
+$$S_{{0}_{age-group}} = \Bigg(Population - \frac{\# Vaccines}{2}\Bigg)*\%{inmunity-loss}$$
+
+In countries such as Peru where there is available data for age groups and the number of doses received, the parameter ${\#Vaccines}$ corresponds to the number of people that received two doses and half of the people that received one dose (assuming they still will get a second dose), as follows:
+
+$$S_{{0}_{age-group}} = \Bigg(Population - \# Vaccines\Bigg)*\%{inmunity-loss}$$
+
+<!-- Considering the stochastic nature of the modelling strategy, we run 10 times each combination of parameters and average the outcome results. -->
+
+Each outcome of interest is computed as the difference between the counterfactual and the simulated scenario as follows:
+
+$$Outcome = Outcome_{counterfactual} - Outcome_{scenario}$$
+
+# India
+
+```{r}
+
+owid.covid.data <- read.csv("owid-covid-data.csv")
+
+reproduction_rate_India<- owid.covid.data %>% 
+  filter(location == "India") %>% 
+  select(date,reproduction_rate) %>% mutate(date=lubridate::ymd(date))
+
+reproduction_rate_Peru<- owid.covid.data %>% 
+  filter(location == "Peru") %>% 
+  select(date,reproduction_rate) %>% mutate(date=lubridate::ymd(date))
+
+summary(reproduction_rate_Peru$reproduction_rate)
+
+# reproduction_rate_India %>% 
+# ggplot()  + 
+#   geom_hline(yintercept = 1,linetype=2,colour="darkorange")+
+#   geom_line(aes(date,reproduction_rate)) + theme_light() +
+#   labs(title = "Reproduction rate over time - India",
+#               subtitle = "Based on reported cases",
+#               caption = "Data source: Our World in Data")+
+#   xlab("Date") + ylab("Reproduction Rate") + 
+#   scale_x_date(breaks = "2 months", labels=scales::date_format("%b%y"),
+#                 limits=c(as.Date("2020-03-15"), as.Date("2021-09-30")))
+  
+
+```
+
+To the current date (October 16 2021), India reports 451,435 deaths during the two-wave epidemic in the country with a peak of weekly deaths of 4190 deaths computed as rolling average. R0 ranges from 0.68 to 2.27 across time (see Figure \@ref(fig:mortality-India)). We observe a lack of correspondence between both (which also occurs if the mortality data is lagged by weeks or a month), which raises concerns regarding the quality of the data.
+
+```{r mortality-India, fig.cap="7-day rolling average of reported deaths and R0 - India"}
+
+
+mortality_India<- owid.covid.data %>% 
+  filter(location == "India") %>% 
+  select(date,new_deaths) %>% mutate(date=lubridate::ymd(date))
+
+# 
+# mortality_India %>% mutate(cma = zoo::rollmean(new_deaths, 7, na.pad=TRUE)) %>%
+#   summarise(max=max(cma,na.rm=T),
+#             mean=mean(cma,na.rm=T))
+
+
+
+scl = 2000
+
+mortality_India %>% left_join(reproduction_rate_India) %>%
+ggplot()  + 
+   geom_line(aes(date,y=zoo::rollmean(reproduction_rate, 7, na.pad=TRUE)*scl),colour="darkorange") + 
+    geom_line(aes(x=date,y=zoo::rollmean(new_deaths, 7, na.pad=TRUE)),color = "darkgreen") +  
+      theme_light() +
+  labs(title = "7-day rolling average of reported deaths and basic reproduction numbers - India",
+              subtitle = "Based on official data",
+              caption = "Data source: Our World in Data")+
+  xlab("") +  ylab("Deaths") + 
+  scale_x_date(breaks = "2 months", labels=scales::date_format("%b%y"),
+                limits=c(as.Date("2020-03-15"), as.Date("2021-09-30"))) + 
+  scale_y_continuous(labels = scales::comma,
+    sec.axis = sec_axis(~./scl, name="Reproduction Rate")) +
+    theme(axis.title.y.right = element_text(color = "darkorange"),
+          axis.text.y.right = element_text(color = "darkorange"),
+          axis.title.y.left = element_text(color = "darkgreen"),
+          axis.text.y.left = element_text(color = "darkgreen"))
+
+
+```
+
+```{r}
+
+# summary(reproduction_rate_India$reproduction_rate)
+
+# Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NA's 
+#  0.680   0.910   1.010   1.103   1.230   2.270      46
+  
+mortality_total_India<- owid.covid.data %>% 
+  filter(location == "India") %>% 
+  select(date,total_deaths) %>% mutate(date=lubridate::ymd(date))
+
+#mortality_total_India %>% summarise(total=max(total_deaths,na.rm=T)) # 451435
+
+
+```
+
+The Indian Government reports weekly vaccinations uptake by three age groups: 15 to 44, 45 to 59, and people over 60 (Figure \@ref(fig:vaccination-India)). Available data disaggregated by age does not discriminate by the number of people with one and two doses. Until October 15, 946 million vaccines have been given, representing 34.3% of the population vaccinated with two doses (which does not mean the same person received two vaccines). Vaccination uptake has been increasing since the end of July 2021, where more than 30 million weekly vaccines have been given each week. This reached a peak of 66.9 million vaccines applied in a week during September 2021. However, the trend is downwards in October 2021. The vaccination coverage for the age groups 15 to 44, 45 to 59, and 60 and above groups is 33.3%, 61.9% and 57.3%, respectively.
+
+```{r vaccination-India, fig.cap="Weekly vaccinations by age groups - India"}
+
+vaccination_India <-  read_excel("dashboard_export_19oct.xlsx")
+
+vaccination_India$week<-c(seq(3,41,1))
+  
+summary(vaccination_India$total)
+
+# 66891331 (or 66891297) in week 11 Sep-17 Sep -> 9555904 daily in that week
+
+
+vaccination_India %>% 
+  pivot_longer(vac_18_45:vac_60_above, names_to = "Age_group") %>% 
+  mutate (Age_group = case_when(Age_group=="vac_18_45" ~ '18 - 44',
+                                Age_group=="vac_45_60" ~ '45 - 59',
+                                T ~ '60+')) %>%
+  ggplot(aes(week,value/7,colour=Age_group,group=Age_group)) + geom_line() + 
+  theme_light() + 
+  scale_x_continuous(breaks = seq(3,42,3)) + 
+  scale_y_continuous(breaks = seq(0,7e6,1e6),
+    labels = scales::comma) + 
+  xlab ("Weeks 2021") + 
+  ylab ("Average daily vaccination") +
+  labs(colour="Age group") +
+    labs(title = "Weekly vaccinations by age groups - India",
+              subtitle = "Based on official data",
+              caption = "Data source: https://dashboard.cowin.gov.in/")
+
+
+```
+
+```{r}
+
+
+population <- nimue:::init(squire::get_population("India")$n, seeding_cases = 100000)
+population<-population$S_0
+
+population2 <- c(sum(population[3:9,1]),sum(population[10:12,1]),sum(population[13:17,1])) %>% as.data.frame()
+
+
+colnames(population2)[1]<- "population"
+Age_group<-c('18 - 44','45 - 59','60+')  
+
+population2<-cbind(Age_group,population2)
+
+# vaccination_India %>% 
+#   pivot_longer(vac_18_45:vac_60_above, names_to = "Age_group") %>% 
+#   mutate (Age_group = case_when(Age_group=="vac_18_45" ~ '18 - 44',
+#                                 Age_group=="vac_45_60" ~ '45 - 59',
+#                                 T ~ '60+')) %>% group_by(Age_group) %>%
+#   summarise(vaccination=sum(value)) %>% left_join(population2) %>%
+#   mutate (proportion = (vaccination/2)/population) 
+
+# Age_group vaccination population proportion
+#   <chr>           <dbl>      <dbl>      <dbl>
+# 1 18 - 44     531157060  797909859      0.333
+# 2 45 - 59     256802443  207522412      0.619
+# 3 60+         159961842  139610480      0.573
+  
+```
+
+## Results of simulations
+
+```{r}
+
+out_format %>% 
+  filter (R0 != 1.1 & R0 != 1.3 & R0 != 1.5 &
+                         R0 != 1.7 & R0 != 1.9 & R0 != 2) %>%
+            dplyr::filter ( max_vaccine == 3000000) %>%
+  mutate(final_coverage=round(final_coverage,2)) %>% 
+  filter (final_coverage == .6 | final_coverage == .8) %>%
+  group_by(R0, final_coverage) %>% 
+  summarise(deaths_averted = mean (deaths_averted),
+            years_life_saved = mean (years_life_saved)) 
+```
+
+The combination of the different parameters provide 1,344 different scenarios for India. The MVC parameter for all age groups was set in a range from 70% to 96% by 2%. This is equivalent to a FVC ranging from 40% to 90%. Based on current data provided in Figure \@ref(fig:vaccination-India), the VD parameter was set to represent a maximum of 2, 2.5, and 3 million people vaccinated per day (this is translated into 4, 5, and 6 million of daily doses in the models).
+
+```{r}
+
+max_India<-out_format %>% 
+    group_by(R0, max_vaccine,coverage,vaccine_coverage_mat) %>% 
+  summarise(deaths_averted = mean (deaths_averted),
+            years_life_saved = mean (years_life_saved)) 
+
+```
+
+Figure \@ref(fig:simulations-ideal-India) presents eight panels with basic reproduction numbers ranging from 1.1 to 1.8. In all cases, the prioritisation of older people in the vaccination strategy leads to increasing returns in numbers of deaths averted when vaccine coverage is higher. Differently, in the case of the lack of prioritisation, the number of deaths averted remains similar across different vaccine coverage levels. Models between vaccination strategies in higher R0 scenarios suggest differences up to 3 million deaths averted. The number of vaccines per day does not play a vital role in the number of deaths averted in both scenarios.
+
+```{r simulations-ideal-India, fig.cap="Deaths averted based on simulated scenarios - India"}
+
+out_format %>% 
+  group_by(final_coverage,R0,vaccine_coverage_mat) %>%
+  mutate(deaths_averted=mean(deaths_averted))%>%
+  ggplot() + geom_point(aes(final_coverage,deaths_averted,
+                            colour=vaccine_coverage_mat,
+                            shape=as.factor(max_vaccine)))+
+  facet_wrap(~R0,ncol = 4) + theme_light() +
+  scale_y_continuous(labels = scales::comma) +
+   scale_x_continuous(labels = scales::percent,limits = c(.45,1)) +
+  theme(legend.position = "bottom", legend.box="vertical", legend.margin=margin()) + 
+  labs(title = "Simulations of Vaccination models - India",
+       caption = "Data source: Authors' own")+
+  xlab("Population maximum coverage") +  ylab("Deaths averted") + 
+   scale_colour_manual("Vaccine prioritisation",values = c("darkgreen", "darkorange"), 
+                       labels = c("No priority", "Older People"))+
+  scale_shape_discrete("Mean vaccines/day",
+                      labels = c("2 million", "2.5 million", "3 million"))
+
+```
+
+Figure \@ref(fig:infections-ideal-India) presents the same simulated scenarios to compute the potential number of infections averted. In this case, the R0 parameter plays a major role, where lower reproduction rates represent higher numbers of infections averted. Models, where older people are prioritised, also show a higher aversion in the infections. The higher number of vaccines per day also affects positively the number of infections averted.
+
+```{r infections-ideal-India, fig.cap="Infections averted based on simulated scenarios - India"}
+
+out_format %>% 
+  group_by(final_coverage,R0,vaccine_coverage_mat) %>%
+  mutate(infections_averted=mean(infections_averted))%>%
+  ggplot() + geom_point(aes(final_coverage,infections_averted,
+                            colour=vaccine_coverage_mat,
+                            shape=as.factor(max_vaccine)))+
+  facet_wrap(~R0,ncol = 4) + theme_light() +
+  scale_y_continuous(labels = scales::comma) +
+   scale_x_continuous(labels = scales::percent,limits = c(.45,1)) +
+  theme(legend.position = "bottom", legend.box="vertical", legend.margin=margin()) + 
+  labs(title = "Simulations of Vaccination models - India",
+       caption = "Data source: Authors' own")+
+  xlab("Population maximum coverage") +  ylab("Infections averted") + 
+   scale_colour_manual("Vaccine prioritisation",values = c("darkgreen", "darkorange"), 
+                       labels = c("No priority", "Older People"))+
+   scale_shape_discrete("Mean vaccines/day",
+                      labels = c("2 million", "2.5 million", "3 million"))
+
+```
+
+Table \@ref(tab:vaccination-ideal-India) shows a conservative scenario where 80% of the population is immunised across 2022. The scenario implies an R0 equal to 1.2. In this case, 28.5% of deaths averted if 6 million people are vaccinated per day, prioritising older people's vaccination. This represents 1,635,079 deaths averted, equivalent to 8,326,446 years of life saved. Under a lack of a vaccination strategy, deaths saved falls to 118,178. A supply of 4 million vaccines per day achieves only a FVC of 68%.
+
+```{r vaccination-ideal-India, tab.cap="Scenario with 80% of population coverage and R0 = 1.2 - India"}
+
+# ideal<-out_format %>% select(final_coverage,R0,seed,max_vaccine,vaccine_coverage_mat,
+#                              infections_averted,hospitalisations_averted,
+# deaths_averted,deaths_averted_prop,years_life_saved,vaccine_n) %>%
+#   mutate(final_coverage=round(final_coverage,2))
+# 
+# table(ideal$final_coverage)
+
+
+ideal<- out_format %>% select(final_coverage,R0,seed,max_vaccine,vaccine_coverage_mat,
+                             infections_averted,hospitalisations_averted,
+deaths_averted,deaths_averted_prop,years_life_saved,vaccine_n) %>% 
+  mutate(final_coverage=round(final_coverage,2)) %>%
+  filter (final_coverage == .8) %>% 
+  group_by(final_coverage,R0,max_vaccine,vaccine_coverage_mat) %>%
+  summarise(infections_averted=mean(infections_averted),
+    hospitalisations_averted= mean(hospitalisations_averted),
+deaths_averted=mean(deaths_averted),
+deaths_averted_prop=mean(deaths_averted_prop),
+years_life_saved=mean(years_life_saved),vaccine_n=mean(vaccine_n))
+
+ideal<-ideal %>% filter(R0>1.1 & R0<1.3)
+  
+ideal<-flextable::flextable(ideal) 
+
+ideal <- set_formatter( x = ideal,
+                        infections_averted=function(x) sprintf("%.0f", x),
+        max_vaccine = function(x) sprintf("%.0f", x),
+        years_life_saved = function(x) sprintf("%.0f", x),
+                vaccine_n = function(x) sprintf("%.0f", x))
+
+ideal
+
+```
+
+# Peru
+
+```{r, cache=T}
+
+source("vaccines_Peru.R", local = knitr::knit_global())
+```
+
+```{r, cache=T}
+source("models_Peru.R", local = knitr::knit_global())
+
+```
+
+```{r, cache=F}
+
+source("models_Peru2.R", local = knitr::knit_global())
+
+```
+
+To the current date (October 16 2021), Peru reports 199,746 deaths during the two-wave epidemic in the country, with a peak of weekly deaths of 874 deaths computed as a rolling average. R0 ranges from 0.91 to 1.86 across time (see Figure \@ref(fig:mortality-Peru)). We observe a lack of correspondence between the contagiousness of the disease and deaths even if the mortality data is lagged by 1-4 weeks raising concerns on the data quality.
+
+```{r mortality-Peru, fig.cap="7-day rolling average of reported deaths and R0 - Peru"}
+
+
+mortality_Peru<- owid.covid.data %>% 
+  filter(location == "Peru") %>% 
+  select(date,new_deaths) %>% mutate(date=lubridate::ymd(date))
+
+#summary(reproduction_rate_Peru$reproduction_rate)
+
+# mortality_Peru %>% mutate(cma = zoo::rollmean(new_deaths, 7, na.pad=TRUE)) %>%
+#   summarise(max=max(cma,na.rm=T),
+#             mean=mean(cma,na.rm=T))
+
+#mortality_Peru %>% summarise (tot=sum(new_deaths,na.rm = T))
+
+scl = 200
+
+mortality_Peru %>% left_join(reproduction_rate_Peru) %>%
+ggplot()  + 
+   geom_line(aes(date,y=zoo::rollmean(reproduction_rate, 7, na.pad=TRUE)*scl),colour="darkorange") + 
+    geom_line(aes(x=date,y=zoo::rollmean(new_deaths, 7, na.pad=TRUE)),color = "darkgreen") +  
+      theme_light() +
+  labs(title = "7-day rolling average of reported deaths and basic reproduction numbers - Peru",
+              subtitle = "Based on official data",
+              caption = "Data source: Our World in Data")+
+  xlab("") +  ylab("Deaths") + 
+  scale_x_date(breaks = "2 months", labels=scales::date_format("%b%y"),
+                limits=c(as.Date("2020-03-15"), as.Date("2021-09-30"))) + 
+  scale_y_continuous(labels = scales::comma,
+    sec.axis = sec_axis(~./scl, name="Reproduction Rate")) +
+    theme(axis.title.y.right = element_text(color = "darkorange"),
+          axis.text.y.right = element_text(color = "darkorange"),
+          axis.title.y.left = element_text(color = "darkgreen"),
+          axis.text.y.left = element_text(color = "darkgreen"))
+
+
+```
+
+The Peruvian Government reports daily vaccinations by age, which allows aggregation by five years age groups. Until October 15, 32.2 million vaccines have been given, representing 49.1% of the population vaccinated with two doses (which does not mean the same person received two vaccines). Vaccination uptake has been increasing since July 2021. Figure \@ref(fig:vaccination-Peru) reflects the age groups prioritisation where between May and July, most vaccines were allocated to older people.
+
+```{r vaccination-Peru, fig.cap="Weekly vaccinations by age groups - Peru"}
+
+#sum(vaccination_Peru2$n) 32237618
+
+agecutper<-levels(vaccination_Peru2$age)
+agecutper<-agecutper %>% bind_cols(age_groups)
+
+colnames(agecutper)[1]<-"age"
+colnames(agecutper)[2]<-"age2"
+
+# vaccination_Peru2 %>% 
+#     group_by(fecha_vacunacion) %>% summarise (n=sum(n,na.rm = T)) %>%
+#   ggplot(aes(fecha_vacunacion,n)) + geom_line() + 
+#   theme_light() +
+#   # scale_x_continuous(breaks = seq(3,42,3)) + 
+#   scale_y_continuous(labels = scales::comma) + 
+#   xlab ("Weeks 2021") + 
+#   ylab ("Average daily vaccination") +
+#     labs(title = "Weekly vaccinations - Peru",
+#               subtitle = "Based on official data",
+#               caption = "Data source: MINSA")
+
+
+vaccination_Peru2 %>% left_join(agecutper) %>%
+  #mutate(fecha_vacunacion=lubridate::week(fecha_vacunacion)) %>%
+  group_by(fecha_vacunacion,age2) %>% summarise (n=sum(n,na.rm = T)) %>%
+  ggplot(aes(fecha_vacunacion,n)) + geom_line() +
+  theme_light() + facet_wrap(~age2,scales = "free") +
+  # scale_x_continuous(breaks = seq(3,42,3)) +
+  scale_x_date(breaks = "2 months", labels=scales::date_format("%b%y"))+
+  scale_y_continuous(labels = scales::comma) +
+  xlab ("Weeks 2021") +
+  ylab ("Average daily vaccination") +
+    labs(title = "Weekly vaccinations by age groups - Peru",
+              subtitle = "Based on official data",
+              caption = "Data source: MINSA")
+
+
+```
+
+## Results of simulations
+
+The combination of the different parameters resulted in 1,440 different scenarios for Peru. The MVC parameter for all age groups was set in a range from 68% to 94% by 2%. This is equivalent to a FVC ranging from 55% to 90%. Based on current data provided in Figure \@ref(fig:vaccination-Peru), the VD parameter was set in a maximum of 100, 150 and 200 thousand people vaccinated per day (this is translated into a maximum of 200, 300, and 400 thousand of daily doses in the models).
+
+Figure \@ref(fig:simulations-ideal-Peru) presents eight panels with basic reproduction numbers ranging from 1.1 to 1.8. The prioritisation of older people in the vaccination strategy leads to increasing returns in numbers of deaths averted when FVC is higher than 80% and increases in case of higher R0 scenarios. The number of vaccines per day does not play a vital role if the vaccination strategies prioritise older people. In contrast, it does affect the number of deaths averted in the case of lack of a vaccination strategy.
+
+```{r}
+
+max_Peru<-out_format_peru %>% 
+    group_by(R0, max_vaccine,coverage,vaccine_coverage_mat) %>% 
+  summarise(deaths_averted = mean (deaths_averted),
+            years_life_saved = mean (years_life_saved)) 
+
+```
+
+```{r simulations-ideal-Peru, fig.cap="Deaths averted based on simulated scenarios - Peru"}
+
+#variable.names(out_format_peru)
+
+out_format_peru %>%
+  group_by(final_coverage,R0,vaccine_coverage_mat,max_vaccine) %>%
+  mutate(deaths_averted=mean(deaths_averted))%>%
+  ggplot() +
+  geom_point(aes(final_coverage,deaths_averted,colour=vaccine_coverage_mat,
+                            shape=as.factor(max_vaccine)))+
+  facet_wrap(~R0,ncol = 4) + theme_light() +
+  scale_y_continuous(labels = scales::comma) +
+   scale_x_continuous(labels = scales::percent,
+                      limits = c(.5,1)) +
+  theme(legend.position = "bottom", legend.box="vertical", legend.margin=margin()) +
+  labs(title = "Simulations of Vaccination models - Peru",
+       caption = "Data source: Authors' own")+
+  xlab("Population maximum coverage") +  ylab("Deaths averted") +
+   scale_colour_manual("Vaccine prioritisation",values = c("darkgreen", "darkorange"),
+                       labels = c("No priority", "Older People"))+
+  scale_shape_discrete("Mean vaccines/day",
+                      labels = c("200k", "300k", "400k"))
+
+```
+
+Figure \@ref(fig:infections-ideal-Peru) presents the same simulated scenarios to compute the potential number of infections averted. Simulations show that when reproduction rates are higher, the vaccination uptake helps prevent a larger number of infections. In this case, both vaccination strategies show similar results in terms of averting infections, while the number of infections averted find a plateau around a FVC of 85%.
+
+```{r infections-ideal-Peru, fig.cap="Infections averted based on simulated scenarios - Peru"}
+
+out_format_peru %>% group_by(final_coverage,R0,vaccine_coverage_mat,max_vaccine) %>%
+  mutate(infections_averted=mean(infections_averted))%>%
+  ggplot() + geom_point(aes(final_coverage,infections_averted,
+                            colour=vaccine_coverage_mat,
+                            shape=as.factor(max_vaccine)))+
+  facet_wrap(~R0,ncol = 4) + theme_light() +
+  scale_y_continuous(labels = scales::comma) +
+   scale_x_continuous(labels = scales::percent,limits = c(.5,1)) +
+  theme(legend.position = "bottom", legend.box="vertical", legend.margin=margin()) +
+  labs(title = "Simulations of Vaccination models - Peru",
+       caption = "Data source: Authors' own")+
+  xlab("Population maximum coverage") +  ylab("Infections averted") +
+   scale_colour_manual("Vaccine prioritisation",values = c("darkgreen", "darkorange"),
+                       labels = c("No priority", "Older People"))+
+  scale_shape_discrete("Mean vaccines/day",
+                      labels = c("200k", "300k", "400k"))
+
+```
+
+Table \@ref(tab:vaccination-ideal-Peru) shows a conservative scenario where 80% of the population is immunised across 2022. The scenario implies an R0 equal to 1.2. The number of deaths averted ranges from 6,803 to 9,504. The vaccination strategy prioritising older people and the number of vaccines per day consistently perform better than the other scenarios in all outcomes.
+
+```{r vaccination-ideal-Peru, tab.cap="Scenario with 80% of population coverage and R0 = 1.2 - Peru"}
+
+ideal_Peru<-out_format_peru %>% select(final_coverage,R0,seed,max_vaccine,vaccine_coverage_mat,
+                             infections_averted,hospitalisations_averted,
+deaths_averted,deaths_averted_prop,years_life_saved,vaccine_n) %>%
+  mutate(final_coverage=round(final_coverage,1)) %>%
+  filter (final_coverage == .8) %>%
+  group_by(final_coverage,R0,max_vaccine,vaccine_coverage_mat) %>%
+  summarise(infections_averted=mean(infections_averted),
+    hospitalisations_averted= mean(hospitalisations_averted),
+deaths_averted=mean(deaths_averted),
+deaths_averted_prop=mean(deaths_averted_prop),
+years_life_saved=mean(years_life_saved),vaccine_n=mean(vaccine_n))
+
+ideal_Peru<-ideal_Peru %>% filter(R0>1.1 & R0<1.3)
+  
+
+ideal_Peru<-flextable::flextable(ideal_Peru)
+
+ideal_Peru <- set_formatter( x = ideal_Peru,
+                        infections_averted=function(x) sprintf("%.0f", x),
+        max_vaccine = function(x) sprintf("%.0f", x),
+        years_life_saved = function(x) sprintf("%.0f", x),
+                vaccine_n = function(x) sprintf("%.0f", x))
+
+ideal_Peru
+
+```
+
+# Discussion
+
+This is a first attempt to show the potential impact of lack of age prioritization on COVID infection, hospitalization and mortality in India and Peru. While the calculations are based on models used in other countries, it is important to note that the uncertainty element of data is higher when analysing the data in LMICS where data are not robust including mortality data [@lloyd-sherlock2020]. However, we believe that the model accurately represents and direction. In addition, it represents the levels as precisely as possible with using the available data.
+
+Limitations - constant transmission rate, think about other parameters
+
+assumes people vaccinate not doses
+
+third doses
+
+*As with any modelling study, there are several limitations. In practice, each country will have experienced a different epidemic when the first vaccine is introduced and will scale up coverage gradually. Second, the model used here is relatively simple in structure and can only simulate a single vaccine product, with one value for vaccine efficacy, meaning we could not include complexities such as multiple vaccine products, nor the partial efficacy following the first dose in a multi-dose vaccine schedule. These considerations will be important for future studies. Fourth, our study focuses only on the health benefits of vaccination. It will be important to consider other therapeutic interventions, as well as the capacity of countries to suppress transmission using NPIs, and to better capture specific risk groups as appropriate to individual countries. Furthermore, the direct health outcome is only one dimension; models that integrate epidemiological and economic outcomes will be needed to evaluate the impact of different vaccine allocation strategies on the economic outputs of countries and the livelihoods of their citizens.*
+
+# Epidemiological and vaccination parameters used across models and countries
+
+### Parameters 1
+
+```{r}
+
+param1<-nimue:::default_probs()
+
+param1<-do.call(cbind.data.frame, param1)
+
+age_groups<-c(
+"0 to 4",
+"5 to 9",
+"10 to 14",	
+"15 to 19",	
+"20 to 24",
+"25 to 29",	
+"30 to 34",	
+"35 to 39",	
+"40 to 44",	
+"45 to 49",	
+"50 to 54",	
+"55 to 59",	
+"60 to 64",	
+"65 to 69",	
+"70 to 74",	
+"75 to 79",	
+"80+")
+
+ft_1<-flextable::flextable(cbind(age_groups,param1)) 
+ft_2 <- autofit(ft_1)
+ft_2
+```
+
+### Parameters 2
+
+```{r}
+
+param2<-nimue:::default_vaccine_pars()
+
+param2<-do.call(cbind.data.frame, param2)
+
+param2<-param2[1,]
+
+ft_3<-flextable::flextable(param2)
+
+ft_4 <- autofit(ft_3)
+
+ft_4
+```
+
+### Parameters 3
+
+```{r}
+
+param3<-nimue:::default_durations()
+
+param3<-do.call(cbind.data.frame, param3)
+
+ft_5<-flextable::flextable(param3) 
+
+ft_6<- autofit(ft_5)
+
+ft_6
+
+```
+
+### Parameters 4
+
+```{r}
+
+param4<-squire::get_healthcare_capacity(country="India")  
+param4_Peru<-squire::get_healthcare_capacity(country="Peru")  
+
+param4<-do.call(cbind.data.frame, param4)
+param4_Peru<-do.call(cbind.data.frame, param4_Peru)
+
+
+param4<- param4 %>% bind_rows(param4_Peru)
+param4$Country<-c("India","Peru")
+
+ft_7<-flextable::flextable(param4) 
+
+ft_8<- autofit(ft_7)
+
+ft_8
+
+```
+
+# References
