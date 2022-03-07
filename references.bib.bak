@@ -1,0 +1,758 @@
+% Encoding: UTF-8
+
+@article{Binder2004,
+  title = {Effects of Extended Outpatient Rehabilitation after Hip Fracture},
+  author = {Binder, Ellen F. and Brown, Marybeth and Sinacore, David R. and Steger-May, Karen and Yarasheski, Kevin E. and Schechtman, Kenneth B.},
+  year = {2004-08-18, 2004-08},
+  journaltitle = {JAMA},
+  volume = {292},
+  number = {7},
+  pages = {837},
+  doi = {10.1001/jama.292.7.837},
+  url = {http://dx.doi.org/10.1001/jama.292.7.837},
+  langid = {english}
+}
+
+@article{bormanSchoolsInequalityMultilevel2010,
+  title = {Schools and {{Inequality}}: {{A Multilevel Analysis}} of {{Coleman}}'s {{Equality}} of {{Educational Opportunity Data}}},
+  shorttitle = {Schools and {{Inequality}}},
+  author = {Borman, Geoffrey and Dowling, N. Maritza},
+  date = {2010-05-01},
+  journaltitle = {Teachers College Record},
+  shortjournal = {Teachers College Record},
+  volume = {112},
+  pages = {1201--1246},
+  abstract = {Background/Context: The Equality of Educational Opportunity study is widely recognized as one of the most important studies on schooling ever performed. The findings from the report have shaped the field of education, national education policies, and wider public and scholarly opinion regarding the contributions of schools and schooling to equality and produdivity in the United States. Despite past reanalyses of the data and decades of research on the effects of schools as organizations, the report's fundamental finding-that a student's family background is far more important than school social composition and school resources for understanding student outcomes-still retains much of its currency. Purpose/Objective/Research Question/Focus of Study: Using the original Equality of Educational Opportunity data, this study replicated Coleman's statistical models but also applied a two-level hierarchical linear model (HLM) to measure the effects of school-level social composition, resources, teacher characteristics, and peer characteristics on ninth-grade students' verbal achievement. Research Design: HLM allows researchers to disentangle how schools and students' family backgrounds contribute to learning outcomes. The methodology offers a clearer interpretation of the relative effects of school characteristics, including racial/ethnic composition, and family background, including race/ethnicity and social class, on students' academic outcomes. Findings/Results: Our results suggest that schools do indeed matter, in that when one examines the outcomes across the national sample of schools, fully 40 \% of the differences in achievement can be found between schools. Even after statistically taking into account students'family background, a large proportion of the variation among true school means is related to differences explained by school characteristics. Within-school inequalities in the achievement outcomes for African American and White students and students from families of higher and lower social class are explained in part by teachers' biases favoring middle-class students and by schools'greater reliance on curriculum differentiation through the use of academic and nonacademic tracking. Conclusions/Recommendations: Formal decomposition of the variance attributable to individual background and the social composition of the schools suggests that going to a high-poverty school or a highly segregated African American school has a profound effect on a student's achievement outcomes, above and beyond the effect of individual poverty or minority status. Specifically, both the racial/ethnic and social class composition of a student's school are 1 3/4 times more important than a student's individual race/ethnicity or social class for understanding educational outcomes.}
+}
+
+@book{Costa2015,
+  title = {Atlas Da Vulnerabilidade Social Nas Regiões Metropolitanas Brasileiras},
+  editor = {Costa, Marco Aurelio and Oliveira Marguti, Barbara},
+  date = {2015},
+  publisher = {{IPEA}},
+  location = {{Brasilia}},
+  isbn = {978-85-7811-254-7}
+}
+
+@book{Costa2015,
+  title = {Atlas Da Vulnerabilidade Social Nas Regiões Metropolitanas Brasileiras},
+  editor = {Costa, Marco Aurelio and Oliveira Marguti, Barbara},
+  date = {2015},
+  publisher = {{IPEA}},
+  location = {{Brasilia}},
+  isbn = {978-85-7811-254-7}
+}
+
+@Report{fergusonReport49Growth2021,
+  author      = {Ferguson, N},
+  date        = {2021-12-15},
+  institution = {{Imperial College London}},
+  title       = {Report 49: {{Growth}} and Immune Escape of the {{Omicron SARS-CoV-2}} Variant of Concern in {{England}}},
+  doi         = {10.25561/93038},
+  url         = {http://spiral.imperial.ac.uk/handle/10044/1/93038},
+  urldate     = {2022-01-10},
+  abstract    = {To estimate the growth of the Omicron variant of concern (1) and its immune escape (2–9) characteristics, we analysed data from all PCR-confirmed SARS-CoV-2 cases in England excluding those with a history of recent international travel. We undertook separate analyses according to two case definitions. For the first definition, we included all cases with a definitive negative S-gene Target Failure (SGTF) result and specimen dates between 29/11/2021 and 11/12/2021 inclusive. For the second definition, we included cases with a positive genotype result and specimen date between 23/11/2021 and 11/12/2021 inclusive. We chose a later start date for the SGTF definition to ensure greater specificity of SGTF for Omicron.},
+  editora     = {Medical Research Council (MRC)},
+  editoratype = {collaborator},
+  file        = {C\:\\Users\\LUCAS\\Zotero\\storage\\AAXRZI5W\\Ferguson - 2021 - Report 49 Growth and immune escape of the Omicron.pdf},
+  keywords    = {Coronavirus, COVID-19},
+  langid      = {english},
+  shorttitle  = {Report 49},
+}
+
+@Report{fergusonReport50Effectiveness2021,
+  author      = {Ferguson, N},
+  date        = {2021-12-16},
+  institution = {{Imperial College London}},
+  title       = {Report 50: {{Effectiveness}} of {{SARS-CoV-2}} Vaccines in {{England}} in 2021: A Whole Population Survival Analysis},
+  doi         = {10.25561/93035},
+  url         = {http://spiral.imperial.ac.uk/handle/10044/1/93035},
+  urldate     = {2022-01-10},
+  abstract    = {To assess differences in the risk of hospitalisation between the Omicron variant of concern (1) and the Delta variant, we analysed data from all PCR-confirmed SARS-CoV-2 cases in England with last test specimen dates between 1st and 14th December inclusive. Variant was defined using a combination of Sgene Target Failure (SGTF) and genetic data. Case data were linked by National Health service (NHS) number to the National Immunisation Management System (NIMS) database, the NHS Emergency Care (ECDS) and Secondary Use Services (SUS) hospital episode datasets. Hospital attendance was defined as any record of attendance at a hospital by a case in the 14 days following their last positive PCR test, up to and including the day of attendance. A secondary analysis examined the subset of attendances with a length of stay of one or more days. We used stratified conditional Poisson regression to predict hospitalisation status, with demographic strata defined by age, sex, ethnicity, region, specimen date, index of multiple deprivation and in some analyses, vaccination status. Predictor variables were variant (Omicron or Delta), reinfection status and vaccination status.},
+  editora     = {Medical Research Council (MRC)},
+  editoratype = {collaborator},
+  file        = {C\:\\Users\\LUCAS\\Zotero\\storage\\N7THF8HM\\Ferguson - 2021 - Report 50 Effectiveness of SARS-CoV-2 vaccines in.pdf},
+  keywords    = {Coronavirus, COVID-19},
+  langid      = {english},
+  shorttitle  = {Report 50},
+}
+
+@article{Finlayson2018,
+  title = {Transitional Care Interventions Reduce Unplanned Hospital Readmissions in High-Risk Older Adults},
+  author = {Finlayson, Kathleen and Chang, Anne M. and Courtney, Mary D. and Edwards, Helen E. and Parker, Anthony W. and Hamilton, Kyra and Pham, Thu Dinh Xuan and O’Brien, Jane},
+  date = {2018-12},
+  journaltitle = {BMC Health Services Research},
+  volume = {18},
+  number = {1},
+  doi = {10.1186/s12913-018-3771-9},
+  url = {http://dx.doi.org/10.1186/s12913-018-3771-9},
+  langid = {english}
+}
+
+@Article{Glebbeek2016,
+  author       = {Glebbeek, Marie Louise and Koonings, Kees},
+  date         = {2016},
+  journaltitle = {Habitat International},
+  title        = {Between {{Morro}} and {{Asfalto}}. {{Violence}}, Insecurity and Socio-Spatial Segregation in {{Latin American}} Cities},
+  doi          = {10.1016/j.habitatint.2015.08.012},
+  issn         = {01973975},
+  pages        = {3--9},
+  volume       = {54},
+  abstract     = {Urban Latin America has become synonymous with violence and insecurity. Whereas levels of violence since 2000, in terms of homicide rates, dropped everywhere else in the world, Latin America and the Caribbean were the exception. Often, efforts to explain this make a connection between poverty, crime, and violence that finds its typical representation in peripheral urban areas: shanty towns. This paper challenges such one-dimensional assumptions by critically examining the complex nexus between violence, insecurity and urban space in urban Latin America. We will define contemporary urban violence in the region and discuss its key characteristics and explanatory factors. Then, we will examine the socio-spatial dimensions of violence and insecurity in three domains: the linkages between criminal gangs, drugs, and violence in peripheral areas; the impact of violence and fear on the strategies of seclusion employed by specific social classes; state responses, especially policing, to show how regimes of public security are differentiated in socio-spatial terms We will argue that these differences reflect differences in citizenship status and citizenship subjectivity, between the privileged and the excluded. This in turn generates bottom-up responses by urban residents that take matters of security and law enforcement in their own hands.},
+  keywords     = {Gangs, Gated communities, Latin American cities, Lynchings, Policing, Social spatial segregation, Vigilantism, Violence},
+  publisher    = {{Elsevier Ltd}},
+}
+
+@Article{herrPublicReportingQuality2016,
+  author       = {Herr, Annika and Nguyen, Thu-Van and Schmitz, Hendrik},
+  date         = {2016-10},
+  journaltitle = {Health Policy (Amsterdam, Netherlands)},
+  title        = {Public Reporting and the Quality of Care of {{German}} Nursing Homes},
+  doi          = {10.1016/j.healthpol.2016.09.004},
+  eprint       = {27671099},
+  eprinttype   = {pmid},
+  issn         = {1872-6054},
+  number       = {10},
+  pages        = {1162--1170},
+  volume       = {120},
+  abstract     = {OBJECTIVES: Since 2009, German nursing homes have been evaluated regularly by an external institution with quality report cards published online. We follow recent debates and argue that most of the information in the report cards does not reliably measure quality of care. However, a subset of up to seven measures does. Do these measures that reflect "risk factors" improve over time? METHOD: Using a sample of more than 3000 German nursing homes with information on two waves, we assume that the introduction of public reporting is an exogenous institutional change and apply before-after-estimations to obtain estimates for the relation between public reporting and quality. RESULTS: We find a significant improvement of the identified risk factors. Also, the two employed outcome quality indicators improve significantly. The improvements are driven by nursing homes with low quality in the first evaluation. CONCLUSION: To the extent that this can be interpreted as evidence that public reporting positively affects the (reported) quality in nursing homes, policy makers should carefully choose indicators reflecting care-sensitive quality.},
+  keywords     = {Germany, Humans, Information, Long-term care, Mandatory Reporting, Nursing homes, Nursing Homes, Outcome and Process Assessment; Health Care, Public reporting, Quality, Quality Improvement, Quality of Health Care, Risk Factors},
+  langid       = {english},
+  shortjournal = {Health Policy},
+}
+
+@article{ho2007,
+  title = {Matching as Nonparametric Preprocessing for Reducing Model Dependence in Parametric Causal Inference},
+  author = {Ho, Daniel E. and Imai, Kosuke and King, Gary and Stuart, Elizabeth A.},
+  date = {2007},
+  journaltitle = {Political Analysis},
+  volume = {15},
+  number = {3},
+  pages = {199--236},
+  doi = {10.1093/pan/mpl013},
+  url = {http://dx.doi.org/10.1093/pan/mpl013},
+  langid = {english}
+}
+
+@online{hodcroftCoVariants2022,
+  title = {{{CoVariants}}},
+  author = {Hodcroft, Emma},
+  date = {2022},
+  url = {https://covariants.org/},
+  urldate = {2022-01-10},
+  abstract = {SARS-CoV-2 Mutations and Variants of Interest},
+  langid = {english},
+  organization = {{CoVariants}},
+  file = {C\:\\Users\\LUCAS\\Zotero\\storage\\ZBQSJZTA\\per-variant.html}
+}
+
+@article{Huntley2013,
+  title = {Is Case Management Effective in Reducing the Risk of Unplanned Hospital Admissions for Older People? {{A}} Systematic Review and Meta-Analysis},
+  author = {Huntley, A. L. and Thomas, R. and Mann, M. and Huws, D. and Elwyn, G. and Paranjothy, S. and Purdy, S.},
+  year = {2013-01-12, 2013-01},
+  journaltitle = {Family Practice},
+  volume = {30},
+  number = {3},
+  pages = {266--275},
+  doi = {10.1093/fampra/cms081},
+  url = {http://dx.doi.org/10.1093/fampra/cms081},
+  langid = {english}
+}
+
+@article{iacus2012,
+  title = {Causal Inference without Balance Checking: {{Coarsened}} Exact Matching},
+  author = {Iacus, Stefano M. and King, Gary and Porro, Giuseppe},
+  date = {2012},
+  journaltitle = {Political Analysis},
+  volume = {20},
+  number = {1},
+  pages = {1--24},
+  doi = {10.1093/pan/mpr013},
+  url = {http://dx.doi.org/10.1093/pan/mpr013},
+  langid = {english}
+}
+
+@article{konetzkaUseNursingHome2016,
+  title = {Use {{Of Nursing Home Compare Website Appears Limited By Lack Of Awareness And Initial Mistrust Of The Data}}},
+  author = {Konetzka, R. Tamara and Perraillon, Marcelo Coca},
+  date = {2016-04},
+  journaltitle = {Health Affairs},
+  shortjournal = {Health Affairs},
+  volume = {35},
+  number = {4},
+  pages = {706--713},
+  issn = {0278-2715, 1544-5208},
+  doi = {10.1377/hlthaff.2015.1377},
+  url = {http://www.healthaffairs.org/doi/10.1377/hlthaff.2015.1377},
+  urldate = {2021-06-18},
+  abstract = {In December 2008 the Centers for Medicare and Medicaid Services (CMS) launched a five-star rating system of nursing homes as part of Nursing Home Compare, a web-based report card detailing quality of care at all CMS-certified nursing homes. Questions remain, however, as to how well consumers use this rating system as well as other sources of information in choosing nursing home placement. We used a qualitative assessment of how consumers select nursing homes and of the role of information about quality, using semistructured interviews of people who recently placed a family member or friend in a nursing home. We found that consumers were receptive to using Internet-based information about quality as one source of information but that choice was limited by the need for specialized services, proximity to family or health care providers, and availability of Medicaid beds. Consumers had a positive reaction when shown Nursing Home Compare; however, its use appeared to be limited by lack of awareness and, to some extent, initial lack of trust of the data. Our findings suggest that efforts to expand the use of Nursing Home Compare should focus on awareness and trust. Useful additions to Nursing Home Compare might include measures of the availability of activities, information about cost, and consumer satisfaction.},
+  langid = {english},
+  file = {C\:\\Users\\LUCAS\\Zotero\\storage\\FS6BT6FV\\Konetzka and Perraillon - 2016 - Use Of Nursing Home Compare Website Appears Limite.pdf}
+}
+
+@article{Latham2014,
+  title = {Effect of a Home-Based Exercise Program on Functional Recovery Following Rehabilitation after Hip Fracture},
+  author = {Latham, Nancy K. and Harris, Bette Ann and Bean, Jonathan F. and Heeren, Timothy and Goodyear, Christine and Zawacki, Stacey and Heislein, Diane M. and Mustafa, Jabed and Pardasaney, Poonam and Giorgetti, Marie and Holt, Nicole and Goehring, Lori and Jette, Alan M.},
+  year = {2014-02-19, 2014-02},
+  journaltitle = {JAMA},
+  volume = {311},
+  number = {7},
+  pages = {700},
+  doi = {10.1001/jama.2014.469},
+  url = {http://dx.doi.org/10.1001/jama.2014.469},
+  langid = {english}
+}
+
+@Article{Maas2019,
+  author       = {Maas, Lucas Wan Der and Faria, Erick de Oliveira and Fernandes, Júlia Leite de Carvalho},
+  date         = {2019},
+  journaltitle = {Cadernos Metrópole},
+  title        = {Segregação Socioespacial e Oferta de Serviços de Saúde Na {{Região Metropolitana}} de {{Belo Horizonte}} Em 2010},
+  doi          = {10.1590/2236-9996.2019-4511},
+  issn         = {1517-2422},
+  number       = {45},
+  pages        = {597--618},
+  volume       = {21},
+  abstract     = {Resumo O objetivo deste artigo é analisar a relação entre segregação socioespacial e oferta de serviços de saúde na Região Metropolitana de Belo Horizonte em 2010. Foram utilizados dados do Censo Demográfico, do Cadastro Nacional de Estabelecimentos de Saúde e da Relação Anual de Informações Sociais. As informações foram organizadas em áreas de ponderação por meio da extração de coordenadas geográficas e analisadas com estatística descritiva e correlação espacial. Os resultados apontam que os serviços públicos de atenção primária à saúde concentravam-se em áreas onde predominavam grupos socioocupacionais inferiores na hierarquia social, ainda que a disponibilidade de médicos não acompanhasse a mesma lógica. Os serviços privados localizavam-se em áreas segregadas por grupos intermediários e superiores, situados principalmente na capital.Abstract The aim of this article is to analyze the relationship between socio-spatial segregation and provision of health services in the Metropolitan Region of Belo Horizonte in 2010. Data from the Population Census, the National Register of Health Establishments and the Annual Record of Social Information were used. The data were organized in weighting areas through the extraction of geographic coordinates and analyzed through descriptive statistics and spatial correlation. The results show that the public primary care services were concentrated in areas where lower socio-occupational groups in the social hierarchy predominated, although the availability of doctors did not follow the same logic. Private services, in turn, were located in areas segregated by intermediate and higher groups, mainly in the capital city.},
+  keywords     = {acess, artigo publicado em open, belo horizonte, health, metropolitan region of, services, socio-spatial segregation, spatial analysis, spatial correlation},
+}
+
+@article{Melo-Silva2018,
+  title = {Hospitalizations among Older Adults},
+  author = {de Melo-Silva, Alexandre Moreira and Mambrini, Juliana Vaz de Melo and de Souza Junior, Paulo Roberto Borges and de Andrade, Fabíola Bof and Lima-Costa, Maria Fernanda},
+  year = {2019-01-24, 2019-01},
+  journaltitle = {Revista de Saúde Pública},
+  volume = {52},
+  pages = {3s},
+  doi = {10.11606/s1518-8787.2018052000639},
+  url = {http://dx.doi.org/10.11606/S1518-8787.2018052000639},
+  issue = {Suppl 2}
+}
+
+@article{mengSARSCoV2OmicronSpike2021,
+  title = {{{SARS-CoV-2 Omicron}} Spike Mediated Immune Escape, Infectivity and Cell-Cell Fusion},
+  author = {Meng, Bo and Ferreira, Isabella A. T. M. and Abdullahi, Adam and Saito, Akatsuki and Kimura, Izumi and Yamasoba, Daichi and Kemp, Steven A. and Goonawardane, Niluka and Papa, Guido and Fatihi, Saman and Rathore, Surabhi and Ikeda, Terumasa and Toyoda, Mako and Tan, Toong Seng and Kuramochi, Jin and Mitsunaga, Shigeki and Ueno, Takamasa and Charles, Oscar J. and Collaboration, CITIID-NIHR BioResource COVID-19 and Consortium, The Genotype to Phenotype Japan (G2P-Japan) and Consortium, Ecuador-COVID19 and Smith, Kenneth G. C. and Bradley, John and Choi, Jinwook and Madissoon, Elo and Meyer, Kerstin and Mlcochova, Petra and Doffinger, Rainer and Teichmann, Sarah A. and James, Leo and Lee, Joo Hyeon and Thukral, Lipi and Sato, Kei and Gupta, Ravindra K.},
+  date = {2021-12-22},
+  pages = {2021.12.17.473248},
+  publisher = {{Cold Spring Harbor Laboratory}},
+  doi = {10.1101/2021.12.17.473248},
+  url = {https://www.biorxiv.org/content/10.1101/2021.12.17.473248v2},
+  urldate = {2022-01-10},
+  abstract = {The SARS-CoV-2 Omicron BA.1 variant emerged in late 2021 and is characterised by multiple spike mutations across all spike domains. Here we show that compared to the Delta variant, Omicron BA.1 confers very significant evasion of therapeutic monoclonal and vaccine-elicited polyclonal neutralising antibodies after two doses. mRNA vaccination as a third vaccine dose rescues and broadens neutralisation in the short term. Importantly, antiviral drugs remdesevir and molnupiravir retain efficacy against Omicron BA.1. Despite three mutations predicted to favour spike S1/S2 cleavage, observed cleavage efficiency is substantially lower than for Delta. Omicron spike pseudotyped virus (PV) entry into lower airway organoids and Calu-3 lung cells was impaired. This defect for Omicron, but not Delta spike PV, correlated with higher cellular expression of TMPRSS2 transcripts, as determined by single cell RNA seq. Indeed we showed that in lung cells expressing TMPRSS2, live Omicron virus demonstrated significantly lower replication in comparison to Delta. This phenotype was reflected in cells where TMPRSS2 expression could be manipulated, with Omicron showing no change in entry in the presence of TMPRSS2. Cell-cell fusion mediated by spike glycoprotein is known require S1/S2 cleavage, but is also dependent on presence of TMPRSS2; fusogenicity of the Omicron BA.1 spike was severely impaired despite TMPRSS2 expression, leading to marked reduction in syncytium formation compared to Delta spike. These in vitro data indicate that suboptimal Omicron S1/S2 cleavage reduces efficient infection of lower airway cells expressing TMPRSS2, but not TMPRSS2 negative cells such as those found in the upper airway. Overall, Omicron appears to have gained significant immune evasion properties whilst modulating viruscell interactions that alter tropism with implications for in vivo disease progression and transmission.},
+  langid = {english},
+  file = {C\:\\Users\\LUCAS\\Zotero\\storage\\KTWWKUQU\\Meng et al. - 2021 - SARS-CoV-2 Omicron spike mediated immune escape, i.pdf;C\:\\Users\\LUCAS\\Zotero\\storage\\UTFS3XA3\\2021.12.17.html}
+}
+
+@online{mrccentreforglobalinfectiousdiseaseanalysisimperialcollegelondonImperialCollegeCOVID19,
+  title = {Imperial {{College COVID-19 LMIC Reports}}},
+  author = {MRC Centre for Global Infectious Disease Analysis, Imperial College London},
+  url = {https://mrc-ide.github.io/global-lmic-reports/},
+  urldate = {2022-01-10},
+  file = {C\:\\Users\\LUCAS\\Zotero\\storage\\6TPEP65T\\global-lmic-reports.html}
+}
+
+@report{NationalHouseholdSample2014,
+  title = {National {{Household Sample Survey}}},
+  date = {2014},
+  institution = {{IBGE}}
+}
+
+@book{organizationWorldReportAgeing2015,
+  title = {World Report on Ageing and Health},
+  author = {Organization, World Health},
+  date = {2015},
+  publisher = {{World Health Organization}},
+  isbn = {92-4-156504-7}
+}
+
+@Article{perraillonNursingHomeResponse2019,
+  author       = {Perraillon, Marcelo Coca and Brauner, Daniel J. and Konetzka, R. Tamara},
+  date         = {2019-08-01},
+  journaltitle = {Medical Care Research and Review},
+  title        = {Nursing {{Home Response}} to {{Nursing Home Compare}}: {{The Provider Perspective}}},
+  doi          = {10.1177/1077558717725165},
+  issn         = {1077-5587},
+  number       = {4},
+  pages        = {425--443},
+  url          = {https://doi.org/10.1177/1077558717725165},
+  urldate      = {2021-06-18},
+  volume       = {76},
+  abstract     = {Nursing Home Compare (NHC) publishes composite quality ratings of nursing homes based on a five-star rating system, a system that has been subject to controversy about its validity. Using in-depth interviews, we assess the views of nursing home administrators and staff on NHC and unearth strategies used to improve ratings. Respondents revealed conflicting goals and strategies. Although nursing home managers monitor the ratings and expend effort to improve scores, competing goals of revenue maximization and avoidance of litigation often overshadow desire to score well on NHC. Some of the improvement strategies simply involve coding changes that have no effect on resident outcomes. Many respondents doubted the validity of the self-reported staffing data and stated that lack of risk adjustment biases ratings. Policy makers should consider nursing home incentives when refining the system, aiming to improve the validity of the self-reported domains to provide incentives for broader quality improvement.},
+  file         = {C\:\\Users\\LUCAS\\Zotero\\storage\\6JTWD5L3\\Perraillon et al. - 2019 - Nursing Home Response to Nursing Home Compare The.pdf},
+  keywords     = {nursing home, nursing home compare, public reporting, quality ratings},
+  langid       = {english},
+  publisher    = {{SAGE Publications Inc}},
+  shortjournal = {Med Care Res Rev},
+  shorttitle   = {Nursing {{Home Response}} to {{Nursing Home Compare}}},
+}
+
+@report{raeInformeRealAcademia2020,
+  title = {Informe de La {{Real Academia Española}} Sobre El Uso Del Lenguaje Inclusivo En La {{Constitución Española}}, Elaborado a Petición de La {{Vicepresidenta}} Del {{Gobierno}}},
+  author = {RAE},
+  date = {2020}
+}
+
+@article{RCoreTeam2020,
+  title = {R: {{A}} Language and Environment for Statistical Computing. {{R Foundation}} for {{Statistical Computing}}},
+  author = {{R Core Team}},
+  date = {2020}
+}
+
+@article{RCoreTeam2020,
+  title = {R: {{A}} Language and Environment for Statistical Computing. {{R Foundation}} for {{Statistical Computing}}},
+  author = {{R Core Team}},
+  date = {2020}
+}
+
+@article{RCoreTeam2020,
+  title = {R: {{A}} Language and Environment for Statistical Computing. {{R Foundation}} for {{Statistical Computing}}},
+  author = {{R Core Team}},
+  date = {2020}
+}
+
+@article{Sartini2012,
+  title = {Programa Maior Cuidado: {{Qualificando}} e Humanizando o Cuidado},
+  author = {Sartini, C and Correia, M},
+  date = {2012},
+  journaltitle = {Pensar/BH Politica Social},
+  volume = {31},
+  pages = {10--13}
+}
+
+@article{schmitzElderlyChooseNursing2014,
+  title = {Do {{Elderly Choose Nursing Homes}} by {{Quality}}, {{Price}} or {{Location}}?},
+  author = {Schmitz, Hendrik and Stroka, Magdalena A.},
+  date = {2014},
+  journaltitle = {SSRN Electronic Journal},
+  shortjournal = {SSRN Journal},
+  issn = {1556-5068},
+  doi = {10.2139/ssrn.2473952},
+  url = {http://www.ssrn.com/abstract=2473952},
+  urldate = {2021-06-18},
+  langid = {english},
+  file = {C\:\\Users\\LUCAS\\Zotero\\storage\\QWKVJNBS\\Schmitz and Stroka - 2014 - Do Elderly Choose Nursing Homes by Quality, Price .pdf}
+}
+
+@article{Sempe2019,
+  title = {Multidisciplinary Interventions for Reducing the Avoidable Displacement from Home of Frail Older People: A Systematic Review},
+  author = {Sempé, Lucas and Billings, Jenny and Lloyd-Sherlock, Peter},
+  date = {2019-11},
+  journaltitle = {BMJ Open},
+  volume = {9},
+  number = {11},
+  pages = {e030687},
+  doi = {10.1136/bmjopen-2019-030687},
+  url = {http://dx.doi.org/10.1136/bmjopen-2019-030687},
+  langid = {english}
+}
+
+@article{Souza2016,
+  title = {Viver Próximo à Saúde Em Belo Horizonte},
+  author = {de Souza, Renato Cesar Ferreira and de Oliveira, Veneza Berenice and Pereira, Doralice Barros and Costa, Heloisa Soares de Moura and Caiaffa, Waleska Teixeira},
+  options = {useprefix=true},
+  date = {2016},
+  journaltitle = {Cadernos Metrópole},
+  volume = {18},
+  number = {36},
+  pages = {326--344},
+  issn = {2236-9996},
+  doi = {10.1590/2236-9996.2016-3601},
+  abstract = {Resumo A definição de unidades espaciais como locus preferencial na prestação do cuidado em saúde é desafiadora quando se buscam modelos assistenciais que reduzam as iniquidades de acesso aos serviços de saúde e os humanizem, integrando dados demográficos, socioeconômicos, culturais e ambientais, configurando localmente os determinantes sociais da saúde. Este estudo introduz uma análise da localização das Unidades Básicas de Saúde (UBS) nos distritos sanitários de Belo Horizonte, comparando as divisões administrativas adotadas com as obtidas pelo teste cartográfico de influência de acesso às UBS. Demonstra-se a potencialidade de investigações futuras sobre o território da cidade na busca de melhores localizações e acesso às UBS, acenando para o enriquecimento do debate sobre os rumos da saúde urbana no Brasil.Abstract TThe definition of spatial units as the preferential locus for healthcare provision is a challenging task when we seek healthcare models that humanize the health services and reduce inequities concerning access to them, integrating demographic, socioeconomic, cultural and environmental data, and configuring the social determinants of health at a local level. This study analyzes the location of Primary Care Units (PCU) in the Health Districts of the city of Belo Horizonte, and compares the adopted administrative divisions with those obtained by mapping the influence of shorter distances to the PCU. It demonstrates the potential that further research on the city's territory has in the search for better locations and access to the PCU, enriching the debate on the future of Urban Health in Brazil.}
+}
+
+@report{StrategyAchieveGlobal2021,
+  title = {Strategy to {{Achieve Global Covid-19 Vaccination}} by Mid-2022},
+  author = {WHO},
+  date = {2021},
+  institution = {{World Health Organisation}}
+}
+
+@article{Surate2014,
+  title = {What Weekday? {{How}} Acute? {{An}} Analysis of Reported Planned and Unplanned {{GP}} Visits by Older Multi-Morbid Patients in the {{Patient Journey Record System}} Database},
+  author = {Surate Solaligue, David Emanuel and Hederman, Lucy and Martin, Carmel Mary},
+  year = {2014-05-19, 2014-05},
+  journaltitle = {Journal of Evaluation in Clinical Practice},
+  volume = {20},
+  number = {4},
+  pages = {522--526},
+  doi = {10.1111/jep.12171},
+  url = {http://dx.doi.org/10.1111/jep.12171},
+  langid = {english}
+}
+
+@article{Szwarcwald2010,
+  title = {Socioeconomic Inequalities in the Use of Outpatient Services in {{Brazil}} According to Health Care Need: Evidence from the {{World Health Survey}}},
+  author = {Szwarcwald, Célia L and Souza-Júnior, Paulo RB and Damacena, Giseli N},
+  year = {2010-07-23, 2010-07},
+  journaltitle = {BMC Health Services Research},
+  volume = {10},
+  number = {1},
+  doi = {10.1186/1472-6963-10-217},
+  url = {http://dx.doi.org/10.1186/1472-6963-10-217},
+  langid = {english}
+}
+
+@article{Victora2011,
+  title = {Health Conditions and Health-Policy Innovations in {{Brazil}}: The Way Forward},
+  author = {Victora, Cesar G and Barreto, Mauricio L and do Carmo Leal, Maria and Monteiro, Carlos A and Schmidt, Maria Ines and Paim, Jairnilson and Bastos, Francisco I and Almeida, Celia and Bahia, Ligia and Travassos, Claudia and Reichenheim, Michael and Barros, Fernando C},
+  options = {useprefix=true},
+  date = {2011-06},
+  journaltitle = {The Lancet},
+  volume = {377},
+  number = {9782},
+  pages = {2042--2053},
+  doi = {10.1016/s0140-6736(11)60055-x},
+  url = {http://dx.doi.org/10.1016/S0140-6736(11)60055-X},
+  langid = {english}
+}
+
+@Article{wernerConsumersRespondPublicly2012,
+  author       = {Werner, Rachel M. and Norton, Edward C. and Konetzka, R. Tamara and Polsky, Daniel},
+  date         = {2012-01},
+  journaltitle = {Journal of Health Economics},
+  title        = {Do Consumers Respond to Publicly Reported Quality Information? {{Evidence}} from Nursing Homes},
+  doi          = {10.1016/j.jhealeco.2012.01.001},
+  eprint       = {22307033},
+  eprinttype   = {pmid},
+  issn         = {1879-1646},
+  number       = {1},
+  pages        = {50--61},
+  volume       = {31},
+  abstract     = {Public reporting of quality information is designed to address information asymmetry in health care markets. Without public reporting, consumers may have little information to help them differentiate quality among providers, giving providers little incentive to compete on quality. Public reporting enables consumers to choose highly ranked providers. Using a four-year (2000-2003) panel dataset, we examine the relationship between report card scores and patient choice of nursing home after the Centers for Medicare and Medicaid Services began publicly reporting nursing home quality information on post-acute care in 2002. We find that the relationship between reported quality and nursing home choice is positive and statistically significant suggesting that patients were more likely to choose facilities with higher reported post-acute care quality after public reporting was initiated. However, the magnitude of the effect was small. We conclude that there has been minimal consumer response to information in the post-acute care market.},
+  keywords     = {Centers for Medicare and Medicaid Services; U.S., Choice Behavior, Community Participation, Humans, Information Dissemination, Nursing Homes, Quality of Health Care, United States},
+  langid       = {english},
+  shortjournal = {J Health Econ},
+  shorttitle   = {Do Consumers Respond to Publicly Reported Quality Information?},
+}
+
+@online{who1,
+  title = {Enhancing {{Readiness}} for {{Omicron}} ({{B}}.1.1.529): {{Technical Brief}} and {{Priority Actions}} for {{Member States}}},
+  shorttitle = {Enhancing {{Readiness}} for {{Omicron}} ({{B}}.1.1.529)},
+  author = {WHO},
+  date = {2021},
+  url = {https://www.who.int/publications/m/item/enhancing-readiness-for-omicron-(b.1.1.529)-technical-brief-and-priority-actions-for-member-states},
+  urldate = {2022-01-10},
+  abstract = {On 26 November 2021, WHO designated the variant B.1.1.529 a variant of concern (VOC), on the basis of advice from WHO’s Technical Advisory Group on Virus Evolution. The variant has been given the name Omicron.  Omicron is a highly divergent variant with a high number of mutations, including 26-32 in the spike, some of which are concerning and may be associated with immune escape potential and higher transmissibility. However, there are still considerable uncertainties. The main uncertainties are (1) how transmissible the variant is and whether any increases are  related to immune escape, intrinsic increased transmissibility, or both; (2) how well vaccines protect against infection, transmission, clinical disease of different degrees of severity and death; and (3) does the variant present with a different severity profile.  Public health advice is based on current information and will be tailored as more evidence emergences around those key questions.},
+  langid = {english},
+  file = {C\:\\Users\\LUCAS\\Zotero\\storage\\A6MSM4U5\\enhancing-readiness-for-omicron-(b.1.1.html}
+}
+
+@online{whoUpdateOmicron2021,
+  title = {Update on {{Omicron}}},
+  author = {WHO},
+  date = {2021},
+  url = {https://www.who.int/news/item/28-11-2021-update-on-omicron},
+  urldate = {2022-01-10},
+  abstract = {On 26 November 2021,~WHO designated the variant B.1.1.529 a variant of concern, named Omicron, on the advice of~WHO’s Technical Advisory Group on Virus Evolution~(TAG-VE).~~This decision was based on the evidence presented to the TAG-VE that~Omicron~has several mutations that may have an impact on how it behaves, for example, on~how easily it spreads or the severity of illness it causes.~Here is a summary of what is currently known.~~~Current knowledge about Omicron~~Researchers in South Africa and around the world are conducting studies to better understand many aspects of Omicron and will continue to share the findings of these studies as they become available.~~Transmissibility:~It is not yet clear whether Omicron is more transmissible (e.g., more easily spread from person to person) compared to other variants, including Delta. The number of people testing positive has risen in areas of South Africa affected by this variant, but epidemiologic studies are underway to understand if it is because of Omicron or other factors.~~Severity of disease:~It is not yet clear whether infection with Omicron~causes more severe disease compared to infections with other variants, including Delta.~~Preliminary data suggests that there are increasing rates of hospitalization in South Africa, but this may be due to increasing overall numbers of people becoming infected, rather than a result of specific infection with Omicron.~~There is currently no information to suggest that symptoms associated with Omicron are different from those from other variants.~~Initial reported infections were among university studies—younger individuals who tend to have more mild disease—but understanding the level of severity of the Omicron variant will take days to several weeks.~~All variants of COVID-19, including the Delta variant that is dominant worldwide, can cause severe disease or death, in particular for the most vulnerable people, and thus prevention is always key.~~Effectiveness of prior SARS-CoV-2 infection~Preliminary evidence suggests there may be an increased risk of reinfection with Omicron (ie, people who have previously had COVID-19 could become reinfected more easily with Omicron), as compared to other variants of concern, but information is limited. More information on this will become available in the coming days and weeks.~Effectiveness of vaccines: WHO is working with technical partners to understand the potential impact of this variant on our existing countermeasures, including vaccines. Vaccines remain critical to reducing severe disease and death, including against the dominant circulating virus, Delta. Current vaccines remain effective against severe disease and death.~~~Effectiveness of current tests:~The widely used PCR tests continue to detect infection, including infection with Omicron, as we have seen with other variants as well. Studies are ongoing to determine whether there is any impact on other types of tests, including rapid antigen detection tests.~~Effectiveness of current treatments:~~ Corticosteroids and IL6 Receptor Blockers will still be effective for managing patients with severe COVID-19. Other treatments will be assessed to see if they are still as effective given the changes to parts of the virus in the Omicron variant.~~~~Studies underway~At the present time, WHO is coordinating with a large number of researchers around the world to better understand Omicron. Studies currently underway or underway shortly include assessments of transmissibility, severity of infection (including symptoms), performance of vaccines and diagnostic tests, and effectiveness of treatments.~~~~WHO encourages countries to contribute the collection and sharing of hospitalized patient data through the~WHO COVID-19 Clinical Data Platform~to rapidly describe clinical characteristics and patient outcomes.~~More information will emerge in the coming days and weeks. WHO’s TAG-VE will continue to monitor and evaluate the data as it becomes available and assess how mutations in Omicron alter the behaviour of the virus.~~~Recommended actions for countries~As Omicron has been designated a Variant of Concern, there are several actions WHO recommends countries to undertake, including enhancing surveillance and sequencing of cases;~~sharing genome sequences on publicly available databases, such as GISAID; reporting initial cases or clusters to WHO; performing field investigations and laboratory assessments to better understand if Omicron has different transmission or disease characteristics, or impacts effectiveness of vaccines, therapeutics, diagnostics or public health and social measures.~~More detail in~the~announcement~from 26 November.~~Countries should continue to implement the effective public health measures to reduce COVID-19 circulation overall, using a risk analysis and science-based approach.~They should increase some public health and medical capacities to manage an increase in cases.~~WHO is providing countries with support and guidance for both readiness and response.~~In addition, it is vitally important that inequities in access to COVID-19 vaccines are urgently addressed to ensure that vulnerable groups everywhere, including health workers and older persons, receive their first and second doses, alongside equitable access to treatment and diagnostics.~~~~Recommended actions for people~The most effective steps individuals can take to reduce the spread of the COVID-19 virus is to keep a physical distance of at least 1 metre from others; wear a well-fitting mask; open windows to improve ventilation; avoid poorly ventilated or crowded spaces; keep hands clean; cough or sneeze into a bent elbow or tissue; and get vaccinated when it’s their turn.~~WHO will continue to provide updates as more information becomes available, including following meetings of the TAG-VE. In addition, information will be available on WHO’s digital and social media platforms.~~Reference material:~~Classification of Omicron~(B.1.1.529): SARS-CoV-2 Variant of Concern~Further information~on TAG-VE},
+  langid = {english},
+  file = {C\:\\Users\\LUCAS\\Zotero\\storage\\UXGXNX5Y\\28-11-2021-update-on-omicron.html}
+}
+
+
+
+@article{Imai2021,
+	title = {SARS-CoV-2 Infection and Significance of Oral Health Management in the Era of {\textquotedblleft}the New Normal with COVID-19{\textquotedblright}},
+	author = {Imai, Kenichi and Tanaka, Hajime},
+	year = {2021},
+	month = {06},
+	date = {2021-06-18},
+	journal = {International Journal of Molecular Sciences},
+	pages = {6527},
+	volume = {22},
+	number = {12},
+	doi = {10.3390/ijms22126527},
+	url = {http://dx.doi.org/10.3390/ijms22126527},
+	langid = {en}
+}
+
+@article{Thakur2021a,
+	title = {A case study of SARS-CoV-2 transmission behavior in a severely air-polluted city (Delhi, India) and the potential usage of graphene based materials for filtering air-pollutants and controlling/monitoring the COVID-19 pandemic},
+	author = {Thakur, Amrit Kumar and Sathyamurthy, Ravishankar and Ramalingam, Velraj and Lynch, Iseult and Sharshir, Swellam Wafa and Ma, Zhenjun and Poongavanam, Ganeshkumar and Lee, Suyeong and Jeong, Yeseul and Hwang, Jang-Yeon},
+	year = {2021},
+	date = {2021},
+	journal = {Environmental Science: Processes & Impacts},
+	doi = {10.1039/d1em00034a},
+	url = {http://dx.doi.org/10.1039/d1em00034a},
+	langid = {en}
+}
+
+@Misc{who1a,
+  author = {WHO,},
+  date   = {2021},
+  title  = {Enhancing Readiness for Omicron (B.1.1.529): Technical Brief and Priority Actions for Member States},
+  note   = {Citation Key: who1},
+  url    = {https://www.who.int/publications/m/item/enhancing-readiness-for-omicron-(b.1.1.529)-technical-brief-and-priority-actions-for-member-states},
+  langid = {en},
+  year   = {2021},
+}
+
+@misc{hodcroft2022,
+	title = {CoVariants},
+	author = {Hodcroft, Emma},
+	year = {2022},
+	date = {2022},
+	url = {https://covariants.org/},
+	langid = {en}
+}
+
+@techreport{fergusonReport49Growth2021a,
+	title = {Report 49: Growth and immune escape of the Omicron SARS-CoV-2 variant of concern in England},
+	author = {Ferguson, N},
+	year = {2021},
+	month = {12},
+	date = {2021-12-15},
+	doi = {10.25561/93038},
+	url = {http://spiral.imperial.ac.uk/handle/10044/1/93038},
+	note = {DOI: 10.25561/93038
+Citation Key: fergusonReport49Growth2021},
+	langid = {en}
+}
+
+@techreport{meng2021,
+	title = {SARS-CoV-2 Omicron spike mediated immune escape, infectivity and cell-cell fusion},
+	author = {Meng, Bo and Ferreira, Isabella A. T. M. and Abdullahi, Adam and Saito, Akatsuki and Kimura, Izumi and Yamasoba, Daichi and Kemp, Steven A. and Goonawardane, Niluka and Papa, Guido and Fatihi, Saman and Rathore, Surabhi and Ikeda, Terumasa and Toyoda, Mako and Tan, Toong Seng and Kuramochi, Jin and Mitsunaga, Shigeki and Ueno, Takamasa and Charles, Oscar J. and Collaboration, CITIID-NIHR BioResource COVID-19 and Consortium, {The Genotype to Phenotype Japan (G2P-Japan)} and Consortium, Ecuador-COVID19 and Smith, Kenneth G. C. and Bradley, John and Choi, Jinwook and Madissoon, Elo and Meyer, Kerstin and Mlcochova, Petra and Doffinger, Rainer and Teichmann, Sarah A. and James, Leo and Lee, Joo Hyeon and Thukral, Lipi and Sato, Kei and Gupta, Ravindra K.},
+	year = {2021},
+	month = {12},
+	date = {2021-12-22},
+	pages = {2021.12.17.473248},
+	url = {https://www.biorxiv.org/content/10.1101/2021.12.17.473248v2},
+	note = {Company: Cold Spring Harbor Laboratory
+DOI: 10.1101/2021.12.17.473248
+Distributor: Cold Spring Harbor Laboratory
+Label: Cold Spring Harbor Laboratory
+Section: New Results
+Type: article},
+	langid = {en}
+}
+
+@article{Lloyd-Sherlock2021,
+	title = {Problems of Data Availability and Quality for COVID-19 and Older People in Low- and Middle-Income Countries},
+	author = {Lloyd-Sherlock, Peter and Sempe, Lucas and McKee, Martin and Guntupalli, Aravinda},
+	editor = {Meeks, Suzanne},
+	year = {2020},
+	month = {10},
+	date = {2020-10-06},
+	journal = {The Gerontologist},
+	pages = {141--144},
+	volume = {61},
+	number = {2},
+	doi = {10.1093/geront/gnaa153},
+	url = {http://dx.doi.org/10.1093/geront/gnaa153},
+	langid = {en}
+}
+
+@article{Hogan2021,
+	title = {Within-country age-based prioritisation, global allocation, and public health impact of a vaccine against SARS-CoV-2: A mathematical modelling analysis},
+	author = {Hogan, Alexandra B. and Winskill, Peter and Watson, Oliver J. and Walker, Patrick G.T. and Whittaker, Charles and Baguelin, Marc and Brazeau, Nicholas F. and Charles, Giovanni D. and Gaythorpe, Katy A.M. and Hamlet, Arran and Knock, Edward and Laydon, Daniel J. and Lees, John A. and {Løchen}, Alessandra and Verity, Robert and Whittles, Lilith K. and Muhib, Farzana and Hauck, Katharina and Ferguson, Neil M. and Ghani, Azra C.},
+	year = {2021},
+	month = {05},
+	date = {2021-05},
+	journal = {Vaccine},
+	pages = {2995--3006},
+	volume = {39},
+	number = {22},
+	doi = {10.1016/j.vaccine.2021.04.002},
+	url = {http://dx.doi.org/10.1016/j.vaccine.2021.04.002},
+	langid = {en}
+}
+
+@article{walker2020,
+	title = {The impact of COVID-19 and strategies for mitigation and suppression in low- and middle-income countries},
+	author = {Walker, Patrick G. T. and Whittaker, Charles and Watson, Oliver J. and Baguelin, Marc and Winskill, Peter and Hamlet, Arran and Djafaara, Bimandra A. and {Cucunubá}, Zulma and Olivera Mesa, Daniela and Green, Will and Thompson, Hayley and Nayagam, Shevanthi and Ainslie, Kylie E. C. and Bhatia, Sangeeta and Bhatt, Samir and Boonyasiri, Adhiratha and Boyd, Olivia and Brazeau, Nicholas F. and Cattarino, Lorenzo and Cuomo-Dannenburg, Gina and Dighe, Amy and Donnelly, Christl A. and Dorigatti, Ilaria and van Elsland, Sabine L. and FitzJohn, Rich and Fu, Han and Gaythorpe, Katy A. M. and Geidelberg, Lily and Grassly, Nicholas and Haw, David and Hayes, Sarah and Hinsley, Wes and Imai, Natsuko and Jorgensen, David and Knock, Edward and Laydon, Daniel and Mishra, Swapnil and Nedjati-Gilani, Gemma and Okell, Lucy C. and Unwin, H. Juliette and Verity, Robert and Vollmer, Michaela and Walters, Caroline E. and Wang, Haowei and Wang, Yuanrong and Xi, Xiaoyue and Lalloo, David G. and Ferguson, Neil M. and Ghani, Azra C.},
+	year = {2020},
+	month = {07},
+	date = {2020-07-24},
+	journal = {Science},
+	pages = {413--422},
+	volume = {369},
+	number = {6502},
+	doi = {10.1126/science.abc0035},
+	url = {http://dx.doi.org/10.1126/science.abc0035},
+	langid = {en}
+}
+
+@article{lau2021,
+	title = {Evaluating the massive underreporting and undertesting of COVID-19 cases in multiple global epicenters},
+	author = {Lau, H. and Khosrawipour, T. and Kocbach, P. and Ichii, H. and Bania, J. and Khosrawipour, V.},
+	year = {2021},
+	month = {03},
+	date = {2021-03},
+	journal = {Pulmonology},
+	pages = {110--115},
+	volume = {27},
+	number = {2},
+	doi = {10.1016/j.pulmoe.2020.05.015},
+	url = {http://dx.doi.org/10.1016/j.pulmoe.2020.05.015},
+	langid = {en}
+}
+
+@misc{vanwees2021,
+	title = {SIR model for assessing the impact of the advent of Omicron and mitigating measures on infection pressure and hospitalization needs},
+	author = {van Wees, Jan-Diederik and van der Kuip, Martijn and Osinga, Sander and Keijser, Bart and van Westerloo, David and Hanegraaf, Maurice and Pluymaekers, Maarten and Leeuwenburgh, Olwijn and Brunner, Logan and van Furth, Marceline Tutu},
+	year = {2021},
+	month = {12},
+	date = {2021-12-27},
+	url = {http://dx.doi.org/10.1101/2021.12.25.21268394}
+}
+
+@misc{huang2022,
+	title = {Seasonal Prediction of Omicron Pandemic},
+	author = {Huang, Jianping and Zhao, Yingjie and Zhang, Li and Li, Xu and Gao, Shuoyuan and Song, Xiaodong},
+	year = {2022},
+	month = {01},
+	date = {2022-01-13},
+	url = {http://dx.doi.org/10.1101/2022.01.13.22269198}
+}
+
+@misc{ignatov2022,
+	title = {Two viruses competition in the SIR model of epidemic spread: application to COVID-19},
+	author = {Ignatov, A.M. and Trigger, S.A.},
+	year = {2022},
+	month = {01},
+	date = {2022-01-11},
+	url = {http://dx.doi.org/10.1101/2022.01.11.22269046}
+}
+
+@misc{pulliam2021,
+	title = {Increased risk of SARS-CoV-2 reinfection associated with emergence of the Omicron variant in South Africa},
+	author = {Pulliam, Juliet R.C. and van Schalkwyk, Cari and Govender, Nevashan and von Gottberg, Anne and Cohen, Cheryl and Groome, Michelle J. and Dushoff, Jonathan and Mlisana, Koleka and Moultrie, Harry},
+	year = {2021},
+	month = {11},
+	date = {2021-11-11},
+	url = {http://dx.doi.org/10.1101/2021.11.11.21266068}
+}
+
+@misc{abbott2022,
+	title = {Estimation of the test to test distribution as a proxy for generation interval distribution for the Omicron variant in England},
+	author = {Abbott, Sam and Sherratt, Katharine and Gerstung, Moritz and Funk, Sebastian},
+	year = {2022},
+	month = {01},
+	date = {2022-01-10},
+	url = {http://dx.doi.org/10.1101/2022.01.08.22268920}
+}
+
+@article{liu2021,
+	title = {Striking Antibody Evasion Manifested by the Omicron Variant of SARS-CoV-2},
+	author = {Liu, Lihong and Iketani, Sho and Guo, Yicheng and Chan, Jasper F-W. and Wang, Maple and Liu, Liyuan and Luo, Yang and Chu, Hin and Huang, Yiming and Nair, Manoj S. and Yu, Jian and Chik, Kenn K-H. and Yuen, Terrence T-T. and Yoon, Chaemin and To, Kelvin K-W. and Chen, Honglin and Yin, Michael T. and Sobieszczyk, Magdalena E. and Huang, Yaoxing and Wang, Harris H. and Sheng, Zizhang and Yuen, Kwok-Yung and Ho, David D.},
+	year = {2021},
+	month = {12},
+	date = {2021-12-23},
+	journal = {Nature},
+	doi = {10.1038/s41586-021-04388-0},
+	url = {http://dx.doi.org/10.1038/s41586-021-04388-0},
+	langid = {en}
+}
+
+@article{roser2020,
+	title = {Coronavirus pandemic (COVID-19)},
+	author = {Roser, Max and Ritchie, Hannah and Ortiz-Ospina, Esteban and Hasell, Joe},
+	year = {2020},
+	date = {2020},
+	journal = {Our world in data}
+}
+
+@Article{persad2020,
+  author  = {Persad, Govind and Peek, Monica E. and Emanuel, Ezekiel J.},
+  date    = {2020-10-27},
+  title   = {Fairly Prioritising Groups for Access to COVID-19 Vaccines},
+  doi     = {10.1001/jama.2020.18513},
+  number  = {16},
+  pages   = {1601},
+  url     = {http://dx.doi.org/10.1001/jama.2020.18513},
+  volume  = {324},
+  journal = {JAMA},
+  langid  = {en},
+  month   = {10},
+  year    = {2020},
+}
+
+@article{emanuel2020,
+	title = {An ethical framework for global vaccine allocation},
+	author = {Emanuel, Ezekiel J. and Persad, Govind and Kern, Adam and Buchanan, Allen and Fabre, {Cécile} and Halliday, Daniel and Heath, Joseph and Herzog, Lisa and Leland, R. J. and Lemango, Ephrem T. and Luna, Florencia and McCoy, Matthew S. and Norheim, Ole F. and Ottersen, Trygve and Schaefer, G. Owen and Tan, Kok-Chor and Wellman, Christopher Heath and Wolff, Jonathan and Richardson, Henry S.},
+	year = {2020},
+	month = {09},
+	date = {2020-09-03},
+	journal = {Science},
+	pages = {1309--1312},
+	volume = {369},
+	number = {6509},
+	doi = {10.1126/science.abe2803},
+	url = {http://dx.doi.org/10.1126/science.abe2803},
+	langid = {en}
+}
+
+@misc{report12,
+	title = {Report 12 - The global impact of COVID-19 and strategies for mitigation and suppression},
+	url = {http://www.imperial.ac.uk/medicine/departments/school-public-health/infectious-disease-epidemiology/mrc-global-infectious-disease-analysis/covid-19/report-12-global-impact-covid-19/},
+	langid = {australian}
+}
+
+@misc{report1,
+	title = {Report 12 - The global impact of COVID-19 and strategies for mitigation and suppression},
+	url = {http://www.imperial.ac.uk/medicine/departments/school-public-health/infectious-disease-epidemiology/mrc-global-infectious-disease-analysis/covid-19/report-12-global-impact-covid-19/},
+	langid = {australian}
+}
+
+@misc{khoury2021,
+	title = {A meta-analysis of Early Results to predict Vaccine efficacy against Omicron},
+	author = {Khoury, David S. and Steain, Megan and Triccas, James A. and Sigal, Alex and Davenport, Miles P. and Cromer, Deborah},
+	year = {2021},
+	month = {12},
+	date = {2021-12-14},
+	url = {http://dx.doi.org/10.1101/2021.12.13.21267748}
+}
+
+@article{collie2021,
+	title = {Effectiveness of BNT162b2 Vaccine against Omicron Variant in South Africa},
+	author = {Collie, Shirley and Champion, Jared and Moultrie, Harry and Bekker, Linda-Gail and Gray, Glenda},
+	year = {2021},
+	month = {12},
+	date = {2021-12-29},
+	journal = {New England Journal of Medicine},
+	doi = {10.1056/nejmc2119270},
+	url = {http://dx.doi.org/10.1056/NEJMc2119270},
+	langid = {en}
+}
+
+@Misc{imf-who2022,
+  author = {IMF-WHO,},
+  date   = {2022},
+  title  = {IMF-WHO COVID-19 Vaccine Tracker},
+  url    = {https://www.imf.org/en/Topics/imf-and-covid19/IMF-WHO-COVID-19-Vaccine-Tracker},
+  year   = {2022},
+}
+
+@Misc{who2022,
+  author = {WHO,},
+  date   = {2022},
+  title  = {COVID-19 Vaccination Data},
+  url    = {https://app.powerbi.com/view?r=eyJrIjoiMWNjNzZkNjctZTNiNy00YmMzLTkxZjQtNmJiZDM2MTYxNzEwIiwidCI6ImY2MTBjMGI3LWJkMjQtNGIzOS04MTBiLTNkYzI4MGFmYjU5MCIsImMiOjh9},
+  year   = {2022},
+}
+
+@Misc{mrc-ide2022,
+  author = {MRC-IDE,},
+  date   = {2022},
+  title  = {Imperial College COVID-19 LMIC Reports},
+  url    = {https://mrc-ide.github.io/global-lmic-reports/},
+  year   = {2022},
+}
+
+@Misc{ihme,
+  author = {IHME,},
+  title  = {COVID-19 projections},
+  url    = {https://covid19.healthdata.org/},
+}
+
+@Misc{WHO2022,
+  author   = {WHO SAGE},
+  date     = {2022},
+  title    = {{{WHO SAGE Roadmap}} for Prioritizing Uses of {{COVID-19}} Vaccines},
+  url      = {https://www.who.int/publications-detail-redirect/who-sage-roadmap-for-prioritizing-uses-of-covid-19-vaccines},
+  urldate  = {2022-02-07},
+  abstract = {An approach to optimize the global impact of COVID-19 vaccines, based on public health goals, global and national equity, and vaccine access and coverage scenarios},
+  file     = {C\:\\Users\\LUCAS\\Zotero\\storage\\T2QL439G\\who-sage-roadmap-for-prioritizing-uses-of-covid-19-vaccines.html},
+  langid   = {english},
+}
+
+@Comment{jabref-meta: databaseType:biblatex;}

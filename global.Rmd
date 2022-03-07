@@ -1,0 +1,308 @@
+---
+title: "Behind the world's COVID-19 vaccination target: a Susceptible-Exposed-Infectious-Removed (SEIR) simulation of avoidable deaths and hospitalisations"
+author: 
+  - Lucas Sempe^[Institute of Global Health and Development, Queen Margaret University, Edinburgh, UK]
+  - Aravinda Guntupalli^[Institute of Applied Health Sciences, School of Medicine, Medical Sciences and Nutrition, University of Aberdeen, Aberdeen, UK]
+  - Peter Lloyd-Sherlock^[School of International Development, University of East Anglia, Norwich, UK]
+output:
+  bookdown::word_document2
+bibliography: references.bib
+---
+
+```{r setup, include=FALSE,echo=F,tinytex.verbose = TRUE, warning=F}
+
+knitr::opts_chunk$set(echo = FALSE, warning = F,
+                      message = F, tinytex.verbose = TRUE,
+  cache = F,fig.width = 9, fig.height = 6,
+  dpi=600,
+  digits = 1, OutDec = ",")
+
+options(scipen=999)
+
+options(digits = 2)
+
+knitr::knit_hooks$set(inline = function(x) {
+if(is.character(x)){
+return(x)
+}else{
+return(prettyNum(x, big.mark=","))
+}
+})
+
+library(readxl)
+library(tidyverse)
+library(xfun)
+library(countrycode)
+
+source("global_analysis.R")
+
+```
+
+# Introduction
+
+A year after the launch of the COVID-19 vaccine immunisation process across countries, we note two facts. Vaccines have been proved very effective against existing variants of COVID-19 both in preventing the acquisition of severe disease, hospitalisation and death; and in terms of slowing down the spread of infections [@Imai2021]. Although the way out of the pandemics requires a worldwide solution, we note that the vaccine roll-out has been very unequal across countries. While many high-income nations will have reached high vaccination coverages by the end of 2021 and before the emergence of the highly transmissible Omicron variant [@Thakur2021a], many low- and middle-income countries (LMICs) are still lagging in their vaccination process.
+
+Many factors will play a role in local, national or global outbreaks. But the most important factor is the worldwide vaccine coverage. Until the vaccination coverage reaches the vast majority of the worldwide population, there will still be high uncertainty regarding future pandemic development. Many countries have already been through several epidemic waves, influenced by factors such as the appearance of new variants or the easing of non-pharmaceutical interventions such as lockdowns or school closures.
+
+On 26 November 2021, the World Health Organization (WHO) designated the coronavirus SARS-CoV-2 B.1.1.529, a variant of concern, named Omicron [@whoUpdateOmicron2021]. As of 22 December 2021, the Omicron variant was already identified in 110 countries across all six WHO Regions [@who1a], becoming predominant across many countries in January 2022 [@hodcroft2022]. On February 9, WHO reported that half a million COVID-19 deaths had been recorded since the Omicron variant was discovered [@AFP2022].
+
+Prior research suggests higher transmission levels, lower hospitalisation rates, greater immune evasion, and lower vaccine efficacy [@fergusonReport49Growth2021a; @meng2021], although information is still limited to certain countries. This uncertainty significantly increases in LMICs, where the civil registration system to collect vital statistics, as well as the health system to recordepidemiological data are not robust [@Lloyd-Sherlock2021].
+
+While high-income countries are focusing on boosters to protect their citizens, particularly older people, against severe disease, several low and middle-income countries are struggling to provide the first two doses to their vulnerable population. Considering the inequalities within and between countries for the vaccination coverage, in this research, we simulated various scenarios to capture the potential number of deaths and hospitalisations averted in the first half of 2022 if vaccination levels would be raised to fulfilling WHO’s goal of vaccinating at least 70% of all populations by 1 July 2022. 
+
+# Empirical strategy
+
+We simulated scenarios based on a previously developed extended age-structured (5-year groups) stochastic compartmental models of SARS-CoV-2 transmission that includes vaccinations [@Hogan2021; @walker2020]. Older adults age 80 and above were considered in one group due to the smaller sample size in countries with lower life expectancy. The models consider the progression of the population across transmission compartments (susceptible, exposed, infected, recovered), clinical pathways (need for hospitalisation, oxygen and/or intensive care) and vaccination uptake considering factors such as vaccine availability, prioritisation and coverage. The infection transmission model also considers the probability of interactions between age groups (contact matrices) and the efficacy of the vaccine in terms of prevention of infection and severe disease. 
+
+We employ Susceptible-Exposed-Infectious-Removed (SEIR) models as they rely on an extensive set of parameters such as probabilities of hospitalisation, probability of severe disease, hospital capacity and ICU, reproduction rates, among others. Our simulated scenarios are built based on parameters chosen to represent critical factors affecting the evolution of the pandemics and the vaccination process.
+
+Our outcomes of interest are avoidable hospitalisations and deaths due to vaccination. For that purpose, our research design compares estimations between two scenarios for each country: 
+
+-	a baseline scenario that assumes that the current average daily vaccination level is maintained, and
+
+-	an accelerated scenario where the daily vaccine level is raised to achieve the goal set by the World Health Organisation of vaccinating 70% of the world population against COVID-19 by 1 July 2022 [@StrategyAchieveGlobal2021]. 
+
+For the accelerated scenario, we differentiate between countries that did not start providing boosters to their population, and those who have already started, even though they are behind meeting the WHO goal. In the first case, we simulate models with a daily number of vaccines needed to reach two doses for 70% of the population by July 1st 2022, while in the second case, we increase the daily number of vaccines to cover three doses in the same period.
+
+We model a vaccination strategy that prioritises the oldest age group sequentially until the maximum coverage per group is reached. For example, suppose we set the maximum coverage at 90%. In that case, the first age group to be solely vaccinated will be those over 80 and above until it reaches 90% of the age group population. Then, the following group, those aged 75 to 79, will follow the vaccination process followed by 70 to 74, until the youngest group of people get vaccinated. This occurs until the whole eligible population is covered up to 90%.
+
+As more than 95% of the global procurement of vaccines require two-dose vaccines, our models assume a fully vaccinated person with two vaccines [@imf-who2022; @who2022]. Considering that the models were used only to simulate a single vaccine product, we consider the complexity of multiple vaccine products by weighting the vaccine effectiveness over time [@mrc-ide2022]. Our models assume a dual effect of vaccines' effectiveness in blocking infection and severe disease. We compute the vaccination effectiveness decay for each country and use the world average. This is based on the time since the first vaccination and the time between the first and second doses (we assume 90 days), the decay rate, and different efficacy parameters. Modelling countries that did not start providing boosters, we assume 30% and 60% of infection blocking effectiveness after one and two doses, respectively. In the case of blocking disease, we assume 40% and 80%, respectively. For countries that started applying a booster dose, values assigned are 60% and 80% for infection blocking and 80% and 95% for severe disease blocking. We assume that individuals who have been vaccinated have a 40% reduction in infectiousness if infected. These chosen efficacy values broadly reflect the range of estimated efficacies seen in response to the Omicron variant [@fergusonReport49Growth2021; @fergusonReport50Effectiveness2021; @report1; @khoury2021; @collie2021]. These values do not reflect a specific vaccine as there are unknowns over each specific country vaccine's rollout.
+
+The probability of hospitalisation is reduced to 60% in comparison to the prior variants [@fergusonReport50Effectiveness2021]. We assume that the mean duration of naturally acquired immunity is 200 days. 
+
+We also simulate two sets of the number of infected cases: the officially reported number of cases of the last two weeks until 15 February 2022, and this value multiplied by 5 and 10, assuming the lack of massive testing and under-reporting of cases [@lau2021].
+
+The number of people in the first state of the transmission model (those susceptible to the disease) corresponds to the country population. This value is based on the high levels of reinfection found across countries such as South Africa and England [@fergusonReport49Growth2021; @pulliam2021]. We assume a uniform distribution of the vaccinations across adults due to the lack of available data. Recent empirical evidence shows that the generation time for the Omicron variant is shorter than the previous predominant Delta variant [@abbott2022; @liu2021]. Following that, we assume the following parameters: mean duration of 2 days for the incubation period, mean of 2.6 days for a mild infection and a mean of 3.8 days for symptoms onset to admission to hospital.
+
+The time period for the analysis is one year, from 15 February 2022 to 14 February 2023. This allows capturing both the date set by the World Health Organisation’s target to vaccinate 70% of the world’s population against COVID-19 by mid-2022 [@StrategyAchieveGlobal2021] and the decay rate of vaccine effectiveness across time.
+
+We use a constant effective reproduction number of 1.3, 1.5 and 2 [@vanwees2021; @huang2022; @ignatov2022] across the first half of 2022. In the second part of the year, the reproduction number is set at 0.9, which implies the contraction of the pandemics over time.
+
+Table \@ref(tab:param1) provides a summary of all the main parameters. Additional country-specific, epidemiological and vaccination parameters were compiled by @Hogan2021 and updated in the R package ['nimue'](https://github.com/mrc-ide/nimue), where original sources of data are given. Infections and vaccine data are collected from Our World in Data [@roser2020]. Probabilities of death according different states and age groups (severity of disease, treatment and information source) can be found in the Appendix.
+
+
+```{r param1}
+
+Parameters <- read_excel("Parameters.xlsx")
+
+Parameters %>% kbl (format = "markdown",caption="Parameters used across simulation scenarios based on Omicron variant",
+                    format.args=list(big.mark = ","),digits = 1) 
+
+
+```
+
+# Results
+
+## Countries behind track
+
+We find that, based on projecting last month total doses constant until 1 July 2022, `r be` countries are behind WHO's goal (see Figure \@ref(fig:mapw)). They are distributed across the world as follows: `r africa` counties in Africa, `r americas` in the Americas, `r asia` in Asia, `r europe` in Europe and `r oceania` in Oceania. `r islands` countries are small islands with a population of fewer than 600,000 people each. While before the WHO target,`r boost_beh` of these countries already started to provide boosters to their population although they do are behind track in terms of providing two doses for 70% of their population. See the full list of countries in the Appendix.
+
+The number of countries is inferior to analysis presented by [OWID](https://ourworldindata.org/covid-vaccination-global-projections), where they identify 118 countries. The differences relies in the criteria. For instance, Our World in Data considers the average number of people who received their first dose of a vaccine per day over the last 14 days, while our model considers the average number of people who received any dose of a vaccine per day, over the last 30 days [@roser2020]. 
+
+```{r mapw, fig.cap="Countries status according to WHO's vaccination goal based on last month vaccination uptake"}
+
+map_res
+
+```
+
+Figure \@ref(fig:growth) shows that the gap between on and off-track countries is widening. Across all regions, the average of daily vaccinations per population in “off track” countries is lower on those that are already “on track”. 
+
+In all regions, we observe that the vaccination average relative to the population is lower for the lagged countries. Based on the unvaccinated population and assuming the need for at least two doses per person during the first semester of 2022, we estimate that 1.7 billion doses are needed to be administered in order to achieve the target of vaccinating 70% of these countries' population. Considering a programmatic delivery cost of US$ 10 per dose [@StrategyAchieveGlobal2021], the estimation reaches 17 billion American dollars.
+
+```{r growth, fig.cap="Countries last month vaccine uptake and coverage"}
+
+plot_rel
+
+```
+
+## Baseline vs. Acceleration Scenarios 
+
+The combination of the different model parameters provides 32 different scenarios for each country. 
+
+By comparing hypothetical scenarios without vaccinations and scenarios where the vaccination coverage reaches 70%, our estimates suggest vaccines save between `r dmin0` and `r dmax0` deaths and prevent `r dmin0h` to `r dmax0h` hospitalisations on the combinations of parameters.
+
+Simulations where we keep constant the last month vaccination uptake with a parameter R0 = 1.5 yields an estimated number of deaths ranging from `r min_base` to `r max_base`. R = 1.5 is chosen to reflect a moderate average transmission rate found across countries in southern Africa, where the Omicron variant was initially found. When compared to the accelerated scenario, we estimate the number of avoidable deaths ranges from `r dmin` to `r dmax`, and the number of avoidable hospitalisations spans from `r dminh` to `r dmaxh`, depending on the combinations of parameters. Table \@ref(tab:tab1) shows the maximum and the minimum number of averted deaths and hospitalisations computed across different R0. In the case of the scenarios of averted deaths, the differences between values do not change substantially when R is 1.5 or higher. In the case of the simulation of averted hospitalisations, the minimum values tend to be stable across different, which is explained by the full occupancy of hospital and ICU beds and the incomplete evolution of the infectious wave due to the period limit imposed our models.
+Country-level estimations of maximum and minimum averted deaths and hospitalisations, vaccine doses and costs are found in the Appendix.
+
+```{r tab1}
+
+tb %>% kbl (format = "markdown",caption="Maximum and minimum averted deaths and hospitalisations",
+            format.args=list(big.mark = ","),digits = 1) 
+
+#flextable::flextable(tb)
+
+```
+
+To exemplify differences across scenarios, Figure \@ref(fig:countries) presents the estimation of avoidable deaths across scenarios for the countries with the highest number of avoidable deaths: `r worstcountries_n[1]`, `r worstcountries_n[2]`, `r worstcountries_n[3]` and the `r worstcountries_n[4]`. Together, they represent between `r worstcountries`% and `r mediancountries`% of the total estimated avertible deaths across different scenarios for R0 = 1.5.
+
+
+```{r countries,fig.cap="Deaths averted across scenarios - selected countries"}
+
+  cnts
+
+```
+
+Across the vast majority of models, between 60% and 70% of avoidable deaths correspond to people aged 60 and above. This occurs even in the majority of countries that currently portray a younger population age structure, such cases of regions such as Africa and Asia. Table \@ref(tab:oldtable) summarises the scenarios in terms of total avoidable deaths and infections based on R0 = 1.5 for the population over and under 60 years old. We find that the proportion of avoidable deaths benefits older people, ranging from `r pro1`% to `r pro2`% of the total number of deaths, while it is similar across age groups for the total number of hospitalisations, ranging from `r pro3`% to `r pro4`% for the older people group.
+
+```{r oldtable}
+
+#flextable::flextable(old_table)
+
+old_table %>% kbl (format = "markdown",caption="Proportion of avoidable deaths of older people across simulations",format.args=list(big.mark = ","),digits = 1) 
+
+```
+
+
+
+Finally, we perform two different sets of robustness checks. First, we perform a similar analysis using a 15-days average of vaccines, yielding very similar results in terms of the number of countries behind WHO’s goal. Additionally, we compare our SEIR models results with those presented by the Institute of Health Metrics and Evaluation [@ihme] and the MRC-IDE at Imperial College [@mrc-ide2022]. As expected, there are no significant differences between models, which are explained by choice of different parameters.
+
+# Conclusions
+
+<!-- what if some countries prioritised younger adults like in Romania you mentioned in the previous versions? This could be something we can discuss in the discussion section -->
+
+<!-- Is the current analysis restricted to parameters and hospitalisation related to Omicron? Can you replicate it for Delta in appendix to show the averted deaths if a virulent strain impacts us again? -->
+
+These scenarios are built to answer an ethical framework that aims to find the best possible allocation of COVID-19 vaccines. Our ethical guidelines are the following: we aim to maximise societal health benefits, prioritise those worst-off without the vaccines, and promote equality, where individuals under the circumstances shall be treated equally [@persad2020; @emanuel2020]. These principles become operational in terms of saving the most lives; prioritise the most vulnerable populations such as older and immunodeficient people; and protecting health workers. Recently, the WHO SAGE group updated their roadmap for accelerated allocation of vaccines across the world, where older adults, health workers, immunocompromised persons, adults with comorbidities, pregnant persons, teachers and other essential workers and disadvantaged  subpopulations at higher risk of severe COVID-19 remain the higher priority groups for additional doses and boosters [@WHO2022].
+
+Our simulations suggest that even with relatively low transmission rates (R = 1.5), upraising daily vaccinations in line with the 70% by mid-2022 target could save between 200,000 and 300,000 lives in the analysed countries in the next five months. We also find that, across all countries - even with different age-population structures - and across models using different parameters, results suggest consistently that older people account for the majority of averted deaths and hospitalisations.
+
+Although accelerating the vaccination levels save thousands of lives, there is still a large number of people that is expected to die, with value spamming from `r min_base` to `r max_base`. The only mechanism to avoid unnecessary and preventable deaths relies on countries ramping up the administration of vaccines to complete their population coverage in the shortest possible time.
+
+As with any modelling study, we address several limitations. First, while vaccine efficacy parameters against infection and disease are proven for previous dominant variants, there is still not enough information to establish certain parameters. Estimates of hospitalisations and deaths may be inaccurate due to our working assumptions. However, the presented counterfactual analysis allows measuring the magnitude in terms of differences between vaccination roll-outs.
+
+
+# References
+
+::: {#refs}
+:::
+
+\newpage
+
+# Appendix
+
+## Countries behing WHO's vaccination goal
+
+```{r, fig.cap="Countries behing WHO's vaccination goal"}
+
+kableExtra::kable(list_countries,
+      format = "markdown",format.args=list(big.mark = ","),digits = 1)
+
+
+#flextable::flextable(list_countries)
+
+```
+
+```{r, fig.cap="Estimation vaccination levels in '`r Sys.Date()`"}
+
+kableExtra::kable(table1,
+      format = "markdown",format.args=list(big.mark = ","),digits = 1)
+
+
+
+```
+
+## Maximum and minimum averted deaths and hospitalisations
+
+```{r, fig.cap="Minimum averted deaths and hospitalisations per country"}
+
+kableExtra::kable(table3,
+      format = "markdown",format.args=list(big.mark = ","),digits = 1)
+
+
+```
+
+
+```{r, fig.cap="Maximum averted deaths and hospitalisations per country"}
+
+kableExtra::kable(table4,
+      format = "markdown",format.args=list(big.mark = ","),digits = 1)
+
+
+```
+
+
+
+## Number of doses for ountries behing WHO's vaccination goal
+
+```{r, fig.cap="Number of doses for ountries behing WHO's vaccination goal"}
+
+list_vaccine_countries %>% kbl(format = "markdown", caption="Number of doses for ountries behing WHO's vaccination goal",format.args=list(big.mark = ","),digits = 1)
+
+```
+
+
+
+```{r, fig.cap="Vaccines and cost to accelarate towards WHO's vaccination goal"}
+
+kableExtra::kable(table6,
+      format = "markdown",format.args=list(big.mark = ","),digits = 1)
+
+
+```
+
+## Estimated vaccine effectivenes decay
+
+```{r pqrs, fig.cap="Estimate of vaccine efficacy waning"}
+
+
+p+q+r+s
+
+```
+
+## Additional parameters
+
+```{r parameter1}
+
+adparam<-squire::default_probs()
+
+nms<- c("Probability of hospitalisation",
+                                        "Probability of severe disease",
+                  "Probability of death given non severe disease and treatment",
+                  "Probability of death given non severe disease and no treatment",
+                  "Probability of death given severe disease and treatment",
+                  "Probability of death given severe disease and no treatment")
+
+adparam1<-rbind(adparam$prob_hosp,
+adparam$prob_severe,
+adparam$prob_non_severe_death_treatment,
+adparam$prob_non_severe_death_no_treatment,
+adparam$prob_severe_death_treatment,
+adparam$prob_severe_death_no_treatment) 
+
+adparam1<-cbind(nms,adparam1) %>% as.data.frame() %>% 
+  mutate(across(c(V2:V18), as.numeric))
+
+
+ageg<-c("Probabilities",
+  "0 to 4",
+"5 to 9",
+"10 to 14",
+"15 to 19",
+"20 to 24",
+"25 to 29",
+"30 to 34",
+"35 to 39",
+"40 to 44",
+"45 to 49",
+"50 to 54",
+"55 to 59",
+"60 to 64",
+"65 to 69",
+"70 to 74",
+"75 to 79",
+"80+"
+)
+
+adparam1<-adparam1%>% rename_at(vars(nms:V18), ~ ageg) %>% mutate(across(where(is.numeric), round, 3))
+
+adparam1 %>% kbl(format = "markdown", caption="Modelling additional parameters",format.args=list(big.mark = ","),digits = 1)
+
+```
+
+
+```{r param2}
+
+param2 <- read_excel("param2.xlsx")
+
+param2 %>% kbl(format = "markdown", caption="Modelling additional parameters - 2",format.args=list(big.mark = ","),digits = 1)
+

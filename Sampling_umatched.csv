@@ -1,0 +1,56 @@
+"","Facility ID","Facility name","Type (government, not for profit, private for profit)","SSSD cases 2020 (total)","SSSD cases 2019 (total)","Population covered","District","County","match1"
+"1","6","Mendikorma Clinic","Government",7,8,5518,"Foya District","Lofa",NA
+"2","7","Porluma Clinic","Government",6,11,9626,"Foya District","Lofa",NA
+"3","24","Popalahun Clinic","Government",0,0,3579,"Kolahun District","Lofa",NA
+"4","25","Faith Medical Lab Clinic","Private for profit",0,0,0,"Salayea District","Lofa",NA
+"5","31","Kpayaquelle Clinic","Government",0,0,1825,"Salayea District","Lofa",NA
+"6","50","Zenalormai Clinic","Government",0,0,1712,"Voinjama District","Lofa",NA
+"7","60","ZRTTI Clinic","Government",0,0,636,"Zorzor District","Lofa",NA
+"8","61","Duogee Clinic","Government",0,0,0,"B'Hai District","Grand Gedeh",NA
+"9","62","Toe Town Clinic","Government",0,0,5982,"B'Hai District","Grand Gedeh",NA
+"10","71","Gbo-Geewon Community Clinic","Government",0,0,0,"Gbao District","Grand Gedeh",NA
+"11","74","Konobo Health Center","Government",0,0,38339,"Konobo District","Grand Gedeh",NA
+"12","78","Christ the King Clinic","Private for profit",0,0,11900,"Tchien District","Grand Gedeh",NA
+"13","79","Galapo Clinic","Private for profit",0,0,0,"Tchien District","Grand Gedeh",NA
+"14","81","Kannah  Clinic (PTP Refugee Clinic)","Government",0,0,0,"Tchien District","Grand Gedeh",NA
+"15","82","Kumah Town Clinic","Government",0,0,2933,"Tchien District","Grand Gedeh",NA
+"16","85","Cotton Tree Health Center","Government",0,0,0,"Firestone District","Margibi",NA
+"17","86","Dolo's Town Health Center","Government",0,0,9160,"Firestone District","Margibi",NA
+"18","88","Farmington Health Center","Private not for profit",12,0,12893,"Firestone District","Margibi",NA
+"19","89","Harbel Health Center","Concession",0,0,54284,"Firestone District","Margibi",NA
+"20","90","Life Line Medical Clinic","Private for profit",0,0,0,"Firestone District","Margibi",NA
+"21","91","Lisnow Martanity Clinic","Private for profit",0,0,0,"Firestone District","Margibi",NA
+"22","92","Mother Artis Martanity Clinic","Government",0,0,0,"Firestone District","Margibi",NA
+"23","93","Optimist Medical Clinic","Private for profit",0,0,0,"Gibi District","Margibi",NA
+"24","95","Salala Rubber Corporation Health Center","Concession",0,0,7708,"Gibi District","Margibi",NA
+"25","96","Wolola Clinic","Government",0,0,3457,"Gibi District","Margibi",NA
+"26","98","Yarnwullie Clinic","Government",0,0,6873,"Gibi District","Margibi",NA
+"27","99","Barbour Hill Community Clinic","Private for profit",0,0,0,"Kakata District","Margibi",NA
+"28","100","Booker Washington Institute Clinic","Government",0,1,0,"Kakata District","Margibi",NA
+"29","102","Cinta Clinic","Private for profit",0,0,0,"Kakata District","Margibi",NA
+"30","103","Diamon Medical Clinic","Government",0,0,0,"Kakata District","Margibi",NA
+"31","106","JJ Korhene Health Care Center",NA,0,0,0,"Kakata District","Margibi",NA
+"32","108","KRTTI Clinic","Government",0,0,0,"Kakata District","Margibi",NA
+"33","109","KRTTI School Based Clinic","Government",0,0,0,"Kakata District","Margibi",NA
+"34","110","Lango Lappay School Based Clinic",NA,0,0,0,"Kakata District","Margibi",NA
+"35","112","Ma. Cynthia Health Care Center",NA,0,0,0,"Kakata District","Margibi",NA
+"36","114","New Day Medical Clinic No. 2","Government",0,0,0,"Kakata District","Margibi",NA
+"37","115","New Destiny Clinic","Private for profit",0,0,0,"Kakata District","Margibi",NA
+"38","117","Prison Level 1 Clinic","Government",0,0,0,"Kakata District","Margibi",NA
+"39","119","Vellay-Ta Clinic","Government",0,0,2981,"Kakata District","Margibi",NA
+"40","120","Waterfield Primary Health Center","Private for profit",0,0,0,"Kakata District","Margibi",NA
+"41","121","Weala  United Methodist Clinic","Private for profit",0,0,0,"Kakata District","Margibi",NA
+"42","124","Boye Town Clinic","Private for profit",0,0,0,"Mambah-Kaba District","Margibi",NA
+"43","126","Disco Hill Community Clinic","Government",0,0,0,"Mambah-Kaba District","Margibi",NA
+"44","127","Dr. Jallah's Medical Health Center","Government",0,0,0,"Mambah-Kaba District","Margibi",NA
+"45","129","Excellent Clinic","Private for profit",0,0,0,"Mambah-Kaba District","Margibi",NA
+"46","130","Karwah Medical Clinic","Private for profit",0,0,0,"Mambah-Kaba District","Margibi",NA
+"47","131","Kelvin Clinic","Private for profit",0,0,0,"Mambah-Kaba District","Margibi",NA
+"48","133","R. S. CauldField School Base Clinic",NA,0,0,0,"Mambah-Kaba District","Margibi",NA
+"49","135","Sumbai Medical Clinic","Private for profit",2,0,0,"Mambah-Kaba District","Margibi",NA
+"50","136","Triple T Medical Clinic","Private for profit",0,2,0,"Mambah-Kaba District","Margibi",NA
+"51","137","Trokon Glay Medical Clinic #1","Private for profit",0,0,0,"Mambah-Kaba District","Margibi",NA
+"52",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"53","Total NTDs Number",NA,NA,166,177,NA,NA,NA,NA
+"54",NA,NA,NA,NA,NA,NA,NA,NA,NA
+"55","Note: 0 means data is not available",NA,NA,NA,NA,NA,NA,NA,NA

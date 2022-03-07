@@ -32,15 +32,6 @@ library(flextable)
 
 ```
 
-
-```{r}
-
-source("functions_final.R")
-
-source("calibrate_deaths.R")
-
-```
-
 ```{r}
 
 source("countries.R")
@@ -116,12 +107,11 @@ The combination of the different parameters provide `r scenarios` different scen
 
 ```{r}
 
-ta<-out_format %>% filter(final_coverage>min_coverage)%>% 
-  mutate(final_coverage = round(final_coverage,2))%>%
-  select(final_coverage,R0,vaccine_coverage_mat,max_vaccine,deaths_averted) %>%
-  group_by(final_coverage,R0,max_vaccine,vaccine_coverage_mat) %>%
+ta<-out_format %>% filter(max_vaccine>mean_vac)%>% 
+  select(max_vaccine,R0,vaccine_coverage_mat,deaths_averted) %>%
+  group_by(max_vaccine,R0,vaccine_coverage_mat) %>%
   mutate(deaths_averted=mean(deaths_averted,na.rm = T)) %>% 
-    group_by(final_coverage,R0,max_vaccine) %>%
+    group_by(max_vaccine,R0) %>%
   mutate(dif.deaths_averted = deaths_averted-lag(deaths_averted)) %>%
   filter(vaccine_coverage_mat=="Elderly")%>% ungroup %>%
   summarise(pos = sum(dif.deaths_averted>0,na.rm=T), # older better
@@ -136,12 +126,11 @@ if (ta$pos > ta$neg) {
   }
 
 
-te<-out_format %>% filter(final_coverage>min_coverage)%>% 
-  mutate(final_coverage = round(final_coverage,2))%>%
-  select(final_coverage,R0,vaccine_coverage_mat,max_vaccine,deaths_averted) %>%
-  group_by(R0,max_vaccine,vaccine_coverage_mat,final_coverage) %>%
+te<-out_format %>% filter(max_vaccine>mean_vac)%>%  
+  select(R0,vaccine_coverage_mat,max_vaccine,deaths_averted) %>%
+  group_by(R0,max_vaccine,vaccine_coverage_mat) %>%
   mutate(deaths_averted=mean(deaths_averted,na.rm = T)) %>% 
-    group_by(R0,max_vaccine,vaccine_coverage_mat) %>%
+    group_by(R0,max_vaccine) %>%
   mutate(dif.deaths_averted = deaths_averted-lag(deaths_averted)) %>%
   ungroup %>% filter(!is.na(dif.deaths_averted))%>%
   summarise(pos = sum(dif.deaths_averted>0,na.rm=T), # >R0 more impact of vaccination
@@ -203,12 +192,11 @@ if (multipl_vaccine < 1){
 }
 
 
-out_format %>% filter(final_coverage>min_coverage)%>%
-  group_by(final_coverage,R0,vaccine_coverage_mat,max_vaccine) %>%
+out_format %>% filter(max_vaccine>mean_vac)%>%
+  group_by(R0,vaccine_coverage_mat,max_vaccine) %>%
   mutate(deaths_averted=mean(deaths_averted))%>%
-  ggplot() + geom_point(aes(final_coverage,deaths_averted,
-                            colour=vaccine_coverage_mat,
-                            shape=as.factor(max_vaccine)))+
+  ggplot() + geom_point(aes(max_vaccine,deaths_averted,
+                            colour=vaccine_coverage_mat))+
   facet_wrap(~R0) + theme_light() +
   scale_y_continuous(labels = scales::comma) +
    scale_x_continuous(labels = scales::percent,
@@ -220,12 +208,7 @@ out_format %>% filter(final_coverage>min_coverage)%>%
   xlab("Population maximum coverage") +  ylab("Deaths averted") + 
    scale_colour_manual("Vaccine prioritisation",
                        values = c("darkgreen", "darkorange"), 
-                       labels = c("No priority", "Older People"))+
-  scale_shape_discrete("Mean vaccines/day",  
-                            breaks=values_labels,
-                       label = c("Historical average",
-                                 "Average x5","Average x10", "Needed to cover 80%"))
-
+                       labels = c("No priority", "Older People"))
 ```
 
 <!-- chequear estas frases -->

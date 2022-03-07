@@ -1,0 +1,946 @@
+WHO_REGION,UNICEF_REGION,WBINCOME_SHORT_STATUS,WHO_LEGAL_STATUS_TITLE,DEVELOPMENT_STATUS,COVAX_STATUS,COUNTRYNAME,ISO_3_CODE,MONTH_DESCRIPTION,PROCUREMENT_TYPE,MANUFACTURER_DESCRIPTION,VACCINE_NAME,TOTAL_DOSES
+AFR,ESARO,High income,Member State,Developing,No,Seychelles,SYC,2022-04-03T23:00:00.000Z,BILATERAL_AGREEMENT,Serum Institute of India,SII - Covishield,59000
+AFR,ESARO,High income,Member State,Developing,No,Seychelles,SYC,2022-06-05T23:00:00.000Z,BILATERAL_AGREEMENT,AstraZeneca,AstraZeneca - Vaxzevria,59000
+AFR,ESARO,High income,Member State,Developing,No,Seychelles,SYC,2022-06-05T23:00:00.000Z,BILATERAL_AGREEMENT,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,81000
+AFR,ESARO,High income,Member State,Developing,No,Seychelles,SYC,2022-06-05T23:00:00.000Z,BILATERAL_AGREEMENT,Gamaleya Research Institute,Gamaleya - Gam-Covid-Vac,1000
+AFR,ESARO,High income,Member State,Developing,No,Seychelles,SYC,2022-05-04T23:00:00.000Z,DONATION,Serum Institute of India,AstraZeneca - Vaxzevria,59000
+AFR,ESARO,High income,Member State,Developing,No,Seychelles,SYC,2022-06-05T23:00:00.000Z,DONATION,Julphar,Julphar - Hayat-Vax,25000
+AFR,ESARO,High income,Member State,Developing,No,Seychelles,SYC,2022-10-09T23:00:00.000Z,DONATION,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,131120
+AFR,ESARO,High income,Member State,Developing,No,Seychelles,SYC,2022-10-09T23:00:00.000Z,DONATION,Chumakov,Gamaleya - Gam-Covid-Vac,1000
+AFR,ESARO,High income,Member State,Developing,No,Seychelles,SYC,2022-10-09T23:00:00.000Z,DONATION,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,35100
+AFR,ESARO,High income,Member State,Developing,No,Seychelles,SYC,2022-10-09T23:00:00.000Z,DONATION,Serum Institute of India,SII - Covishield,59000
+AFR,ESARO,High income,Member State,Developing,No,Seychelles,SYC,2022-10-09T23:00:00.000Z,NR,NR,All vaccine types,226220
+AFR,ESARO,Low income,Member State,Least developed,AMC,Burundi,BDI,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,Sinovac,Beijing CNBG - BBIBP-CorV,500000
+AFR,ESARO,Low income,Member State,Least developed,AMC,Burundi,BDI,2022-11-11T00:00:00.000Z,MULTILATERAL_AFRICAN,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,151200
+AFR,ESARO,Low income,Member State,Least developed,AMC,Burundi,BDI,2022-11-11T00:00:00.000Z,NR,NR,All vaccine types,651200
+AFR,ESARO,Low income,Member State,Least developed,AMC,Ethiopia,ETH,2022-09-08T23:00:00.000Z,BILATERAL_AGREEMENT,Sinovac,Sinovac - CoronaVac,3493200
+AFR,ESARO,Low income,Member State,Least developed,AMC,Ethiopia,ETH,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,AstraZeneca,AstraZeneca - Vaxzevria,2779440
+AFR,ESARO,Low income,Member State,Least developed,AMC,Ethiopia,ETH,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,3493200
+AFR,ESARO,Low income,Member State,Least developed,AMC,Ethiopia,ETH,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,
+AFR,ESARO,Low income,Member State,Least developed,AMC,Ethiopia,ETH,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,
+AFR,ESARO,Low income,Member State,Least developed,AMC,Ethiopia,ETH,2022-09-08T23:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,4963440
+AFR,ESARO,Low income,Member State,Least developed,AMC,Ethiopia,ETH,2022-09-08T23:00:00.000Z,COVAX_FACILITY,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,2729750
+AFR,ESARO,Low income,Member State,Least developed,AMC,Ethiopia,ETH,2022-09-08T23:00:00.000Z,COVAX_FACILITY,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,1552200
+AFR,ESARO,Low income,Member State,Least developed,AMC,Ethiopia,ETH,2022-11-11T00:00:00.000Z,COVAX_FACILITY,Serum Institute of India,SII - Covishield,2184000
+AFR,ESARO,Low income,Member State,Least developed,AMC,Ethiopia,ETH,2022-11-11T00:00:00.000Z,NR,NR,All vaccine types,8456640
+AFR,ESARO,Low income,Member State,Least developed,AMC,Madagascar,MDG,2022-09-08T23:00:00.000Z,COVAX_FACILITY,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,250000
+AFR,ESARO,Low income,Member State,Least developed,AMC,Madagascar,MDG,2022-09-08T23:00:00.000Z,COVAX_FACILITY,Sinovac,Sinovac - CoronaVac,468000
+AFR,ESARO,Low income,Member State,Least developed,AMC,Madagascar,MDG,2022-11-11T00:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,
+AFR,ESARO,Low income,Member State,Least developed,AMC,Madagascar,MDG,2022-11-11T00:00:00.000Z,COVAX_FACILITY,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,
+AFR,ESARO,Low income,Member State,Least developed,AMC,Madagascar,MDG,2022-11-11T00:00:00.000Z,COVAX_FACILITY,Serum Institute of India,SII - Covishield,
+AFR,ESARO,Low income,Member State,Least developed,AMC,Madagascar,MDG,2022-11-11T00:00:00.000Z,DONATION,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,
+AFR,ESARO,Low income,Member State,Least developed,AMC,Madagascar,MDG,2022-11-11T00:00:00.000Z,NR,NR,All vaccine types,
+AFR,ESARO,Low income,Member State,Least developed,AMC,Malawi,MWI,2022-06-05T23:00:00.000Z,BILATERAL_AGREEMENT,AstraZeneca,AstraZeneca - Vaxzevria,50000
+AFR,ESARO,Low income,Member State,Least developed,AMC,Malawi,MWI,2022-07-06T23:00:00.000Z,BILATERAL_AGREEMENT,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,50000
+AFR,ESARO,Low income,Member State,Least developed,AMC,Malawi,MWI,2022-09-08T23:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,1787390
+AFR,ESARO,Low income,Member State,Least developed,AMC,Malawi,MWI,2022-09-08T23:00:00.000Z,COVAX_FACILITY,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,638400
+AFR,ESARO,Low income,Member State,Least developed,AMC,Malawi,MWI,2022-06-05T23:00:00.000Z,MULTILATERAL_AFRICAN,AstraZeneca,AstraZeneca - Vaxzevria,102000
+AFR,ESARO,Low income,Member State,Least developed,AMC,Malawi,MWI,2022-07-06T23:00:00.000Z,MULTILATERAL_AFRICAN,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,102000
+AFR,ESARO,Low income,Member State,Least developed,AMC,Malawi,MWI,2022-09-08T23:00:00.000Z,NR,NR,All vaccine types,2425790
+AFR,ESARO,Low income,Member State,Least developed,AMC,Mozambique,MOZ,2022-06-05T23:00:00.000Z,BILATERAL_AGREEMENT,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,100000
+AFR,ESARO,Low income,Member State,Least developed,AMC,Mozambique,MOZ,2022-06-05T23:00:00.000Z,BILATERAL_AGREEMENT,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,11000000
+AFR,ESARO,Low income,Member State,Least developed,AMC,Mozambique,MOZ,2022-06-05T23:00:00.000Z,BILATERAL_AGREEMENT,Wuhan Institute of Biological Products (CNBG),Wuhan CNBG - Inactivated,260000
+AFR,ESARO,Low income,Member State,Least developed,AMC,Mozambique,MOZ,2022-07-06T23:00:00.000Z,BILATERAL_AGREEMENT,Beijing Bio-Institute Biological Products (CNBG),Wuhan CNBG - Inactivated,2960000
+AFR,ESARO,Low income,Member State,Least developed,AMC,Mozambique,MOZ,2022-07-06T23:00:00.000Z,BILATERAL_AGREEMENT,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,302400
+AFR,ESARO,Low income,Member State,Least developed,AMC,Mozambique,MOZ,2022-06-05T23:00:00.000Z,COVAX_FACILITY,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,302400
+AFR,ESARO,Low income,Member State,Least developed,AMC,Mozambique,MOZ,2022-06-05T23:00:00.000Z,COVAX_FACILITY,Serum Institute of India,SII - Covishield,384000
+AFR,ESARO,Low income,Member State,Least developed,AMC,Mozambique,MOZ,2022-07-06T23:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,642000
+AFR,ESARO,Low income,Member State,Least developed,AMC,Mozambique,MOZ,2022-06-05T23:00:00.000Z,DONATION,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,
+AFR,ESARO,Low income,Member State,Least developed,AMC,Mozambique,MOZ,2022-06-05T23:00:00.000Z,DONATION,Serum Institute of India,SII - Covishield,100000
+AFR,ESARO,Low income,Member State,Least developed,AMC,Mozambique,MOZ,2022-07-06T23:00:00.000Z,NR,NR,All vaccine types,3904400
+AFR,ESARO,Low income,Member State,Least developed,AMC,Rwanda,RWA,2022-09-08T23:00:00.000Z,BILATERAL_AGREEMENT,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,3983850
+AFR,ESARO,Low income,Member State,Least developed,AMC,Rwanda,RWA,2022-06-05T23:00:00.000Z,COVAX_FACILITY,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,52960
+AFR,ESARO,Low income,Member State,Least developed,AMC,Rwanda,RWA,2022-09-08T23:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,1083090
+AFR,ESARO,Low income,Member State,Least developed,AMC,Rwanda,RWA,2022-09-08T23:00:00.000Z,COVAX_FACILITY,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,420060
+AFR,ESARO,Low income,Member State,Least developed,AMC,Rwanda,RWA,2022-09-08T23:00:00.000Z,COVAX_FACILITY,Gamaleya Research Institute,Gamaleya - Gam-Covid-Vac,10000
+AFR,ESARO,Low income,Member State,Least developed,AMC,Rwanda,RWA,2022-09-08T23:00:00.000Z,COVAX_FACILITY,Moderna,Moderna - Spikevax,2000
+AFR,ESARO,Low income,Member State,Least developed,AMC,Rwanda,RWA,2022-09-08T23:00:00.000Z,COVAX_FACILITY,Sinovac,Sinovac - CoronaVac,604400
+AFR,ESARO,Low income,Member State,Least developed,AMC,Rwanda,RWA,2022-09-08T23:00:00.000Z,MULTILATERAL_AFRICAN,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,108000
+AFR,ESARO,Low income,Member State,Least developed,AMC,Rwanda,RWA,2022-09-08T23:00:00.000Z,NR,NR,All vaccine types,6211400
+AFR,ESARO,Low income,Member State,Least developed,AMC,South Sudan,SSD,2022-09-08T23:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,119520
+AFR,ESARO,Low income,Member State,Least developed,AMC,South Sudan,SSD,2022-09-08T23:00:00.000Z,COVAX_FACILITY,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,152950
+AFR,ESARO,Low income,Member State,Least developed,AMC,South Sudan,SSD,2022-06-05T23:00:00.000Z,MULTILATERAL_AFRICAN,AstraZeneca,AstraZeneca - Vaxzevria,60000
+AFR,ESARO,Low income,Member State,Least developed,AMC,South Sudan,SSD,2022-09-08T23:00:00.000Z,NR,NR,All vaccine types,272470
+AFR,ESARO,Low income,Member State,Least developed,AMC,Uganda,UGA,2022-06-05T23:00:00.000Z,BILATERAL_AGREEMENT,AstraZeneca,AstraZeneca - Vaxzevria,100000
+AFR,ESARO,Low income,Member State,Least developed,AMC,Uganda,UGA,2022-06-05T23:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,864000
+AFR,ESARO,Low income,Member State,Least developed,AMC,Uganda,UGA,2022-06-05T23:00:00.000Z,NR,NR,All vaccine types,964000
+AFR,ESARO,Middle income,Member State,Developing,AMC,Eswatini,SWZ,2022-09-08T23:00:00.000Z,BILATERAL_AGREEMENT,AstraZeneca,AstraZeneca - Vaxzevria,175190
+AFR,ESARO,Middle income,Member State,Developing,AMC,Eswatini,SWZ,2022-09-08T23:00:00.000Z,COVAX_FACILITY,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,302400
+AFR,ESARO,Middle income,Member State,Developing,AMC,Eswatini,SWZ,2022-11-11T00:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,0
+AFR,ESARO,Middle income,Member State,Developing,AMC,Eswatini,SWZ,2022-11-11T00:00:00.000Z,COVAX_FACILITY,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,100620
+AFR,ESARO,Middle income,Member State,Developing,AMC,Eswatini,SWZ,2022-11-11T00:00:00.000Z,DONATION,AstraZeneca,AstraZeneca - Vaxzevria,
+AFR,ESARO,Middle income,Member State,Developing,AMC,Eswatini,SWZ,2022-11-11T00:00:00.000Z,DONATION,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,302400
+AFR,ESARO,Middle income,Member State,Developing,AMC,Eswatini,SWZ,2022-11-11T00:00:00.000Z,NR,NR,All vaccine types,403020
+AFR,ESARO,Middle income,Member State,Developing,AMC,Kenya,KEN,2022-06-05T23:00:00.000Z,BILATERAL_AGREEMENT,AstraZeneca,AstraZeneca - Vaxzevria,100000
+AFR,ESARO,Middle income,Member State,Developing,AMC,Kenya,KEN,2022-07-06T23:00:00.000Z,BILATERAL_AGREEMENT,Moderna,Moderna - Spikevax,880460
+AFR,ESARO,Middle income,Member State,Developing,AMC,Kenya,KEN,2022-04-03T23:00:00.000Z,COVAX_FACILITY,Serum Institute of India,SII - Covishield,1020000
+AFR,ESARO,Middle income,Member State,Developing,AMC,Kenya,KEN,2022-07-06T23:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,3088300
+AFR,ESARO,Middle income,Member State,Developing,AMC,Kenya,KEN,2022-07-06T23:00:00.000Z,NR,NR,All vaccine types,3968760
+AFR,ESARO,Middle income,Member State,Developing,AMC,Zimbabwe,ZWE,2022-08-07T23:00:00.000Z,BILATERAL_AGREEMENT,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,5492800
+AFR,ESARO,Middle income,Member State,Developing,AMC,Zimbabwe,ZWE,2022-08-07T23:00:00.000Z,BILATERAL_AGREEMENT,Bharat Biotech,Bharat - Covaxin,35000
+AFR,ESARO,Middle income,Member State,Developing,AMC,Zimbabwe,ZWE,2022-08-07T23:00:00.000Z,BILATERAL_AGREEMENT,Sinovac,Sinovac - CoronaVac,6200000
+AFR,ESARO,Middle income,Member State,Developing,AMC,Zimbabwe,ZWE,2022-08-07T23:00:00.000Z,NR,NR,All vaccine types,11727800
+AFR,ESARO,Middle income,Member State,Developing,No,Namibia,NAM,2022-06-05T23:00:00.000Z,BILATERAL_AGREEMENT,AstraZeneca,AstraZeneca - Vaxzevria,30000
+AFR,ESARO,Middle income,Member State,Developing,No,Namibia,NAM,2022-07-06T23:00:00.000Z,BILATERAL_AGREEMENT,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,350000
+AFR,ESARO,Middle income,Member State,Developing,No,Namibia,NAM,2022-07-06T23:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,247200
+AFR,ESARO,Middle income,Member State,Developing,No,Namibia,NAM,2022-07-06T23:00:00.000Z,NR,NR,All vaccine types,597200
+AFR,ESARO,Middle income,Member State,Developing,No,South Africa,ZAF,2022-05-04T23:00:00.000Z,BILATERAL_AGREEMENT,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,500000
+AFR,ESARO,Middle income,Member State,Developing,No,South Africa,ZAF,2022-05-04T23:00:00.000Z,NR,NR,All vaccine types,500000
+AFR,ESARO,Middle income,Member State,Developing,Self-financing,Botswana,BWA,2022-04-03T23:00:00.000Z,BILATERAL_AGREEMENT,AstraZeneca,AstraZeneca - Vaxzevria,40000
+AFR,ESARO,Middle income,Member State,Developing,Self-financing,Botswana,BWA,2022-09-08T23:00:00.000Z,BILATERAL_AGREEMENT,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,19890
+AFR,ESARO,Middle income,Member State,Developing,Self-financing,Botswana,BWA,2022-09-08T23:00:00.000Z,BILATERAL_AGREEMENT,Sinovac,Sinovac - CoronaVac,400000
+AFR,ESARO,Middle income,Member State,Developing,Self-financing,Botswana,BWA,2022-09-08T23:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,130800
+AFR,ESARO,Middle income,Member State,Developing,Self-financing,Botswana,BWA,2022-07-06T23:00:00.000Z,MULTILATERAL_AFRICAN,Sinovac,Sinovac - CoronaVac,400000
+AFR,ESARO,Middle income,Member State,Developing,Self-financing,Botswana,BWA,2022-09-08T23:00:00.000Z,MULTILATERAL_AFRICAN,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,108000
+AFR,ESARO,Middle income,Member State,Developing,Self-financing,Botswana,BWA,2022-09-08T23:00:00.000Z,NR,NR,All vaccine types,658690
+AFR,ESARO,Middle income,Member State,Developing,Self-financing,Mauritius,MUS,2022-04-03T23:00:00.000Z,BILATERAL_AGREEMENT,Serum Institute of India,SII - Covishield,200000
+AFR,ESARO,Middle income,Member State,Developing,Self-financing,Mauritius,MUS,2022-06-05T23:00:00.000Z,BILATERAL_AGREEMENT,AstraZeneca,AstraZeneca - Vaxzevria,262400
+AFR,ESARO,Middle income,Member State,Developing,Self-financing,Mauritius,MUS,2022-06-05T23:00:00.000Z,BILATERAL_AGREEMENT,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,600000
+AFR,ESARO,Middle income,Member State,Developing,Self-financing,Mauritius,MUS,2022-06-05T23:00:00.000Z,BILATERAL_AGREEMENT,Bharat Biotech,Bharat - Covaxin,200000
+AFR,ESARO,Middle income,Member State,Developing,Self-financing,Mauritius,MUS,2022-04-03T23:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,62800
+AFR,ESARO,Middle income,Member State,Developing,Self-financing,Mauritius,MUS,2022-06-05T23:00:00.000Z,NR,NR,All vaccine types,1062400
+AFR,ESARO,Middle income,Member State,Least developed,AMC,Angola,AGO,2022-06-05T23:00:00.000Z,BILATERAL_AGREEMENT,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,200000
+AFR,ESARO,Middle income,Member State,Least developed,AMC,Angola,AGO,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,Gamaleya Research Institute,Gamaleya - Gam-Covid-Vac,588550
+AFR,ESARO,Middle income,Member State,Least developed,AMC,Angola,AGO,2022-11-11T00:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,4674130
+AFR,ESARO,Middle income,Member State,Least developed,AMC,Angola,AGO,2022-11-11T00:00:00.000Z,COVAX_FACILITY,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,3049650
+AFR,ESARO,Middle income,Member State,Least developed,AMC,Angola,AGO,2022-11-11T00:00:00.000Z,COVAX_FACILITY,Moderna,Moderna - Spikevax,3352800
+AFR,ESARO,Middle income,Member State,Least developed,AMC,Angola,AGO,2022-11-11T00:00:00.000Z,COVAX_FACILITY,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,6027840
+AFR,ESARO,Middle income,Member State,Least developed,AMC,Angola,AGO,2022-11-11T00:00:00.000Z,COVAX_FACILITY,Sinovac,Beijing CNBG - BBIBP-CorV,15089622
+AFR,ESARO,Middle income,Member State,Least developed,AMC,Angola,AGO,2022-11-11T00:00:00.000Z,NR,NR,All vaccine types,32782592
+AFR,ESARO,Middle income,Member State,Least developed,AMC,Comoros,COM,2022-06-05T23:00:00.000Z,BILATERAL_AGREEMENT,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,100000
+AFR,ESARO,Middle income,Member State,Least developed,AMC,Comoros,COM,2022-04-03T23:00:00.000Z,COVAX_FACILITY,Serum Institute of India,SII - Covishield,
+AFR,ESARO,Middle income,Member State,Least developed,AMC,Comoros,COM,2022-06-05T23:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,12000
+AFR,ESARO,Middle income,Member State,Least developed,AMC,Comoros,COM,2022-06-05T23:00:00.000Z,MULTILATERAL_AFRICAN,AstraZeneca,AstraZeneca - Vaxzevria,6000
+AFR,ESARO,Middle income,Member State,Least developed,AMC,Comoros,COM,2022-06-05T23:00:00.000Z,NR,NR,All vaccine types,118000
+AFR,ESARO,Middle income,Member State,Least developed,AMC,Lesotho,LSO,2022-09-08T23:00:00.000Z,BILATERAL_AGREEMENT,Sinovac,Sinovac - CoronaVac,200000
+AFR,ESARO,Middle income,Member State,Least developed,AMC,Lesotho,LSO,2022-06-05T23:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,72000
+AFR,ESARO,Middle income,Member State,Least developed,AMC,Lesotho,LSO,2022-09-08T23:00:00.000Z,COVAX_FACILITY,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,659600
+AFR,ESARO,Middle income,Member State,Least developed,AMC,Lesotho,LSO,2022-09-08T23:00:00.000Z,MULTILATERAL_AFRICAN,AstraZeneca,AstraZeneca - Vaxzevria,72000
+AFR,ESARO,Middle income,Member State,Least developed,AMC,Lesotho,LSO,2022-09-08T23:00:00.000Z,NR,NR,All vaccine types,931600
+AFR,ESARO,Middle income,Member State,Least developed,AMC,United Republic of Tanzania,TZA,2022-08-07T23:00:00.000Z,BILATERAL_AGREEMENT,Gamaleya Research Institute,Gamaleya - Gam-Covid-Vac,1000
+AFR,ESARO,Middle income,Member State,Least developed,AMC,United Republic of Tanzania,TZA,2022-09-08T23:00:00.000Z,BILATERAL_AGREEMENT,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,1065600
+AFR,ESARO,Middle income,Member State,Least developed,AMC,United Republic of Tanzania,TZA,2022-09-08T23:00:00.000Z,BILATERAL_AGREEMENT,Sinovac,Sinovac - CoronaVac,110000
+AFR,ESARO,Middle income,Member State,Least developed,AMC,United Republic of Tanzania,TZA,2022-09-08T23:00:00.000Z,COVAX_FACILITY,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,1058400
+AFR,ESARO,Middle income,Member State,Least developed,AMC,United Republic of Tanzania,TZA,2022-09-08T23:00:00.000Z,NR,NR,All vaccine types,2234000
+AFR,ESARO,Middle income,Member State,Least developed,AMC,Zambia,ZMB,2022-09-08T23:00:00.000Z,BILATERAL_AGREEMENT,Sinovac,Sinovac - CoronaVac,113600
+AFR,ESARO,Middle income,Member State,Least developed,AMC,Zambia,ZMB,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,113600
+AFR,ESARO,Middle income,Member State,Least developed,AMC,Zambia,ZMB,2022-08-07T23:00:00.000Z,COVAX_FACILITY,Gamaleya Research Institute,Gamaleya - Gam-Covid-Vac,432000
+AFR,ESARO,Middle income,Member State,Least developed,AMC,Zambia,ZMB,2022-11-11T00:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,119200
+AFR,ESARO,Middle income,Member State,Least developed,AMC,Zambia,ZMB,2022-11-11T00:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,228000
+AFR,ESARO,Middle income,Member State,Least developed,AMC,Zambia,ZMB,2022-11-11T00:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,410100
+AFR,ESARO,Middle income,Member State,Least developed,AMC,Zambia,ZMB,2022-11-11T00:00:00.000Z,COVAX_FACILITY,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,636000
+AFR,ESARO,Middle income,Member State,Least developed,AMC,Zambia,ZMB,2022-11-11T00:00:00.000Z,COVAX_FACILITY,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,638400
+AFR,ESARO,Middle income,Member State,Least developed,AMC,Zambia,ZMB,2022-11-11T00:00:00.000Z,COVAX_FACILITY,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,1008000
+AFR,ESARO,Middle income,Member State,Least developed,AMC,Zambia,ZMB,2022-11-11T00:00:00.000Z,COVAX_FACILITY,Moderna,Moderna - Spikevax,188400
+AFR,ESARO,Middle income,Member State,Least developed,AMC,Zambia,ZMB,2022-11-11T00:00:00.000Z,COVAX_FACILITY,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,580320
+AFR,ESARO,Middle income,Member State,Least developed,AMC,Zambia,ZMB,2022-11-11T00:00:00.000Z,COVAX_FACILITY,Serum Institute of India,SII - Covishield,228000
+AFR,ESARO,Middle income,Member State,Least developed,AMC,Zambia,ZMB,2022-11-11T00:00:00.000Z,MULTILATERAL_AFRICAN,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,604800
+AFR,ESARO,Middle income,Member State,Least developed,AMC,Zambia,ZMB,2022-11-11T00:00:00.000Z,NR,NR,All vaccine types,4754820
+AFR,MENA,Middle income,Member State,Developing,AMC,Algeria,DZA,2022-04-03T23:00:00.000Z,BILATERAL_AGREEMENT,AstraZeneca,AstraZeneca - Vaxzevria,50000
+AFR,MENA,Middle income,Member State,Developing,AMC,Algeria,DZA,2022-09-08T23:00:00.000Z,BILATERAL_AGREEMENT,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,700000
+AFR,MENA,Middle income,Member State,Developing,AMC,Algeria,DZA,2022-09-08T23:00:00.000Z,BILATERAL_AGREEMENT,Gamaleya Research Institute,Gamaleya - Gam-Covid-Vac,1000000
+AFR,MENA,Middle income,Member State,Developing,AMC,Algeria,DZA,2022-09-08T23:00:00.000Z,BILATERAL_AGREEMENT,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,604800
+AFR,MENA,Middle income,Member State,Developing,AMC,Algeria,DZA,2022-09-08T23:00:00.000Z,BILATERAL_AGREEMENT,Sinovac,Sinovac - CoronaVac,22975200
+AFR,MENA,Middle income,Member State,Developing,AMC,Algeria,DZA,2022-09-08T23:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,2253200
+AFR,MENA,Middle income,Member State,Developing,AMC,Algeria,DZA,2022-09-08T23:00:00.000Z,NR,NR,All vaccine types,27533200
+AFR,WCARO,Low income,Member State,Least developed,AMC,Burkina Faso,BFA,2022-05-04T23:00:00.000Z,BILATERAL_AGREEMENT,AstraZeneca,AstraZeneca - Vaxzevria,115000
+AFR,WCARO,Low income,Member State,Least developed,AMC,Burkina Faso,BFA,2022-09-08T23:00:00.000Z,BILATERAL_AGREEMENT,Sinovac,Sinovac - CoronaVac,1074000
+AFR,WCARO,Low income,Member State,Least developed,AMC,Burkina Faso,BFA,2022-09-08T23:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,222800
+AFR,WCARO,Low income,Member State,Least developed,AMC,Burkina Faso,BFA,2022-09-08T23:00:00.000Z,COVAX_FACILITY,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,453860
+AFR,WCARO,Low income,Member State,Least developed,AMC,Burkina Faso,BFA,2022-04-03T23:00:00.000Z,DONATION,AstraZeneca,AstraZeneca - Vaxzevria,115200
+AFR,WCARO,Low income,Member State,Least developed,AMC,Burkina Faso,BFA,2022-09-08T23:00:00.000Z,NR,NR,All vaccine types,1750660
+AFR,WCARO,Low income,Member State,Least developed,AMC,Central African Republic,CAF,2022-06-05T23:00:00.000Z,BILATERAL_AGREEMENT,AstraZeneca,AstraZeneca - Vaxzevria,35000
+AFR,WCARO,Low income,Member State,Least developed,AMC,Central African Republic,CAF,2022-09-08T23:00:00.000Z,BILATERAL_AGREEMENT,Sinovac,Sinovac - CoronaVac,150000
+AFR,WCARO,Low income,Member State,Least developed,AMC,Central African Republic,CAF,2022-09-08T23:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,163160
+AFR,WCARO,Low income,Member State,Least developed,AMC,Central African Republic,CAF,2022-09-08T23:00:00.000Z,COVAX_FACILITY,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,638400
+AFR,WCARO,Low income,Member State,Least developed,AMC,Central African Republic,CAF,2022-09-08T23:00:00.000Z,NR,NR,All vaccine types,951560
+AFR,WCARO,Low income,Member State,Least developed,AMC,Chad,TCD,2022-09-08T23:00:00.000Z,BILATERAL_AGREEMENT,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,200000
+AFR,WCARO,Low income,Member State,Least developed,AMC,Chad,TCD,2022-09-08T23:00:00.000Z,COVAX_FACILITY,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,333450
+AFR,WCARO,Low income,Member State,Least developed,AMC,Chad,TCD,2022-09-08T23:00:00.000Z,NR,NR,All vaccine types,533450
+AFR,WCARO,Low income,Member State,Least developed,AMC,Democratic Republic of the Congo,COD,2022-09-08T23:00:00.000Z,BILATERAL_AGREEMENT,Sinovac,Sinovac - CoronaVac,400000
+AFR,WCARO,Low income,Member State,Least developed,AMC,Democratic Republic of the Congo,COD,2022-09-08T23:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,527840
+AFR,WCARO,Low income,Member State,Least developed,AMC,Democratic Republic of the Congo,COD,2022-09-08T23:00:00.000Z,COVAX_FACILITY,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,756000
+AFR,WCARO,Low income,Member State,Least developed,AMC,Democratic Republic of the Congo,COD,2022-09-08T23:00:00.000Z,COVAX_FACILITY,Moderna,Moderna - Spikevax,250320
+AFR,WCARO,Low income,Member State,Least developed,AMC,Democratic Republic of the Congo,COD,2022-09-08T23:00:00.000Z,COVAX_FACILITY,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,250000
+AFR,WCARO,Low income,Member State,Least developed,AMC,Democratic Republic of the Congo,COD,2022-09-08T23:00:00.000Z,NR,NR,All vaccine types,2184160
+AFR,WCARO,Low income,Member State,Least developed,AMC,Gambia,GMB,2022-09-08T23:00:00.000Z,BILATERAL_AGREEMENT,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,355200
+AFR,WCARO,Low income,Member State,Least developed,AMC,Gambia,GMB,2022-09-08T23:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,89400
+AFR,WCARO,Low income,Member State,Least developed,AMC,Gambia,GMB,2022-06-05T23:00:00.000Z,MULTILATERAL_AFRICAN,AstraZeneca,AstraZeneca - Vaxzevria,15000
+AFR,WCARO,Low income,Member State,Least developed,AMC,Gambia,GMB,2022-09-08T23:00:00.000Z,MULTILATERAL_AFRICAN,Sinovac,Sinovac - CoronaVac,10000
+AFR,WCARO,Low income,Member State,Least developed,AMC,Gambia,GMB,2022-09-08T23:00:00.000Z,NR,NR,All vaccine types,454600
+AFR,WCARO,Low income,Member State,Least developed,AMC,Guinea,GIN,2022-06-05T23:00:00.000Z,BILATERAL_AGREEMENT,Sinovac,Sinovac - CoronaVac,300000
+AFR,WCARO,Low income,Member State,Least developed,AMC,Guinea,GIN,2022-07-06T23:00:00.000Z,BILATERAL_AGREEMENT,Serum Institute of India,SII - Covishield,1678000
+AFR,WCARO,Low income,Member State,Least developed,AMC,Guinea,GIN,2022-09-08T23:00:00.000Z,BILATERAL_AGREEMENT,AstraZeneca,AstraZeneca - Vaxzevria,569160
+AFR,WCARO,Low income,Member State,Least developed,AMC,Guinea,GIN,2022-09-08T23:00:00.000Z,BILATERAL_AGREEMENT,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,2100000
+AFR,WCARO,Low income,Member State,Least developed,AMC,Guinea,GIN,2022-09-08T23:00:00.000Z,BILATERAL_AGREEMENT,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,2101000
+AFR,WCARO,Low income,Member State,Least developed,AMC,Guinea,GIN,2022-09-08T23:00:00.000Z,BILATERAL_AGREEMENT,Gamaleya Research Institute,Gamaleya - Gam-Covid-Vac,97990
+AFR,WCARO,Low income,Member State,Least developed,AMC,Guinea,GIN,2022-06-05T23:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,194400
+AFR,WCARO,Low income,Member State,Least developed,AMC,Guinea,GIN,2022-09-08T23:00:00.000Z,COVAX_FACILITY,Gamaleya Research Institute,Gamaleya - Gam-Covid-Vac,407990
+AFR,WCARO,Low income,Member State,Least developed,AMC,Guinea,GIN,2022-09-08T23:00:00.000Z,COVAX_FACILITY,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,
+AFR,WCARO,Low income,Member State,Least developed,AMC,Guinea,GIN,2022-09-08T23:00:00.000Z,COVAX_FACILITY,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,444000
+AFR,WCARO,Low income,Member State,Least developed,AMC,Guinea,GIN,2022-09-08T23:00:00.000Z,COVAX_FACILITY,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,588510
+AFR,WCARO,Low income,Member State,Least developed,AMC,Guinea,GIN,2022-09-08T23:00:00.000Z,COVAX_FACILITY,Serum Institute of India,SII - Covishield,399360
+AFR,WCARO,Low income,Member State,Least developed,AMC,Guinea,GIN,2022-09-08T23:00:00.000Z,COVAX_FACILITY,Serum Institute of India,Sinovac - CoronaVac,708000
+AFR,WCARO,Low income,Member State,Least developed,AMC,Guinea,GIN,2022-09-08T23:00:00.000Z,COVAX_FACILITY,Sinovac,Sinovac - CoronaVac,300000
+AFR,WCARO,Low income,Member State,Least developed,AMC,Guinea,GIN,2022-07-06T23:00:00.000Z,MULTILATERAL_AFRICAN,AstraZeneca,AstraZeneca - Vaxzevria,69000
+AFR,WCARO,Low income,Member State,Least developed,AMC,Guinea,GIN,2022-09-08T23:00:00.000Z,MULTILATERAL_AFRICAN,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,336000
+AFR,WCARO,Low income,Member State,Least developed,AMC,Guinea,GIN,2022-09-08T23:00:00.000Z,MULTILATERAL_AFRICAN,Serum Institute of India,SII - Covishield,69000
+AFR,WCARO,Low income,Member State,Least developed,AMC,Guinea,GIN,2022-09-08T23:00:00.000Z,NR,NR,All vaccine types,4298860
+AFR,WCARO,Low income,Member State,Least developed,AMC,Guinea,GIN,2022-09-08T23:00:00.000Z,NR,NR,All vaccine types,4410660
+AFR,WCARO,Low income,Member State,Least developed,AMC,Guinea-Bissau,GNB,2022-09-08T23:00:00.000Z,BILATERAL_AGREEMENT,AstraZeneca,AstraZeneca - Vaxzevria,173600
+AFR,WCARO,Low income,Member State,Least developed,AMC,Guinea-Bissau,GNB,2022-09-08T23:00:00.000Z,BILATERAL_AGREEMENT,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,302400
+AFR,WCARO,Low income,Member State,Least developed,AMC,Guinea-Bissau,GNB,2022-09-08T23:00:00.000Z,BILATERAL_AGREEMENT,Sinovac,Sinovac - CoronaVac,306070
+AFR,WCARO,Low income,Member State,Least developed,AMC,Guinea-Bissau,GNB,2022-04-03T23:00:00.000Z,COVAX_FACILITY,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,28800
+AFR,WCARO,Low income,Member State,Least developed,AMC,Guinea-Bissau,GNB,2022-07-06T23:00:00.000Z,MULTILATERAL_AFRICAN,AstraZeneca,AstraZeneca - Vaxzevria,25787
+AFR,WCARO,Low income,Member State,Least developed,AMC,Guinea-Bissau,GNB,2022-07-06T23:00:00.000Z,MULTILATERAL_AFRICAN,Sinovac,Sinovac - CoronaVac,6000
+AFR,WCARO,Low income,Member State,Least developed,AMC,Guinea-Bissau,GNB,2022-09-08T23:00:00.000Z,NR,NR,All vaccine types,782070
+AFR,WCARO,Low income,Member State,Least developed,AMC,Liberia,LBR,2022-09-08T23:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,315000
+AFR,WCARO,Low income,Member State,Least developed,AMC,Liberia,LBR,2022-09-08T23:00:00.000Z,COVAX_FACILITY,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,578600
+AFR,WCARO,Low income,Member State,Least developed,AMC,Liberia,LBR,2022-06-05T23:00:00.000Z,MULTILATERAL_AFRICAN,AstraZeneca,AstraZeneca - Vaxzevria,27000
+AFR,WCARO,Low income,Member State,Least developed,AMC,Liberia,LBR,2022-09-08T23:00:00.000Z,NR,NR,All vaccine types,893600
+AFR,WCARO,Low income,Member State,Least developed,AMC,Mali,MLI,2022-09-08T23:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,396000
+AFR,WCARO,Low income,Member State,Least developed,AMC,Mali,MLI,2022-09-08T23:00:00.000Z,COVAX_FACILITY,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,79200
+AFR,WCARO,Low income,Member State,Least developed,AMC,Mali,MLI,2022-09-08T23:00:00.000Z,COVAX_FACILITY,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,151200
+AFR,WCARO,Low income,Member State,Least developed,AMC,Mali,MLI,2022-09-08T23:00:00.000Z,COVAX_FACILITY,Sinovac,Sinovac - CoronaVac,835200
+AFR,WCARO,Low income,Member State,Least developed,AMC,Mali,MLI,2022-09-08T23:00:00.000Z,NR,NR,All vaccine types,1461600
+AFR,WCARO,Low income,Member State,Least developed,AMC,Niger,NER,2022-06-05T23:00:00.000Z,BILATERAL_AGREEMENT,AstraZeneca,AstraZeneca - Vaxzevria,25000
+AFR,WCARO,Low income,Member State,Least developed,AMC,Niger,NER,2022-07-06T23:00:00.000Z,BILATERAL_AGREEMENT,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,425000
+AFR,WCARO,Low income,Member State,Least developed,AMC,Niger,NER,2022-09-08T23:00:00.000Z,BILATERAL_AGREEMENT,Sinovac,Sinovac - CoronaVac,1123600
+AFR,WCARO,Low income,Member State,Least developed,AMC,Niger,NER,2022-10-09T23:00:00.000Z,BILATERAL_AGREEMENT,Beijing Bio-Institute Biological Products (CNBG),Wuhan CNBG - Inactivated,0
+AFR,WCARO,Low income,Member State,Least developed,AMC,Niger,NER,2022-06-05T23:00:00.000Z,COVAX_FACILITY,Serum Institute of India,AstraZeneca - Vaxzevria,
+AFR,WCARO,Low income,Member State,Least developed,AMC,Niger,NER,2022-10-09T23:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,0
+AFR,WCARO,Low income,Member State,Least developed,AMC,Niger,NER,2022-10-09T23:00:00.000Z,COVAX_FACILITY,Beijing Bio-Institute Biological Products (CNBG),Wuhan CNBG - Inactivated,
+AFR,WCARO,Low income,Member State,Least developed,AMC,Niger,NER,2022-10-09T23:00:00.000Z,COVAX_FACILITY,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,0
+AFR,WCARO,Low income,Member State,Least developed,AMC,Niger,NER,2022-10-09T23:00:00.000Z,COVAX_FACILITY,Serum Institute of India,SII - Covishield,0
+AFR,WCARO,Low income,Member State,Least developed,AMC,Niger,NER,2022-10-09T23:00:00.000Z,NR,NR,All vaccine types,0
+AFR,WCARO,Low income,Member State,Least developed,AMC,Sierra Leone,SLE,2022-05-04T23:00:00.000Z,BILATERAL_AGREEMENT,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,240000
+AFR,WCARO,Low income,Member State,Least developed,AMC,Sierra Leone,SLE,2022-09-08T23:00:00.000Z,BILATERAL_AGREEMENT,Sinovac,Sinovac - CoronaVac,440000
+AFR,WCARO,Low income,Member State,Least developed,AMC,Sierra Leone,SLE,2022-09-08T23:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,234000
+AFR,WCARO,Low income,Member State,Least developed,AMC,Sierra Leone,SLE,2022-09-08T23:00:00.000Z,COVAX_FACILITY,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,336000
+AFR,WCARO,Low income,Member State,Least developed,AMC,Sierra Leone,SLE,2022-09-08T23:00:00.000Z,COVAX_FACILITY,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,113490
+AFR,WCARO,Low income,Member State,Least developed,AMC,Sierra Leone,SLE,2022-05-04T23:00:00.000Z,MULTILATERAL_AFRICAN,AstraZeneca,AstraZeneca - Vaxzevria,42000
+AFR,WCARO,Low income,Member State,Least developed,AMC,Sierra Leone,SLE,2022-09-08T23:00:00.000Z,NR,NR,All vaccine types,1123490
+AFR,WCARO,Low income,Member State,Least developed,AMC,Togo,TGO,2022-09-08T23:00:00.000Z,BILATERAL_AGREEMENT,Sinovac,Sinovac - CoronaVac,1427200
+AFR,WCARO,Low income,Member State,Least developed,AMC,Togo,TGO,2022-09-08T23:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,599360
+AFR,WCARO,Low income,Member State,Least developed,AMC,Togo,TGO,2022-09-08T23:00:00.000Z,COVAX_FACILITY,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,707850
+AFR,WCARO,Low income,Member State,Least developed,AMC,Togo,TGO,2022-06-05T23:00:00.000Z,MULTILATERAL_AFRICAN,AstraZeneca,AstraZeneca - Vaxzevria,120000
+AFR,WCARO,Low income,Member State,Least developed,AMC,Togo,TGO,2022-09-08T23:00:00.000Z,MULTILATERAL_AFRICAN,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,592800
+AFR,WCARO,Low income,Member State,Least developed,AMC,Togo,TGO,2022-09-08T23:00:00.000Z,NR,NR,All vaccine types,3327210
+AFR,WCARO,Middle income,Member State,Developing,AMC,Cabo Verde,CPV,2022-06-05T23:00:00.000Z,BILATERAL_AGREEMENT,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,50000
+AFR,WCARO,Middle income,Member State,Developing,AMC,Cabo Verde,CPV,2022-09-08T23:00:00.000Z,BILATERAL_AGREEMENT,AstraZeneca,AstraZeneca - Vaxzevria,559200
+AFR,WCARO,Middle income,Member State,Developing,AMC,Cabo Verde,CPV,2022-06-05T23:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,55200
+AFR,WCARO,Middle income,Member State,Developing,AMC,Cabo Verde,CPV,2022-09-08T23:00:00.000Z,COVAX_FACILITY,Moderna,Moderna - Spikevax,100100
+AFR,WCARO,Middle income,Member State,Developing,AMC,Cabo Verde,CPV,2022-09-08T23:00:00.000Z,COVAX_FACILITY,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,5850
+AFR,WCARO,Middle income,Member State,Developing,AMC,Cabo Verde,CPV,2022-09-08T23:00:00.000Z,COVAX_FACILITY,Sinovac,Sinovac - CoronaVac,50000
+AFR,WCARO,Middle income,Member State,Developing,AMC,Cabo Verde,CPV,2022-09-08T23:00:00.000Z,NR,NR,All vaccine types,715150
+AFR,WCARO,Middle income,Member State,Developing,AMC,Cameroon,CMR,2022-09-08T23:00:00.000Z,BILATERAL_AGREEMENT,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,200000
+AFR,WCARO,Middle income,Member State,Developing,AMC,Cameroon,CMR,2022-09-08T23:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,391200
+AFR,WCARO,Middle income,Member State,Developing,AMC,Cameroon,CMR,2022-09-08T23:00:00.000Z,MULTILATERAL_AFRICAN,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,461450
+AFR,WCARO,Middle income,Member State,Developing,AMC,Cameroon,CMR,2022-09-08T23:00:00.000Z,NR,NR,All vaccine types,1052650
+AFR,WCARO,Middle income,Member State,Developing,AMC,Congo,COG,2022-05-04T23:00:00.000Z,BILATERAL_AGREEMENT,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,141220
+AFR,WCARO,Middle income,Member State,Developing,AMC,Congo,COG,2022-09-08T23:00:00.000Z,BILATERAL_AGREEMENT,Gamaleya Research Institute,Gamaleya - Gam-Covid-Vac,134000
+AFR,WCARO,Middle income,Member State,Developing,AMC,Congo,COG,2022-09-08T23:00:00.000Z,BILATERAL_AGREEMENT,Sinovac,Sinovac - CoronaVac,609220
+AFR,WCARO,Middle income,Member State,Developing,AMC,Congo,COG,2022-09-08T23:00:00.000Z,COVAX_FACILITY,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,355200
+AFR,WCARO,Middle income,Member State,Developing,AMC,Congo,COG,2022-09-08T23:00:00.000Z,NR,NR,All vaccine types,1098420
+AFR,WCARO,Middle income,Member State,Developing,AMC,Côte d'Ivoire,CIV,2022-04-03T23:00:00.000Z,BILATERAL_AGREEMENT,Gamaleya Research Institute,Gamaleya - Gam-Covid-Vac,50000
+AFR,WCARO,Middle income,Member State,Developing,AMC,Côte d'Ivoire,CIV,2022-05-04T23:00:00.000Z,BILATERAL_AGREEMENT,AstraZeneca,SII - Covishield,75000
+AFR,WCARO,Middle income,Member State,Developing,AMC,Côte d'Ivoire,CIV,2022-09-08T23:00:00.000Z,BILATERAL_AGREEMENT,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,1654380
+AFR,WCARO,Middle income,Member State,Developing,AMC,Côte d'Ivoire,CIV,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,
+AFR,WCARO,Middle income,Member State,Developing,AMC,Côte d'Ivoire,CIV,2022-05-04T23:00:00.000Z,COVAX_FACILITY,AstraZeneca,SII - Covishield,654000
+AFR,WCARO,Middle income,Member State,Developing,AMC,Côte d'Ivoire,CIV,2022-09-08T23:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,2373890
+AFR,WCARO,Middle income,Member State,Developing,AMC,Côte d'Ivoire,CIV,2022-09-08T23:00:00.000Z,COVAX_FACILITY,Sinovac,Sinovac - CoronaVac,2845271
+AFR,WCARO,Middle income,Member State,Developing,AMC,Côte d'Ivoire,CIV,2022-11-11T00:00:00.000Z,COVAX_FACILITY,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,
+AFR,WCARO,Middle income,Member State,Developing,AMC,Côte d'Ivoire,CIV,2022-11-11T00:00:00.000Z,COVAX_FACILITY,Serum Institute of India,SII - Covishield,
+AFR,WCARO,Middle income,Member State,Developing,AMC,Côte d'Ivoire,CIV,2022-11-11T00:00:00.000Z,MULTILATERAL_AFRICAN,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,
+AFR,WCARO,Middle income,Member State,Developing,AMC,Côte d'Ivoire,CIV,2022-11-11T00:00:00.000Z,NR,NR,All vaccine types,
+AFR,WCARO,Middle income,Member State,Developing,AMC,Ghana,GHA,2022-04-03T23:00:00.000Z,BILATERAL_AGREEMENT,AstraZeneca,AstraZeneca - Vaxzevria,52000
+AFR,WCARO,Middle income,Member State,Developing,AMC,Ghana,GHA,2022-04-03T23:00:00.000Z,BILATERAL_AGREEMENT,Serum Institute of India,AstraZeneca - Vaxzevria,2000
+AFR,WCARO,Middle income,Member State,Developing,AMC,Ghana,GHA,2022-09-08T23:00:00.000Z,BILATERAL_AGREEMENT,Gamaleya Research Institute,Gamaleya - Gam-Covid-Vac,21000
+AFR,WCARO,Middle income,Member State,Developing,AMC,Ghana,GHA,2022-04-03T23:00:00.000Z,COVAX_FACILITY,Serum Institute of India,AstraZeneca - Vaxzevria,600000
+AFR,WCARO,Middle income,Member State,Developing,AMC,Ghana,GHA,2022-09-08T23:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,3598770
+AFR,WCARO,Middle income,Member State,Developing,AMC,Ghana,GHA,2022-09-08T23:00:00.000Z,COVAX_FACILITY,Moderna,Moderna - Spikevax,1229620
+AFR,WCARO,Middle income,Member State,Developing,AMC,Ghana,GHA,2022-09-08T23:00:00.000Z,COVAX_FACILITY,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,1330290
+AFR,WCARO,Middle income,Member State,Developing,AMC,Ghana,GHA,2022-04-03T23:00:00.000Z,MULTILATERAL_AFRICAN,AstraZeneca,AstraZeneca - Vaxzevria,314850
+AFR,WCARO,Middle income,Member State,Developing,AMC,Ghana,GHA,2022-09-08T23:00:00.000Z,MULTILATERAL_AFRICAN,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,737200
+AFR,WCARO,Middle income,Member State,Developing,AMC,Ghana,GHA,2022-09-08T23:00:00.000Z,MULTILATERAL_AFRICAN,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,1178450
+AFR,WCARO,Middle income,Member State,Developing,AMC,Ghana,GHA,2022-09-08T23:00:00.000Z,NR,NR,All vaccine types,8095330
+AFR,WCARO,Middle income,Member State,Developing,AMC,Nigeria,NGA,2022-06-05T23:00:00.000Z,BILATERAL_AGREEMENT,AstraZeneca,AstraZeneca - Vaxzevria,100000
+AFR,WCARO,Middle income,Member State,Developing,AMC,Nigeria,NGA,2022-09-08T23:00:00.000Z,BILATERAL_AGREEMENT,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,1911600
+AFR,WCARO,Middle income,Member State,Developing,AMC,Nigeria,NGA,2022-09-08T23:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,8794240
+AFR,WCARO,Middle income,Member State,Developing,AMC,Nigeria,NGA,2022-09-08T23:00:00.000Z,COVAX_FACILITY,Moderna,Moderna - Spikevax,4000080
+AFR,WCARO,Middle income,Member State,Developing,AMC,Nigeria,NGA,2022-09-08T23:00:00.000Z,COVAX_FACILITY,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,3577860
+AFR,WCARO,Middle income,Member State,Developing,AMC,Nigeria,NGA,2022-09-08T23:00:00.000Z,NR,NR,All vaccine types,18283780
+AFR,WCARO,Middle income,Member State,Developing,No,Equatorial Guinea,GNQ,2022-09-08T23:00:00.000Z,BILATERAL_AGREEMENT,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,820000
+AFR,WCARO,Middle income,Member State,Developing,No,Equatorial Guinea,GNQ,2022-09-08T23:00:00.000Z,NR,NR,All vaccine types,820000
+AFR,WCARO,Middle income,Member State,Developing,No,Gabon,GAB,2022-06-05T23:00:00.000Z,BILATERAL_AGREEMENT,Gamaleya Research Institute,Gamaleya - Gam-Covid-Vac,10000
+AFR,WCARO,Middle income,Member State,Developing,No,Gabon,GAB,2022-09-08T23:00:00.000Z,BILATERAL_AGREEMENT,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,400000
+AFR,WCARO,Middle income,Member State,Developing,No,Gabon,GAB,2022-09-08T23:00:00.000Z,COVAX_FACILITY,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,168000
+AFR,WCARO,Middle income,Member State,Developing,No,Gabon,GAB,2022-09-08T23:00:00.000Z,COVAX_FACILITY,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,100620
+AFR,WCARO,Middle income,Member State,Developing,No,Gabon,GAB,2022-09-08T23:00:00.000Z,NR,NR,All vaccine types,668620
+AFR,WCARO,Middle income,Member State,Least developed,AMC,Benin,BEN,2022-06-05T23:00:00.000Z,BILATERAL_AGREEMENT,AstraZeneca,AstraZeneca - Vaxzevria,144000
+AFR,WCARO,Middle income,Member State,Least developed,AMC,Benin,BEN,2022-09-08T23:00:00.000Z,BILATERAL_AGREEMENT,Sinovac,Sinovac - CoronaVac,203000
+AFR,WCARO,Middle income,Member State,Least developed,AMC,Benin,BEN,2022-07-06T23:00:00.000Z,COVAX_FACILITY,Sinovac,Sinovac - CoronaVac,203000
+AFR,WCARO,Middle income,Member State,Least developed,AMC,Benin,BEN,2022-09-08T23:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,144000
+AFR,WCARO,Middle income,Member State,Least developed,AMC,Benin,BEN,2022-09-08T23:00:00.000Z,COVAX_FACILITY,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,410400
+AFR,WCARO,Middle income,Member State,Least developed,AMC,Benin,BEN,2022-09-08T23:00:00.000Z,COVAX_FACILITY,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,332280
+AFR,WCARO,Middle income,Member State,Least developed,AMC,Benin,BEN,2022-09-08T23:00:00.000Z,NR,NR,All vaccine types,1089680
+AFR,WCARO,Middle income,Member State,Least developed,AMC,Mauritania,MRT,2022-07-06T23:00:00.000Z,BILATERAL_AGREEMENT,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,437140
+AFR,WCARO,Middle income,Member State,Least developed,AMC,Mauritania,MRT,2022-07-06T23:00:00.000Z,BILATERAL_AGREEMENT,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,302400
+AFR,WCARO,Middle income,Member State,Least developed,AMC,Mauritania,MRT,2022-09-08T23:00:00.000Z,BILATERAL_AGREEMENT,AstraZeneca,AstraZeneca - Vaxzevria,922350
+AFR,WCARO,Middle income,Member State,Least developed,AMC,Mauritania,MRT,2022-07-06T23:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,204150
+AFR,WCARO,Middle income,Member State,Least developed,AMC,Mauritania,MRT,2022-09-08T23:00:00.000Z,COVAX_FACILITY,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,410400
+AFR,WCARO,Middle income,Member State,Least developed,AMC,Mauritania,MRT,2022-09-08T23:00:00.000Z,COVAX_FACILITY,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,104130
+AFR,WCARO,Middle income,Member State,Least developed,AMC,Mauritania,MRT,2022-09-08T23:00:00.000Z,COVAX_FACILITY,Sinovac,Sinovac - CoronaVac,738000
+AFR,WCARO,Middle income,Member State,Least developed,AMC,Mauritania,MRT,2022-04-03T23:00:00.000Z,MULTILATERAL_AFRICAN,AstraZeneca,AstraZeneca - Vaxzevria,27000
+AFR,WCARO,Middle income,Member State,Least developed,AMC,Mauritania,MRT,2022-09-08T23:00:00.000Z,NR,NR,All vaccine types,2174880
+AFR,WCARO,Middle income,Member State,Least developed,AMC,Sao Tome and Principe,STP,2022-09-08T23:00:00.000Z,BILATERAL_AGREEMENT,AstraZeneca,AstraZeneca - Vaxzevria,49000
+AFR,WCARO,Middle income,Member State,Least developed,AMC,Sao Tome and Principe,STP,2022-09-08T23:00:00.000Z,BILATERAL_AGREEMENT,Sinovac,Sinovac - CoronaVac,100000
+AFR,WCARO,Middle income,Member State,Least developed,AMC,Sao Tome and Principe,STP,2022-09-08T23:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,48500
+AFR,WCARO,Middle income,Member State,Least developed,AMC,Sao Tome and Principe,STP,2022-09-08T23:00:00.000Z,MULTILATERAL_AFRICAN,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,79200
+AFR,WCARO,Middle income,Member State,Least developed,AMC,Sao Tome and Principe,STP,2022-09-08T23:00:00.000Z,NR,NR,All vaccine types,276700
+AFR,WCARO,Middle income,Member State,Least developed,AMC,Senegal,SEN,2022-06-05T23:00:00.000Z,BILATERAL_AGREEMENT,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,200000
+AFR,WCARO,Middle income,Member State,Least developed,AMC,Senegal,SEN,2022-09-08T23:00:00.000Z,BILATERAL_AGREEMENT,AstraZeneca,AstraZeneca - Vaxzevria,1768260
+AFR,WCARO,Middle income,Member State,Least developed,AMC,Senegal,SEN,2022-09-08T23:00:00.000Z,BILATERAL_AGREEMENT,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,796800
+AFR,WCARO,Middle income,Member State,Least developed,AMC,Senegal,SEN,2022-06-05T23:00:00.000Z,COVAX_FACILITY,Serum Institute of India,AstraZeneca - Vaxzevria,
+AFR,WCARO,Middle income,Member State,Least developed,AMC,Senegal,SEN,2022-09-08T23:00:00.000Z,COVAX_FACILITY,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,265590
+AFR,WCARO,Middle income,Member State,Least developed,AMC,Senegal,SEN,2022-09-08T23:00:00.000Z,COVAX_FACILITY,Sinovac,Sinovac - CoronaVac,1109318
+AFR,WCARO,Middle income,Member State,Least developed,AMC,Senegal,SEN,2022-09-08T23:00:00.000Z,NR,NR,All vaccine types,3939968
+AMR,,High income,Territory or Area,Developing,,Bermuda,BMU,2022-07-06T23:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,26400
+AMR,,High income,Territory or Area,Developing,,Bermuda,BMU,2022-07-06T23:00:00.000Z,DONATION,AstraZeneca,AstraZeneca - Vaxzevria,
+AMR,,High income,Territory or Area,Developing,,Bermuda,BMU,2022-07-06T23:00:00.000Z,DONATION,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,
+AMR,,High income,Territory or Area,Developing,,Bermuda,BMU,2022-07-06T23:00:00.000Z,NR,NR,All vaccine types,26400
+AMR,Dev,High income,Member State,Developed economy,No,United States of America,USA,2022-07-06T23:00:00.000Z,NR,NR,All vaccine types,600000000
+AMR,Dev,High income,Member State,Developed economy,No,United States of America,USA,2022-07-06T23:00:00.000Z,OTHER,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,100000000
+AMR,Dev,High income,Member State,Developed economy,No,United States of America,USA,2022-07-06T23:00:00.000Z,OTHER,Moderna,Moderna - Spikevax,300000000
+AMR,Dev,High income,Member State,Developed economy,No,United States of America,USA,2022-07-06T23:00:00.000Z,OTHER,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,200000000
+AMR,Dev,High income,Member State,Developed economy,Self-financing,Canada,CAN,2022-03-03T00:00:00.000Z,BILATERAL_AGREEMENT,AstraZeneca,Unknown Vaccine,20000000
+AMR,Dev,High income,Member State,Developed economy,Self-financing,Canada,CAN,2022-03-03T00:00:00.000Z,BILATERAL_AGREEMENT,Serum Institute of India,Unknown Vaccine,20000000
+AMR,Dev,High income,Member State,Developed economy,Self-financing,Canada,CAN,2022-08-07T23:00:00.000Z,BILATERAL_AGREEMENT,AstraZeneca,AstraZeneca - Vaxzevria,20000000
+AMR,Dev,High income,Member State,Developed economy,Self-financing,Canada,CAN,2022-08-07T23:00:00.000Z,BILATERAL_AGREEMENT,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,38000000
+AMR,Dev,High income,Member State,Developed economy,Self-financing,Canada,CAN,2022-08-07T23:00:00.000Z,BILATERAL_AGREEMENT,Medicago Inc,Medicago - VLP,76000000
+AMR,Dev,High income,Member State,Developed economy,Self-financing,Canada,CAN,2022-08-07T23:00:00.000Z,BILATERAL_AGREEMENT,Moderna,Moderna - Spikevax,44000000
+AMR,Dev,High income,Member State,Developed economy,Self-financing,Canada,CAN,2022-08-07T23:00:00.000Z,BILATERAL_AGREEMENT,Novavax,Novavax - Covavax,76000000
+AMR,Dev,High income,Member State,Developed economy,Self-financing,Canada,CAN,2022-08-07T23:00:00.000Z,BILATERAL_AGREEMENT,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,76000000
+AMR,Dev,High income,Member State,Developed economy,Self-financing,Canada,CAN,2022-08-07T23:00:00.000Z,BILATERAL_AGREEMENT,Sanofi Pasteur - GSK,Sanofi GSK - Vidprevtyn,72000000
+AMR,Dev,High income,Member State,Developed economy,Self-financing,Canada,CAN,2022-08-07T23:00:00.000Z,BILATERAL_AGREEMENT,Serum Institute of India,AstraZeneca - Vaxzevria,2000000
+AMR,Dev,High income,Member State,Developed economy,Self-financing,Canada,CAN,2022-03-03T00:00:00.000Z,COVAX_FACILITY,AstraZeneca,Unknown Vaccine,1624800
+AMR,Dev,High income,Member State,Developed economy,Self-financing,Canada,CAN,2022-08-07T23:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,1624800
+AMR,Dev,High income,Member State,Developed economy,Self-financing,Canada,CAN,2022-03-03T00:00:00.000Z,DONATION,AstraZeneca,Unknown Vaccine,1500000
+AMR,Dev,High income,Member State,Developed economy,Self-financing,Canada,CAN,2022-08-07T23:00:00.000Z,NR,NR,All vaccine types,405624800
+AMR,LACRO,,Territory or Area,Developing,,Anguilla,AIA,2022-12-12T00:00:00.000Z,NR,NR,All vaccine types,24010
+AMR,LACRO,,Territory or Area,Developing,,Anguilla,AIA,2022-12-12T00:00:00.000Z,OTHER,AstraZeneca,AstraZeneca - Vaxzevria,20500
+AMR,LACRO,,Territory or Area,Developing,,Anguilla,AIA,2022-12-12T00:00:00.000Z,OTHER,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,3510
+AMR,LACRO,High income,Territory or Area,Developing,,British Virgin Islands,VGB,2022-05-04T23:00:00.000Z,DONATION,AstraZeneca,AstraZeneca - Vaxzevria,38000
+AMR,LACRO,High income,Territory or Area,Developing,,British Virgin Islands,VGB,2022-05-04T23:00:00.000Z,NR,NR,All vaccine types,38000
+AMR,LACRO,High income,Member State,Developing,Self-financing,Antigua and Barbuda,ATG,2022-07-06T23:00:00.000Z,DONATION,Serum Institute of India,AstraZeneca - Vaxzevria,5000
+AMR,LACRO,High income,Member State,Developing,Self-financing,Antigua and Barbuda,ATG,2022-09-08T23:00:00.000Z,DONATION,AnGes Biopharmaceutical,Pfizer BioNTech - Comirnaty,17500
+AMR,LACRO,High income,Member State,Developing,Self-financing,Antigua and Barbuda,ATG,2022-09-08T23:00:00.000Z,DONATION,AstraZeneca,AstraZeneca - Vaxzevria,12000
+AMR,LACRO,High income,Member State,Developing,Self-financing,Antigua and Barbuda,ATG,2022-09-08T23:00:00.000Z,DONATION,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,38500
+AMR,LACRO,High income,Member State,Developing,Self-financing,Antigua and Barbuda,ATG,2022-09-08T23:00:00.000Z,DONATION,Vaxxinity Inc,Gamaleya - Sputnik-Light,2000
+AMR,LACRO,High income,Member State,Developing,Self-financing,Antigua and Barbuda,ATG,2022-09-08T23:00:00.000Z,NR,NR,All vaccine types,70000
+AMR,LACRO,High income,Member State,Developing,Self-financing,Barbados,BRB,2022-12-12T00:00:00.000Z,BILATERAL_AGREEMENT,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,30000
+AMR,LACRO,High income,Member State,Developing,Self-financing,Barbados,BRB,2022-12-12T00:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,100800
+AMR,LACRO,High income,Member State,Developing,Self-financing,Barbados,BRB,2022-12-12T00:00:00.000Z,COVAX_FACILITY,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,14040
+AMR,LACRO,High income,Member State,Developing,Self-financing,Barbados,BRB,2022-12-12T00:00:00.000Z,DONATION,AstraZeneca,AstraZeneca - Vaxzevria,60000
+AMR,LACRO,High income,Member State,Developing,Self-financing,Barbados,BRB,2022-12-12T00:00:00.000Z,DONATION,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,30000
+AMR,LACRO,High income,Member State,Developing,Self-financing,Barbados,BRB,2022-12-12T00:00:00.000Z,DONATION,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,140200
+AMR,LACRO,High income,Member State,Developing,Self-financing,Barbados,BRB,2022-12-12T00:00:00.000Z,DONATION,Serum Institute of India,SII - Covishield,90000
+AMR,LACRO,High income,Member State,Developing,Self-financing,Barbados,BRB,2022-12-12T00:00:00.000Z,NR,NR,All vaccine types,472040
+AMR,LACRO,High income,Member State,Developing,Self-financing,Barbados,BRB,2022-12-12T00:00:00.000Z,OTHER,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,7000
+AMR,LACRO,High income,Member State,Developing,Self-financing,Chile,CHL,2022-05-04T23:00:00.000Z,BILATERAL_AGREEMENT,CanSino Biologicals,CanSino - Convidecia,300000
+AMR,LACRO,High income,Member State,Developing,Self-financing,Chile,CHL,2022-05-04T23:00:00.000Z,BILATERAL_AGREEMENT,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,2589600
+AMR,LACRO,High income,Member State,Developing,Self-financing,Chile,CHL,2022-05-04T23:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,489600
+AMR,LACRO,High income,Member State,Developing,Self-financing,Chile,CHL,2022-05-04T23:00:00.000Z,MULTILATERAL_OTHER,Sinovac,Sinovac - CoronaVac,17100000
+AMR,LACRO,High income,Member State,Developing,Self-financing,Chile,CHL,2022-05-04T23:00:00.000Z,NR,NR,All vaccine types,20479200
+AMR,LACRO,High income,Member State,Developing,Self-financing,Saint Kitts and Nevis,KNA,2022-04-03T23:00:00.000Z,BILATERAL_AGREEMENT,AstraZeneca,AstraZeneca - Vaxzevria,21600
+AMR,LACRO,High income,Member State,Developing,Self-financing,Saint Kitts and Nevis,KNA,2022-12-12T00:00:00.000Z,COVAX_FACILITY,Serum Institute of India,SII - Covishield,41500
+AMR,LACRO,High income,Member State,Developing,Self-financing,Saint Kitts and Nevis,KNA,2022-06-05T23:00:00.000Z,DONATION,AstraZeneca,AstraZeneca - Vaxzevria,5000
+AMR,LACRO,High income,Member State,Developing,Self-financing,Saint Kitts and Nevis,KNA,2022-06-05T23:00:00.000Z,DONATION,Serum Institute of India,SII - Covishield,20000
+AMR,LACRO,High income,Member State,Developing,Self-financing,Saint Kitts and Nevis,KNA,2022-12-12T00:00:00.000Z,DONATION,AstraZeneca,SII - Covishield,5000
+AMR,LACRO,High income,Member State,Developing,Self-financing,Saint Kitts and Nevis,KNA,2022-12-12T00:00:00.000Z,DONATION,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,11700
+AMR,LACRO,High income,Member State,Developing,Self-financing,Saint Kitts and Nevis,KNA,2022-12-12T00:00:00.000Z,NR,NR,All vaccine types,79800
+AMR,LACRO,High income,Member State,Developing,Self-financing,Saint Kitts and Nevis,KNA,2022-06-05T23:00:00.000Z,OTHER,AstraZeneca,AstraZeneca - Vaxzevria,21600
+AMR,LACRO,High income,Member State,Developing,Self-financing,Saint Kitts and Nevis,KNA,2022-12-12T00:00:00.000Z,OTHER,AstraZeneca,SII - Covishield,21600
+AMR,LACRO,High income,Member State,Developing,Self-financing,Trinidad and Tobago,TTO,2022-08-07T23:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,67200
+AMR,LACRO,High income,Member State,Developing,Self-financing,Trinidad and Tobago,TTO,2022-08-07T23:00:00.000Z,DONATION,AstraZeneca,AstraZeneca - Vaxzevria,26000
+AMR,LACRO,High income,Member State,Developing,Self-financing,Trinidad and Tobago,TTO,2022-08-07T23:00:00.000Z,DONATION,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,100000
+AMR,LACRO,High income,Member State,Developing,Self-financing,Trinidad and Tobago,TTO,2022-08-07T23:00:00.000Z,DONATION,Bharat Biotech,Pfizer BioNTech - Comirnaty,305770
+AMR,LACRO,High income,Member State,Developing,Self-financing,Trinidad and Tobago,TTO,2022-08-07T23:00:00.000Z,DONATION,Serum Institute of India,SII - Covishield,27000
+AMR,LACRO,High income,Member State,Developing,Self-financing,Trinidad and Tobago,TTO,2022-08-07T23:00:00.000Z,MULTILATERAL_AFRICAN,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,800000
+AMR,LACRO,High income,Member State,Developing,Self-financing,Trinidad and Tobago,TTO,2022-08-07T23:00:00.000Z,NR,NR,All vaccine types,1325970
+AMR,LACRO,High income,Member State,Developing,Self-financing,Uruguay,URY,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,3355560
+AMR,LACRO,High income,Member State,Developing,Self-financing,Uruguay,URY,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,Sinovac,Sinovac - CoronaVac,3850000
+AMR,LACRO,High income,Member State,Developing,Self-financing,Uruguay,URY,2022-11-11T00:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,48000
+AMR,LACRO,High income,Member State,Developing,Self-financing,Uruguay,URY,2022-11-11T00:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,50400
+AMR,LACRO,High income,Member State,Developing,Self-financing,Uruguay,URY,2022-11-11T00:00:00.000Z,NR,NR,All vaccine types,7354360
+AMR,LACRO,Middle income,Member State,Developing,AMC,Bolivia (Plurinational State of),BOL,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,8700000
+AMR,LACRO,Middle income,Member State,Developing,AMC,Bolivia (Plurinational State of),BOL,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,Gamaleya Research Institute,Gamaleya - Gam-Covid-Vac,2469960
+AMR,LACRO,Middle income,Member State,Developing,AMC,Bolivia (Plurinational State of),BOL,2022-11-11T00:00:00.000Z,COVAX_FACILITY,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,1008000
+AMR,LACRO,Middle income,Member State,Developing,AMC,Bolivia (Plurinational State of),BOL,2022-11-11T00:00:00.000Z,COVAX_FACILITY,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,471510
+AMR,LACRO,Middle income,Member State,Developing,AMC,Bolivia (Plurinational State of),BOL,2022-11-11T00:00:00.000Z,COVAX_FACILITY,Serum Institute of India,SII - Covishield,1062500
+AMR,LACRO,Middle income,Member State,Developing,AMC,Bolivia (Plurinational State of),BOL,2022-11-11T00:00:00.000Z,DONATION,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,300000
+AMR,LACRO,Middle income,Member State,Developing,AMC,Bolivia (Plurinational State of),BOL,2022-11-11T00:00:00.000Z,DONATION,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,1000350
+AMR,LACRO,Middle income,Member State,Developing,AMC,Bolivia (Plurinational State of),BOL,2022-11-11T00:00:00.000Z,DONATION,Serum Institute of India,SII - Covishield,300000
+AMR,LACRO,Middle income,Member State,Developing,AMC,Bolivia (Plurinational State of),BOL,2022-11-11T00:00:00.000Z,NR,NR,All vaccine types,15312320
+AMR,LACRO,Middle income,Member State,Developing,AMC,Dominica,DMA,2022-09-08T23:00:00.000Z,BILATERAL_AGREEMENT,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,
+AMR,LACRO,Middle income,Member State,Developing,AMC,Dominica,DMA,2022-09-08T23:00:00.000Z,BILATERAL_AGREEMENT,Serum Institute of India,SII - Covishield,
+AMR,LACRO,Middle income,Member State,Developing,AMC,Dominica,DMA,2022-09-08T23:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,
+AMR,LACRO,Middle income,Member State,Developing,AMC,Dominica,DMA,2022-09-08T23:00:00.000Z,DONATION,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,46800
+AMR,LACRO,Middle income,Member State,Developing,AMC,Dominica,DMA,2022-09-08T23:00:00.000Z,NR,NR,All vaccine types,46800
+AMR,LACRO,Middle income,Member State,Developing,AMC,El Salvador,SLV,2022-05-04T23:00:00.000Z,BILATERAL_AGREEMENT,Sinovac,Sinovac - CoronaVac,1500000
+AMR,LACRO,Middle income,Member State,Developing,AMC,El Salvador,SLV,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,AstraZeneca,AstraZeneca - Vaxzevria,20000
+AMR,LACRO,Middle income,Member State,Developing,AMC,El Salvador,SLV,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,1668000
+AMR,LACRO,Middle income,Member State,Developing,AMC,El Salvador,SLV,2022-11-11T00:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,96000
+AMR,LACRO,Middle income,Member State,Developing,AMC,El Salvador,SLV,2022-11-11T00:00:00.000Z,COVAX_FACILITY,Moderna,Moderna - Spikevax,3000200
+AMR,LACRO,Middle income,Member State,Developing,AMC,El Salvador,SLV,2022-11-11T00:00:00.000Z,COVAX_FACILITY,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,317070
+AMR,LACRO,Middle income,Member State,Developing,AMC,El Salvador,SLV,2022-11-11T00:00:00.000Z,COVAX_FACILITY,Serum Institute of India,SII - Covishield,33600
+AMR,LACRO,Middle income,Member State,Developing,AMC,El Salvador,SLV,2022-11-11T00:00:00.000Z,DONATION,Sinovac,Sinovac - CoronaVac,150000
+AMR,LACRO,Middle income,Member State,Developing,AMC,El Salvador,SLV,2022-11-11T00:00:00.000Z,NR,NR,All vaccine types,5284870
+AMR,LACRO,Middle income,Member State,Developing,AMC,Grenada,GRD,2022-11-11T00:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,45600
+AMR,LACRO,Middle income,Member State,Developing,AMC,Grenada,GRD,2022-11-11T00:00:00.000Z,DONATION,AstraZeneca,AstraZeneca - Vaxzevria,
+AMR,LACRO,Middle income,Member State,Developing,AMC,Grenada,GRD,2022-11-11T00:00:00.000Z,DONATION,AstraZeneca,SII - Covishield,
+AMR,LACRO,Middle income,Member State,Developing,AMC,Grenada,GRD,2022-11-11T00:00:00.000Z,DONATION,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,
+AMR,LACRO,Middle income,Member State,Developing,AMC,Grenada,GRD,2022-11-11T00:00:00.000Z,DONATION,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,29250
+AMR,LACRO,Middle income,Member State,Developing,AMC,Grenada,GRD,2022-11-11T00:00:00.000Z,NR,NR,All vaccine types,74850
+AMR,LACRO,Middle income,Member State,Developing,AMC,Honduras,HND,2022-10-09T23:00:00.000Z,BILATERAL_AGREEMENT,Gamaleya Research Institute,Gamaleya - Gam-Covid-Vac,4200000
+AMR,LACRO,Middle income,Member State,Developing,AMC,Honduras,HND,2022-10-09T23:00:00.000Z,BILATERAL_AGREEMENT,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,4400370
+AMR,LACRO,Middle income,Member State,Developing,AMC,Honduras,HND,2022-10-09T23:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,424800
+AMR,LACRO,Middle income,Member State,Developing,AMC,Honduras,HND,2022-10-09T23:00:00.000Z,COVAX_FACILITY,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,117000
+AMR,LACRO,Middle income,Member State,Developing,AMC,Honduras,HND,2022-10-09T23:00:00.000Z,DONATION,AstraZeneca,AstraZeneca - Vaxzevria,189600
+AMR,LACRO,Middle income,Member State,Developing,AMC,Honduras,HND,2022-10-09T23:00:00.000Z,DONATION,AstraZeneca,AstraZeneca - Vaxzevria,477839
+AMR,LACRO,Middle income,Member State,Developing,AMC,Honduras,HND,2022-10-09T23:00:00.000Z,DONATION,Moderna,Moderna - Spikevax,3000100
+AMR,LACRO,Middle income,Member State,Developing,AMC,Honduras,HND,2022-10-09T23:00:00.000Z,MULTILATERAL_OTHER,AstraZeneca,SII - Covishield,510400
+AMR,LACRO,Middle income,Member State,Developing,AMC,Honduras,HND,2022-10-09T23:00:00.000Z,NR,NR,All vaccine types,13320109
+AMR,LACRO,Middle income,Member State,Developing,AMC,Nicaragua,NIC,2022-06-05T23:00:00.000Z,BILATERAL_AGREEMENT,Gamaleya Research Institute,Gamaleya - Gam-Covid-Vac,310000
+AMR,LACRO,Middle income,Member State,Developing,AMC,Nicaragua,NIC,2022-06-05T23:00:00.000Z,DONATION,AstraZeneca,SII - Covishield,335000
+AMR,LACRO,Middle income,Member State,Developing,AMC,Nicaragua,NIC,2022-06-05T23:00:00.000Z,DONATION,Gamaleya Research Institute,Gamaleya - Gam-Covid-Vac,3000
+AMR,LACRO,Middle income,Member State,Developing,AMC,Nicaragua,NIC,2022-06-05T23:00:00.000Z,NR,NR,All vaccine types,648000
+AMR,LACRO,Middle income,Member State,Developing,AMC,Saint Lucia,LCA,2022-06-05T23:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,24000
+AMR,LACRO,Middle income,Member State,Developing,AMC,Saint Lucia,LCA,2022-06-05T23:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,26400
+AMR,LACRO,Middle income,Member State,Developing,AMC,Saint Lucia,LCA,2022-06-05T23:00:00.000Z,DONATION,Serum Institute of India,SII - Covishield,25000
+AMR,LACRO,Middle income,Member State,Developing,AMC,Saint Lucia,LCA,2022-06-05T23:00:00.000Z,NR,NR,All vaccine types,75400
+AMR,LACRO,Middle income,Member State,Developing,AMC,Saint Vincent and the Grenadines,VCT,2022-07-06T23:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,21600
+AMR,LACRO,Middle income,Member State,Developing,AMC,Saint Vincent and the Grenadines,VCT,2022-07-06T23:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,24000
+AMR,LACRO,Middle income,Member State,Developing,AMC,Saint Vincent and the Grenadines,VCT,2022-05-04T23:00:00.000Z,DONATION,Serum Institute of India,AstraZeneca - Vaxzevria,85600
+AMR,LACRO,Middle income,Member State,Developing,AMC,Saint Vincent and the Grenadines,VCT,2022-07-06T23:00:00.000Z,DONATION,Gamaleya Research Institute,Gamaleya - Gam-Covid-Vac,1820
+AMR,LACRO,Middle income,Member State,Developing,AMC,Saint Vincent and the Grenadines,VCT,2022-07-06T23:00:00.000Z,DONATION,Serum Institute of India,SII - Covishield,40000
+AMR,LACRO,Middle income,Member State,Developing,AMC,Saint Vincent and the Grenadines,VCT,2022-07-06T23:00:00.000Z,NR,NR,All vaccine types,137420
+AMR,LACRO,Middle income,Member State,Developing,AMC,Saint Vincent and the Grenadines,VCT,2022-07-06T23:00:00.000Z,OTHER,Gamaleya Research Institute,Gamaleya - Gam-Covid-Vac,50000
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Argentina,ARG,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Argentina,ARG,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,CanSino Biologicals,CanSino - Convidecia,
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Argentina,ARG,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,Gamaleya Research Institute,Gamaleya - Gam-Covid-Vac,
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Argentina,ARG,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,Moderna,Moderna - Spikevax,
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Argentina,ARG,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Argentina,ARG,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,Serum Institute of India,SII - Covishield,
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Argentina,ARG,2022-11-11T00:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Argentina,ARG,2022-11-11T00:00:00.000Z,NR,NR,All vaccine types,
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Belize,BLZ,2022-05-04T23:00:00.000Z,COVAX_FACILITY,AstraZeneca,SII - Covishield,67200
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Belize,BLZ,2022-12-12T00:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,100800
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Belize,BLZ,2022-12-12T00:00:00.000Z,DONATION,AstraZeneca,AstraZeneca - Vaxzevria,42000
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Belize,BLZ,2022-12-12T00:00:00.000Z,DONATION,AstraZeneca,AstraZeneca - Vaxzevria,200000
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Belize,BLZ,2022-12-12T00:00:00.000Z,DONATION,AstraZeneca,SII - Covishield,1000
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Belize,BLZ,2022-12-12T00:00:00.000Z,DONATION,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,10000
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Belize,BLZ,2022-12-12T00:00:00.000Z,DONATION,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,14800
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Belize,BLZ,2022-12-12T00:00:00.000Z,DONATION,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,286650
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Belize,BLZ,2022-12-12T00:00:00.000Z,NR,NR,All vaccine types,655250
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Brazil,BRA,2022-05-04T23:00:00.000Z,BILATERAL_AGREEMENT,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,200000970
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Brazil,BRA,2022-05-04T23:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,5073600
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Brazil,BRA,2022-05-04T23:00:00.000Z,COVAX_FACILITY,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,842400
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Brazil,BRA,2022-05-04T23:00:00.000Z,NR,NR,All vaccine types,205916970
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Colombia,COL,2022-10-09T23:00:00.000Z,BILATERAL_AGREEMENT,AstraZeneca,AstraZeneca - Vaxzevria,9997560
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Colombia,COL,2022-10-09T23:00:00.000Z,BILATERAL_AGREEMENT,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,9000000
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Colombia,COL,2022-10-09T23:00:00.000Z,BILATERAL_AGREEMENT,Moderna,Moderna - Spikevax,10000000
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Colombia,COL,2022-10-09T23:00:00.000Z,BILATERAL_AGREEMENT,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,15000570
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Colombia,COL,2022-10-09T23:00:00.000Z,BILATERAL_AGREEMENT,Sinovac,Sinovac - CoronaVac,12000000
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Colombia,COL,2022-10-09T23:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,2066400
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Colombia,COL,2022-10-09T23:00:00.000Z,COVAX_FACILITY,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,2217150
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Colombia,COL,2022-10-09T23:00:00.000Z,COVAX_FACILITY,Sinovac,Sinovac - CoronaVac,6619200
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Colombia,COL,2022-10-09T23:00:00.000Z,DONATION,AstraZeneca,AstraZeneca - Vaxzevria,1057600
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Colombia,COL,2022-10-09T23:00:00.000Z,DONATION,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,2500000
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Colombia,COL,2022-10-09T23:00:00.000Z,DONATION,Moderna,Moderna - Spikevax,3500000
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Colombia,COL,2022-10-09T23:00:00.000Z,NR,NR,All vaccine types,73958480
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Costa Rica,CRI,2022-10-09T23:00:00.000Z,BILATERAL_AGREEMENT,AstraZeneca,AstraZeneca - Vaxzevria,540000
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Costa Rica,CRI,2022-10-09T23:00:00.000Z,BILATERAL_AGREEMENT,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,2174055
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Costa Rica,CRI,2022-10-09T23:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,43200
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Costa Rica,CRI,2022-10-09T23:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,88800
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Costa Rica,CRI,2022-10-09T23:00:00.000Z,COVAX_FACILITY,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,40950
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Costa Rica,CRI,2022-10-09T23:00:00.000Z,NR,NR,All vaccine types,2887005
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Ecuador,ECU,2022-10-09T23:00:00.000Z,BILATERAL_AGREEMENT,AstraZeneca,AstraZeneca - Vaxzevria,614000
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Ecuador,ECU,2022-10-09T23:00:00.000Z,BILATERAL_AGREEMENT,CanSino Biologicals,CanSino - Convidecia,800000
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Ecuador,ECU,2022-10-09T23:00:00.000Z,BILATERAL_AGREEMENT,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,4675125
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Ecuador,ECU,2022-10-09T23:00:00.000Z,BILATERAL_AGREEMENT,Sinovac,Sinovac - CoronaVac,13000000
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Ecuador,ECU,2022-10-09T23:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,336000
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Ecuador,ECU,2022-10-09T23:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,420000
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Ecuador,ECU,2022-10-09T23:00:00.000Z,DONATION,AstraZeneca,AstraZeneca - Vaxzevria,101760
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Ecuador,ECU,2022-10-09T23:00:00.000Z,DONATION,AstraZeneca,AstraZeneca - Vaxzevria,394950
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Ecuador,ECU,2022-10-09T23:00:00.000Z,DONATION,Sinovac,Sinovac - CoronaVac,1000000
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Ecuador,ECU,2022-10-09T23:00:00.000Z,NR,NR,All vaccine types,21341835
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Guatemala,GTM,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,AstraZeneca,AstraZeneca - Vaxzevria,660000
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Guatemala,GTM,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,Gamaleya Research Institute,Gamaleya - Gam-Covid-Vac,8000000
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Guatemala,GTM,2022-11-11T00:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,321600
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Guatemala,GTM,2022-11-11T00:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,403200
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Guatemala,GTM,2022-11-11T00:00:00.000Z,COVAX_FACILITY,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,1533870
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Guatemala,GTM,2022-11-11T00:00:00.000Z,DONATION,AstraZeneca,AstraZeneca - Vaxzevria,300000
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Guatemala,GTM,2022-11-11T00:00:00.000Z,DONATION,AstraZeneca,AstraZeneca - Vaxzevria,304000
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Guatemala,GTM,2022-11-11T00:00:00.000Z,DONATION,AstraZeneca,AstraZeneca - Vaxzevria,363100
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Guatemala,GTM,2022-11-11T00:00:00.000Z,DONATION,Moderna,Moderna - Spikevax,5000
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Guatemala,GTM,2022-11-11T00:00:00.000Z,DONATION,Moderna,Moderna - Spikevax,6500060
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Guatemala,GTM,2022-11-11T00:00:00.000Z,DONATION,Serum Institute of India,SII - Covishield,200000
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Guatemala,GTM,2022-11-11T00:00:00.000Z,NR,NR,All vaccine types,18590830
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Jamaica,JAM,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,100000
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Jamaica,JAM,2022-11-11T00:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,55200
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Jamaica,JAM,2022-11-11T00:00:00.000Z,COVAX_FACILITY,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,100620
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Jamaica,JAM,2022-11-11T00:00:00.000Z,DONATION,AstraZeneca,AstraZeneca - Vaxzevria,0
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Jamaica,JAM,2022-11-11T00:00:00.000Z,DONATION,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,0
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Jamaica,JAM,2022-11-11T00:00:00.000Z,DONATION,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,0
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Jamaica,JAM,2022-11-11T00:00:00.000Z,DONATION,Serum Institute of India,SII - Covishield,0
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Jamaica,JAM,2022-11-11T00:00:00.000Z,MULTILATERAL_AFRICAN,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,1900000
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Jamaica,JAM,2022-11-11T00:00:00.000Z,NR,NR,All vaccine types,2211020
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Panama,PAN,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,AstraZeneca,AstraZeneca - Vaxzevria,367200
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Panama,PAN,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,AstraZeneca,AstraZeneca - Vaxzevria,734400
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Panama,PAN,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,6702930
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Panama,PAN,2022-11-11T00:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,36000
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Panama,PAN,2022-11-11T00:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,148800
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Panama,PAN,2022-11-11T00:00:00.000Z,COVAX_FACILITY,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,198900
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Panama,PAN,2022-11-11T00:00:00.000Z,DONATION,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,503100
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Panama,PAN,2022-11-11T00:00:00.000Z,NR,NR,All vaccine types,8691330
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Paraguay,PRY,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,Gamaleya Research Institute,Gamaleya - Gam-Covid-Vac,1000000
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Paraguay,PRY,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,Julphar,Julphar - Hayat-Vax,250000
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Paraguay,PRY,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,0
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Paraguay,PRY,2022-11-11T00:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,934400
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Paraguay,PRY,2022-11-11T00:00:00.000Z,COVAX_FACILITY,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,39600
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Paraguay,PRY,2022-11-11T00:00:00.000Z,DONATION,AstraZeneca,AstraZeneca - Vaxzevria,0
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Paraguay,PRY,2022-11-11T00:00:00.000Z,DONATION,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,0
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Paraguay,PRY,2022-11-11T00:00:00.000Z,DONATION,Bharat Biotech,Bharat - Covaxin,0
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Paraguay,PRY,2022-11-11T00:00:00.000Z,DONATION,Moderna,Moderna - Spikevax,0
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Paraguay,PRY,2022-11-11T00:00:00.000Z,DONATION,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,0
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Paraguay,PRY,2022-11-11T00:00:00.000Z,DONATION,Sinovac,Sinovac - CoronaVac,0
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Paraguay,PRY,2022-11-11T00:00:00.000Z,NR,NR,All vaccine types,2224000
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Suriname,SUR,2022-04-03T23:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,52800
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Suriname,SUR,2022-04-03T23:00:00.000Z,COVAX_FACILITY,AstraZeneca,SII - Covishield,50000
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Suriname,SUR,2022-09-08T23:00:00.000Z,DONATION,AstraZeneca,AstraZeneca - Vaxzevria,307200
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Suriname,SUR,2022-09-08T23:00:00.000Z,DONATION,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,100000
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Suriname,SUR,2022-09-08T23:00:00.000Z,DONATION,Moderna,Moderna - Spikevax,10000
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Suriname,SUR,2022-09-08T23:00:00.000Z,DONATION,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,140400
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Suriname,SUR,2022-09-08T23:00:00.000Z,DONATION,Serum Institute of India,SII - Covishield,51000
+AMR,LACRO,Middle income,Member State,Developing,Self-financing,Suriname,SUR,2022-09-08T23:00:00.000Z,NR,NR,All vaccine types,608600
+AMR,LACRO,Middle income,Member State,Least developed,AMC,Haiti,HTI,2022-04-03T23:00:00.000Z,COVAX_FACILITY,Vaxxinity Inc,Unknown Vaccine,
+AMR,LACRO,Middle income,Member State,Least developed,AMC,Haiti,HTI,2022-11-11T00:00:00.000Z,COVAX_FACILITY,Moderna,Moderna - Spikevax,
+AMR,LACRO,Middle income,Member State,Least developed,AMC,Haiti,HTI,2022-11-11T00:00:00.000Z,NR,NR,All vaccine types,
+AMR,LACRO,NA,Member State,Developing,Self-financing,Venezuela (Bolivarian Republic of),VEN,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,250000
+AMR,LACRO,NA,Member State,Developing,Self-financing,Venezuela (Bolivarian Republic of),VEN,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,Gamaleya Research Institute,Gamaleya - Gam-Covid-Vac,230000
+AMR,LACRO,NA,Member State,Developing,Self-financing,Venezuela (Bolivarian Republic of),VEN,2022-11-11T00:00:00.000Z,NR,NR,All vaccine types,480000
+EMR,ESARO,Low income,Member State,Least developed,AMC,Somalia,SOM,2022-11-11T00:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,108000
+EMR,ESARO,Low income,Member State,Least developed,AMC,Somalia,SOM,2022-11-11T00:00:00.000Z,DONATION,AstraZeneca,AstraZeneca - Vaxzevria,151200
+EMR,ESARO,Low income,Member State,Least developed,AMC,Somalia,SOM,2022-11-11T00:00:00.000Z,DONATION,AstraZeneca,AstraZeneca - Vaxzevria,528320
+EMR,ESARO,Low income,Member State,Least developed,AMC,Somalia,SOM,2022-11-11T00:00:00.000Z,DONATION,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,231718
+EMR,ESARO,Low income,Member State,Least developed,AMC,Somalia,SOM,2022-11-11T00:00:00.000Z,DONATION,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,582870
+EMR,ESARO,Low income,Member State,Least developed,AMC,Somalia,SOM,2022-11-11T00:00:00.000Z,DONATION,Serum Institute of India,SII - Covishield,300000
+EMR,ESARO,Low income,Member State,Least developed,AMC,Somalia,SOM,2022-11-11T00:00:00.000Z,NR,NR,All vaccine types,1902108
+EMR,MENA,High income,Member State,Developing,Self-financing,Qatar,QAT,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,AstraZeneca,AstraZeneca - Vaxzevria,122400
+EMR,MENA,High income,Member State,Developing,Self-financing,Qatar,QAT,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,Moderna,Moderna - Spikevax,1999800
+EMR,MENA,High income,Member State,Developing,Self-financing,Qatar,QAT,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,3799965
+EMR,MENA,High income,Member State,Developing,Self-financing,Qatar,QAT,2022-03-03T00:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,
+EMR,MENA,High income,Member State,Developing,Self-financing,Qatar,QAT,2022-11-11T00:00:00.000Z,NR,NR,All vaccine types,5922165
+EMR,MENA,High income,Member State,Developing,Self-financing,United Arab Emirates,ARE,2022-09-08T23:00:00.000Z,BILATERAL_AGREEMENT,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,
+EMR,MENA,High income,Member State,Developing,Self-financing,United Arab Emirates,ARE,2022-09-08T23:00:00.000Z,BILATERAL_AGREEMENT,Gamaleya Research Institute,Gamaleya - Gam-Covid-Vac,
+EMR,MENA,High income,Member State,Developing,Self-financing,United Arab Emirates,ARE,2022-09-08T23:00:00.000Z,BILATERAL_AGREEMENT,Julphar,Julphar - Hayat-Vax,
+EMR,MENA,High income,Member State,Developing,Self-financing,United Arab Emirates,ARE,2022-09-08T23:00:00.000Z,BILATERAL_AGREEMENT,Moderna,Moderna - Spikevax,
+EMR,MENA,High income,Member State,Developing,Self-financing,United Arab Emirates,ARE,2022-09-08T23:00:00.000Z,BILATERAL_AGREEMENT,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,
+EMR,MENA,High income,Member State,Developing,Self-financing,United Arab Emirates,ARE,2022-09-08T23:00:00.000Z,BILATERAL_AGREEMENT,Serum Institute of India,SII - Covishield,
+EMR,MENA,Low income,Member State,Developing,AMC,Syrian Arab Republic,SYR,2022-12-12T00:00:00.000Z,BILATERAL_AGREEMENT,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,1995000
+EMR,MENA,Low income,Member State,Developing,AMC,Syrian Arab Republic,SYR,2022-12-12T00:00:00.000Z,BILATERAL_AGREEMENT,Gamaleya Research Institute,Gamaleya - Gam-Covid-Vac,100000
+EMR,MENA,Low income,Member State,Developing,AMC,Syrian Arab Republic,SYR,2022-12-12T00:00:00.000Z,BILATERAL_AGREEMENT,Gamaleya Research Institute,Gamaleya - Sputnik-Light,250000
+EMR,MENA,Low income,Member State,Developing,AMC,Syrian Arab Republic,SYR,2022-12-12T00:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,7221640
+EMR,MENA,Low income,Member State,Developing,AMC,Syrian Arab Republic,SYR,2022-12-12T00:00:00.000Z,COVAX_FACILITY,Serum Institute of India,SII - Covishield,203000
+EMR,MENA,Low income,Member State,Developing,AMC,Syrian Arab Republic,SYR,2022-12-12T00:00:00.000Z,COVAX_FACILITY,Sinovac,Chumakov - Covi-Vac,1356000
+EMR,MENA,Low income,Member State,Developing,AMC,Syrian Arab Republic,SYR,2022-06-05T23:00:00.000Z,DONATION,Serum Institute of India,SII - Covishield,203000
+EMR,MENA,Low income,Member State,Developing,AMC,Syrian Arab Republic,SYR,2022-12-12T00:00:00.000Z,NR,NR,All vaccine types,11125640
+EMR,MENA,Low income,Member State,Least developed,AMC,Yemen,YEM,2022-06-05T23:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,360000
+EMR,MENA,Low income,Member State,Least developed,AMC,Yemen,YEM,2022-09-08T23:00:00.000Z,COVAX_FACILITY,AstraZeneca,SII - Covishield,360000
+EMR,MENA,Low income,Member State,Least developed,AMC,Yemen,YEM,2022-09-08T23:00:00.000Z,COVAX_FACILITY,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,151200
+EMR,MENA,Low income,Member State,Least developed,AMC,Yemen,YEM,2022-09-08T23:00:00.000Z,COVAX_FACILITY,Serum Institute of India,SII - Covishield,360000
+EMR,MENA,Low income,Member State,Least developed,AMC,Yemen,YEM,2022-09-08T23:00:00.000Z,DONATION,AstraZeneca,AstraZeneca - Vaxzevria,356800
+EMR,MENA,Low income,Member State,Least developed,AMC,Yemen,YEM,2022-09-08T23:00:00.000Z,NR,NR,All vaccine types,1228000
+EMR,MENA,Middle income,Member State,Developing,Self-financing,Iran (Islamic Republic of),IRN,2022-12-12T00:00:00.000Z,BILATERAL_AGREEMENT,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,90000000
+EMR,MENA,Middle income,Member State,Developing,Self-financing,Iran (Islamic Republic of),IRN,2022-12-12T00:00:00.000Z,BILATERAL_AGREEMENT,Bharat Biotech,Bharat - Covaxin,500000
+EMR,MENA,Middle income,Member State,Developing,Self-financing,Iran (Islamic Republic of),IRN,2022-12-12T00:00:00.000Z,BILATERAL_AGREEMENT,Gamaleya Research Institute,Gamaleya - Gam-Covid-Vac,2000000
+EMR,MENA,Middle income,Member State,Developing,Self-financing,Iran (Islamic Republic of),IRN,2022-12-12T00:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,12000000
+EMR,MENA,Middle income,Member State,Developing,Self-financing,Iran (Islamic Republic of),IRN,2022-12-12T00:00:00.000Z,DOMESTIC,Instituto Finlay de Vacunas,Finlay - Soberana-02,8000000
+EMR,MENA,Middle income,Member State,Developing,Self-financing,Iran (Islamic Republic of),IRN,2022-12-12T00:00:00.000Z,DOMESTIC,Shifa Pharmed,Shifa - COVIran Barakat,50000000
+EMR,MENA,Middle income,Member State,Developing,Self-financing,Iran (Islamic Republic of),IRN,2022-12-12T00:00:00.000Z,DOMESTIC,Vaxine Pty Ltd,Vaxine-SpikoGen,6000000
+EMR,MENA,Middle income,Member State,Developing,Self-financing,Iran (Islamic Republic of),IRN,2022-12-12T00:00:00.000Z,NR,NR,All vaccine types,168500000
+EMR,ROSA,Low income,Member State,Least developed,AMC,Afghanistan,AFG,2022-11-11T00:00:00.000Z,DONATION,AstraZeneca,AstraZeneca - Vaxzevria,124000
+EMR,ROSA,Low income,Member State,Least developed,AMC,Afghanistan,AFG,2022-11-11T00:00:00.000Z,DONATION,AstraZeneca,AstraZeneca - Vaxzevria,144000
+EMR,ROSA,Low income,Member State,Least developed,AMC,Afghanistan,AFG,2022-11-11T00:00:00.000Z,DONATION,AstraZeneca,AstraZeneca - Vaxzevria,151200
+EMR,ROSA,Low income,Member State,Least developed,AMC,Afghanistan,AFG,2022-11-11T00:00:00.000Z,DONATION,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,700000
+EMR,ROSA,Low income,Member State,Least developed,AMC,Afghanistan,AFG,2022-11-11T00:00:00.000Z,DONATION,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,3312000
+EMR,ROSA,Low income,Member State,Least developed,AMC,Afghanistan,AFG,2022-11-11T00:00:00.000Z,DONATION,Serum Institute of India,SII - Covishield,968000
+EMR,ROSA,Low income,Member State,Least developed,AMC,Afghanistan,AFG,2022-11-11T00:00:00.000Z,NR,NR,All vaccine types,5399200
+EMR,ROSA,Middle income,Member State,Developing,AMC,Pakistan,PAK,2022-09-08T23:00:00.000Z,BILATERAL_AGREEMENT,CanSino Biologicals,CanSino - Convidecia,1659200
+EMR,ROSA,Middle income,Member State,Developing,AMC,Pakistan,PAK,2022-09-08T23:00:00.000Z,BILATERAL_AGREEMENT,Sinovac,Sinovac - CoronaVac,20550000
+EMR,ROSA,Middle income,Member State,Developing,AMC,Pakistan,PAK,2022-09-08T23:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,
+EMR,ROSA,Middle income,Member State,Developing,AMC,Pakistan,PAK,2022-09-08T23:00:00.000Z,COVAX_FACILITY,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,
+EMR,ROSA,Middle income,Member State,Developing,AMC,Pakistan,PAK,2022-03-03T00:00:00.000Z,DONATION,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,1220000
+EMR,ROSA,Middle income,Member State,Developing,AMC,Pakistan,PAK,2022-09-08T23:00:00.000Z,DONATION,Moderna,Moderna - Spikevax,
+EMR,ROSA,Middle income,Member State,Developing,AMC,Pakistan,PAK,2022-09-08T23:00:00.000Z,NR,NR,All vaccine types,34989200
+EMR,ROSA,Middle income,Member State,Developing,AMC,Pakistan,PAK,2022-04-03T23:00:00.000Z,OTHER,CanSino Biologicals,CanSino - Convidecia,60000
+EMR,ROSA,Middle income,Member State,Developing,AMC,Pakistan,PAK,2022-09-08T23:00:00.000Z,OTHER,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,12720000
+EMR,ROSA,Middle income,Member State,Developing,AMC,Pakistan,PAK,2022-09-08T23:00:00.000Z,OTHER,Gamaleya Research Institute,Gamaleya - Gam-Covid-Vac,60000
+EUR,,Middle income,Territory or Area,,AMC,Kosovo (in accordance with UN Security Council resolution 1244 (1999)),XKX,2022-10-09T23:00:00.000Z,BILATERAL_AGREEMENT,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,1213290
+EUR,,Middle income,Territory or Area,,AMC,Kosovo (in accordance with UN Security Council resolution 1244 (1999)),XKX,2022-10-09T23:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,100800
+EUR,,Middle income,Territory or Area,,AMC,Kosovo (in accordance with UN Security Council resolution 1244 (1999)),XKX,2022-10-09T23:00:00.000Z,COVAX_FACILITY,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,638820
+EUR,,Middle income,Territory or Area,,AMC,Kosovo (in accordance with UN Security Council resolution 1244 (1999)),XKX,2022-10-09T23:00:00.000Z,DONATION,AstraZeneca,AstraZeneca - Vaxzevria,10000
+EUR,,Middle income,Territory or Area,,AMC,Kosovo (in accordance with UN Security Council resolution 1244 (1999)),XKX,2022-10-09T23:00:00.000Z,MULTILATERAL_EU,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,94770
+EUR,,Middle income,Territory or Area,,AMC,Kosovo (in accordance with UN Security Council resolution 1244 (1999)),XKX,2022-10-09T23:00:00.000Z,NR,NR,All vaccine types,2057680
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,AMC,Kyrgyzstan,KGZ,2022-06-05T23:00:00.000Z,BILATERAL_AGREEMENT,Gamaleya Research Institute,Gamaleya - Gam-Covid-Vac,80000
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,AMC,Kyrgyzstan,KGZ,2022-07-06T23:00:00.000Z,BILATERAL_AGREEMENT,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,1100000
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,AMC,Kyrgyzstan,KGZ,2022-08-07T23:00:00.000Z,COVAX_FACILITY,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,44400
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,AMC,Kyrgyzstan,KGZ,2022-08-07T23:00:00.000Z,DOMESTIC,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,1250000
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,AMC,Kyrgyzstan,KGZ,2022-07-06T23:00:00.000Z,DONATION,AstraZeneca,AstraZeneca - Vaxzevria,40000
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,AMC,Kyrgyzstan,KGZ,2022-07-06T23:00:00.000Z,DONATION,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,150000
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,AMC,Kyrgyzstan,KGZ,2022-09-08T23:00:00.000Z,DONATION,Sinovac,Sinovac - CoronaVac,150000
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,AMC,Kyrgyzstan,KGZ,2022-10-09T23:00:00.000Z,DONATION,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,259740
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,AMC,Kyrgyzstan,KGZ,2022-10-09T23:00:00.000Z,NR,NR,All vaccine types,259740
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,AMC,Tajikistan,TJK,2022-10-09T23:00:00.000Z,BILATERAL_AGREEMENT,Sinovac,Sinovac - CoronaVac,
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,AMC,Tajikistan,TJK,2022-10-09T23:00:00.000Z,COVAX_FACILITY,Moderna,Moderna - Spikevax,
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,AMC,Tajikistan,TJK,2022-10-09T23:00:00.000Z,COVAX_FACILITY,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,AMC,Tajikistan,TJK,2022-10-09T23:00:00.000Z,COVAX_FACILITY,Serum Institute of India,SII - Covishield,0
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,AMC,Tajikistan,TJK,2022-10-09T23:00:00.000Z,DONATION,AstraZeneca,AstraZeneca - Vaxzevria,
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,AMC,Tajikistan,TJK,2022-10-09T23:00:00.000Z,DONATION,Gamaleya Research Institute,Gamaleya - Gam-Covid-Vac,
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,AMC,Tajikistan,TJK,2022-10-09T23:00:00.000Z,NR,NR,All vaccine types,0
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,AMC,Ukraine,UKR,2022-11-11T00:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,367200
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,AMC,Ukraine,UKR,2022-11-11T00:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,705600
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,AMC,Ukraine,UKR,2022-11-11T00:00:00.000Z,COVAX_FACILITY,Moderna,Moderna - Spikevax,5073200
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,AMC,Ukraine,UKR,2022-11-11T00:00:00.000Z,COVAX_FACILITY,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,1253070
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,AMC,Ukraine,UKR,2022-11-11T00:00:00.000Z,COVAX_FACILITY,Sinovac,Sinovac - CoronaVac,159600
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,AMC,Ukraine,UKR,2022-11-11T00:00:00.000Z,DONATION,AstraZeneca,AstraZeneca - Vaxzevria,153600
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,AMC,Ukraine,UKR,2022-11-11T00:00:00.000Z,DONATION,AstraZeneca,AstraZeneca - Vaxzevria,586400
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,AMC,Ukraine,UKR,2022-11-11T00:00:00.000Z,DONATION,AstraZeneca,AstraZeneca - Vaxzevria,2626380
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,AMC,Ukraine,UKR,2022-11-11T00:00:00.000Z,NR,NR,All vaccine types,35002446
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,AMC,Ukraine,UKR,2022-11-11T00:00:00.000Z,OTHER,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,500
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,AMC,Ukraine,UKR,2022-11-11T00:00:00.000Z,OTHER,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,13343580
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,AMC,Ukraine,UKR,2022-11-11T00:00:00.000Z,OTHER,Serum Institute of India,SII - Covishield,500000
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,AMC,Ukraine,UKR,2022-11-11T00:00:00.000Z,OTHER,Sinovac,Sinovac - CoronaVac,10233316
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,No,Belarus,BLR,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,1884328
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,No,Belarus,BLR,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,Gamaleya Research Institute,Gamaleya - Gam-Covid-Vac,811790
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,No,Belarus,BLR,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,Gamaleya Research Institute,Gamaleya - Sputnik-Light,249200
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,No,Belarus,BLR,2022-11-11T00:00:00.000Z,DOMESTIC,Gamaleya Research Institute,Gamaleya - Gam-Covid-Vac,4446847
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,No,Belarus,BLR,2022-11-11T00:00:00.000Z,NR,NR,All vaccine types,7392165
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,No,Belarus,BLR,2022-10-09T23:00:00.000Z,OTHER,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,1000000
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,No,Turkmenistan,TKM,2022-06-05T23:00:00.000Z,DONATION,Sinovac,Sinovac - CoronaVac,
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,No,Turkmenistan,TKM,2022-09-08T23:00:00.000Z,DONATION,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,100000
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,No,Turkmenistan,TKM,2022-09-08T23:00:00.000Z,DONATION,Moderna,Moderna - Spikevax,
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,No,Turkmenistan,TKM,2022-09-08T23:00:00.000Z,NR,NR,All vaccine types,121600
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,No,Turkmenistan,TKM,2022-09-08T23:00:00.000Z,OTHER,AstraZeneca,AstraZeneca - Vaxzevria,1000
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,No,Turkmenistan,TKM,2022-09-08T23:00:00.000Z,OTHER,Gamaleya Research Institute,Gamaleya - Gam-Covid-Vac,20300
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,No,Turkmenistan,TKM,2022-09-08T23:00:00.000Z,OTHER,State Research Center of Virology & Biotechnology,SRCVB - EpiVacCorona,300
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,Self-financing,Azerbaijan,AZE,2022-12-12T00:00:00.000Z,BILATERAL_AGREEMENT,Gamaleya Research Institute,Gamaleya - Gam-Covid-Vac,200000
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,Self-financing,Azerbaijan,AZE,2022-12-12T00:00:00.000Z,BILATERAL_AGREEMENT,Sinovac,Sinovac - CoronaVac,8753710
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,Self-financing,Azerbaijan,AZE,2022-12-12T00:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,259200
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,Self-financing,Azerbaijan,AZE,2022-12-12T00:00:00.000Z,COVAX_FACILITY,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,218790
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,Self-financing,Azerbaijan,AZE,2022-12-12T00:00:00.000Z,NR,NR,All vaccine types,9431700
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,Self-financing,Georgia,GEO,2022-12-12T00:00:00.000Z,BILATERAL_AGREEMENT,AstraZeneca,AstraZeneca - Vaxzevria,43200
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,Self-financing,Georgia,GEO,2022-12-12T00:00:00.000Z,BILATERAL_AGREEMENT,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,1700000
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,Self-financing,Georgia,GEO,2022-12-12T00:00:00.000Z,BILATERAL_AGREEMENT,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,506610
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,Self-financing,Georgia,GEO,2022-12-12T00:00:00.000Z,BILATERAL_AGREEMENT,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,576810
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,Self-financing,Georgia,GEO,2022-12-12T00:00:00.000Z,BILATERAL_AGREEMENT,Sinovac,Sinovac - CoronaVac,1000000
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,Self-financing,Georgia,GEO,2022-12-12T00:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,129600
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,Self-financing,Georgia,GEO,2022-12-12T00:00:00.000Z,COVAX_FACILITY,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,30420
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,Self-financing,Georgia,GEO,2022-12-12T00:00:00.000Z,DONATION,AstraZeneca,AstraZeneca - Vaxzevria,
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,Self-financing,Georgia,GEO,2022-12-12T00:00:00.000Z,DONATION,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,Self-financing,Georgia,GEO,2022-12-12T00:00:00.000Z,DONATION,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,468000
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,Self-financing,Georgia,GEO,2022-12-12T00:00:00.000Z,DONATION,Sinovac,Sinovac - CoronaVac,
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,Self-financing,Georgia,GEO,2022-12-12T00:00:00.000Z,NR,NR,All vaccine types,4454640
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,Self-financing,Montenegro,MNE,2022-03-03T00:00:00.000Z,BILATERAL_AGREEMENT,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,200000
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,Self-financing,Montenegro,MNE,2022-03-03T00:00:00.000Z,BILATERAL_AGREEMENT,Gamaleya Research Institute,Gamaleya - Gam-Covid-Vac,50000
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,Self-financing,Montenegro,MNE,2022-03-03T00:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,24000
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,Self-financing,Montenegro,MNE,2022-03-03T00:00:00.000Z,DONATION,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,30000
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,Self-financing,Montenegro,MNE,2022-03-03T00:00:00.000Z,DONATION,Gamaleya Research Institute,Gamaleya - Gam-Covid-Vac,4000
+EUR,CEE-CIS,Middle income,Member State,Economy in transition,Self-financing,Montenegro,MNE,2022-03-03T00:00:00.000Z,NR,NR,All vaccine types,308000
+EUR,Dev,High income,Member State,Developed economy,No,Austria,AUT,2022-11-11T00:00:00.000Z,MULTILATERAL_EU,AstraZeneca,AstraZeneca - Vaxzevria,5934447
+EUR,Dev,High income,Member State,Developed economy,No,Austria,AUT,2022-11-11T00:00:00.000Z,MULTILATERAL_EU,Curevac,Curevac - CVnCoV,3000000
+EUR,Dev,High income,Member State,Developed economy,No,Austria,AUT,2022-11-11T00:00:00.000Z,MULTILATERAL_EU,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,2500000
+EUR,Dev,High income,Member State,Developed economy,No,Austria,AUT,2022-11-11T00:00:00.000Z,MULTILATERAL_EU,Moderna,Moderna - Spikevax,8030551
+EUR,Dev,High income,Member State,Developed economy,No,Austria,AUT,2022-11-11T00:00:00.000Z,MULTILATERAL_EU,Novavax,Novavax - Covavax,1150000
+EUR,Dev,High income,Member State,Developed economy,No,Austria,AUT,2022-11-11T00:00:00.000Z,MULTILATERAL_EU,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,33333789
+EUR,Dev,High income,Member State,Developed economy,No,Austria,AUT,2022-11-11T00:00:00.000Z,MULTILATERAL_EU,Sanofi Pasteur - GSK,Sanofi GSK - Vidprevtyn,2940000
+EUR,Dev,High income,Member State,Developed economy,No,Austria,AUT,2022-11-11T00:00:00.000Z,NR,NR,All vaccine types,56888787
+EUR,Dev,High income,Member State,Developed economy,No,Belgium,BEL,2022-10-09T23:00:00.000Z,MULTILATERAL_EU,Curevac,Curevac - CVnCoV,
+EUR,Dev,High income,Member State,Developed economy,No,Belgium,BEL,2022-11-11T00:00:00.000Z,MULTILATERAL_EU,AstraZeneca,AstraZeneca - Vaxzevria,7500000
+EUR,Dev,High income,Member State,Developed economy,No,Belgium,BEL,2022-11-11T00:00:00.000Z,MULTILATERAL_EU,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,5000000
+EUR,Dev,High income,Member State,Developed economy,No,Belgium,BEL,2022-11-11T00:00:00.000Z,MULTILATERAL_EU,Moderna,Moderna - Spikevax,5900000
+EUR,Dev,High income,Member State,Developed economy,No,Belgium,BEL,2022-11-11T00:00:00.000Z,MULTILATERAL_EU,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,15000000
+EUR,Dev,High income,Member State,Developed economy,No,Belgium,BEL,2022-11-11T00:00:00.000Z,NR,NR,All vaccine types,33400000
+EUR,Dev,High income,Member State,Developed economy,No,Czechia,CZE,2022-11-11T00:00:00.000Z,MULTILATERAL_EU,AstraZeneca,AstraZeneca - Vaxzevria,3000000
+EUR,Dev,High income,Member State,Developed economy,No,Czechia,CZE,2022-11-11T00:00:00.000Z,MULTILATERAL_EU,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,2000000
+EUR,Dev,High income,Member State,Developed economy,No,Czechia,CZE,2022-11-11T00:00:00.000Z,MULTILATERAL_EU,Moderna,Moderna - Spikevax,3977200
+EUR,Dev,High income,Member State,Developed economy,No,Czechia,CZE,2022-11-11T00:00:00.000Z,MULTILATERAL_EU,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,14000000
+EUR,Dev,High income,Member State,Developed economy,No,Czechia,CZE,2022-11-11T00:00:00.000Z,NR,NR,All vaccine types,22977200
+EUR,Dev,High income,Member State,Developed economy,No,Denmark,DNK,2022-12-12T00:00:00.000Z,MULTILATERAL_EU,AstraZeneca,AstraZeneca - Vaxzevria,5100000
+EUR,Dev,High income,Member State,Developed economy,No,Denmark,DNK,2022-12-12T00:00:00.000Z,MULTILATERAL_EU,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,
+EUR,Dev,High income,Member State,Developed economy,No,Denmark,DNK,2022-12-12T00:00:00.000Z,MULTILATERAL_EU,Moderna,Moderna - Spikevax,8900000
+EUR,Dev,High income,Member State,Developed economy,No,Denmark,DNK,2022-12-12T00:00:00.000Z,MULTILATERAL_EU,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,8000000
+EUR,Dev,High income,Member State,Developed economy,No,Denmark,DNK,2022-12-12T00:00:00.000Z,NR,NR,All vaccine types,22000000
+EUR,Dev,High income,Member State,Developed economy,No,Estonia,EST,2022-10-09T23:00:00.000Z,MULTILATERAL_EU,AstraZeneca,AstraZeneca - Vaxzevria,
+EUR,Dev,High income,Member State,Developed economy,No,Estonia,EST,2022-10-09T23:00:00.000Z,MULTILATERAL_EU,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,
+EUR,Dev,High income,Member State,Developed economy,No,Estonia,EST,2022-10-09T23:00:00.000Z,MULTILATERAL_EU,Moderna,Moderna - Spikevax,
+EUR,Dev,High income,Member State,Developed economy,No,Estonia,EST,2022-10-09T23:00:00.000Z,MULTILATERAL_EU,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,
+EUR,Dev,High income,Member State,Developed economy,No,Finland,FIN,2022-10-09T23:00:00.000Z,MULTILATERAL_EU,AstraZeneca,AstraZeneca - Vaxzevria,
+EUR,Dev,High income,Member State,Developed economy,No,Finland,FIN,2022-10-09T23:00:00.000Z,MULTILATERAL_EU,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,
+EUR,Dev,High income,Member State,Developed economy,No,Finland,FIN,2022-10-09T23:00:00.000Z,MULTILATERAL_EU,Moderna,Moderna - Spikevax,
+EUR,Dev,High income,Member State,Developed economy,No,Finland,FIN,2022-10-09T23:00:00.000Z,MULTILATERAL_EU,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,
+EUR,Dev,High income,Member State,Developed economy,No,France,FRA,2022-10-09T23:00:00.000Z,MULTILATERAL_EU,AstraZeneca,AstraZeneca - Vaxzevria,44000000
+EUR,Dev,High income,Member State,Developed economy,No,France,FRA,2022-10-09T23:00:00.000Z,MULTILATERAL_EU,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,30000000
+EUR,Dev,High income,Member State,Developed economy,No,France,FRA,2022-10-09T23:00:00.000Z,MULTILATERAL_EU,Moderna,Moderna - Spikevax,24000000
+EUR,Dev,High income,Member State,Developed economy,No,France,FRA,2022-10-09T23:00:00.000Z,MULTILATERAL_EU,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,49000000
+EUR,Dev,High income,Member State,Developed economy,No,France,FRA,2022-10-09T23:00:00.000Z,NR,NR,All vaccine types,147000000
+EUR,Dev,High income,Member State,Developed economy,No,Hungary,HUN,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,5000000
+EUR,Dev,High income,Member State,Developed economy,No,Hungary,HUN,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,Gamaleya Research Institute,Gamaleya - Gam-Covid-Vac,2000000
+EUR,Dev,High income,Member State,Developed economy,No,Hungary,HUN,2022-11-11T00:00:00.000Z,MULTILATERAL_EU,AstraZeneca,AstraZeneca - Vaxzevria,6513460
+EUR,Dev,High income,Member State,Developed economy,No,Hungary,HUN,2022-11-11T00:00:00.000Z,MULTILATERAL_EU,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,4309022
+EUR,Dev,High income,Member State,Developed economy,No,Hungary,HUN,2022-11-11T00:00:00.000Z,MULTILATERAL_EU,Moderna,Moderna - Spikevax,1723610
+EUR,Dev,High income,Member State,Developed economy,No,Hungary,HUN,2022-11-11T00:00:00.000Z,MULTILATERAL_EU,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,10874511
+EUR,Dev,High income,Member State,Developed economy,No,Hungary,HUN,2022-11-11T00:00:00.000Z,NR,NR,All vaccine types,30420603
+EUR,Dev,High income,Member State,Developed economy,No,Ireland,IRL,2022-12-12T00:00:00.000Z,MULTILATERAL_EU,AstraZeneca,AstraZeneca - Vaxzevria,
+EUR,Dev,High income,Member State,Developed economy,No,Ireland,IRL,2022-12-12T00:00:00.000Z,MULTILATERAL_EU,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,
+EUR,Dev,High income,Member State,Developed economy,No,Ireland,IRL,2022-12-12T00:00:00.000Z,MULTILATERAL_EU,Moderna,Moderna - Spikevax,
+EUR,Dev,High income,Member State,Developed economy,No,Ireland,IRL,2022-12-12T00:00:00.000Z,MULTILATERAL_EU,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,
+EUR,Dev,High income,Member State,Developed economy,No,Ireland,IRL,2022-05-04T23:00:00.000Z,NR,NR,All vaccine types,3267660
+EUR,Dev,High income,Member State,Developed economy,No,Italy,ITA,2022-11-11T00:00:00.000Z,MULTILATERAL_EU,AstraZeneca,AstraZeneca - Vaxzevria,
+EUR,Dev,High income,Member State,Developed economy,No,Italy,ITA,2022-11-11T00:00:00.000Z,MULTILATERAL_EU,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,
+EUR,Dev,High income,Member State,Developed economy,No,Italy,ITA,2022-11-11T00:00:00.000Z,MULTILATERAL_EU,Moderna,Moderna - Spikevax,
+EUR,Dev,High income,Member State,Developed economy,No,Italy,ITA,2022-11-11T00:00:00.000Z,MULTILATERAL_EU,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,
+EUR,Dev,High income,Member State,Developed economy,No,Italy,ITA,2022-11-11T00:00:00.000Z,NR,NR,All vaccine types,
+EUR,Dev,High income,Member State,Developed economy,No,Lithuania,LTU,2022-10-09T23:00:00.000Z,MULTILATERAL_EU,Curevac,Curevac - CVnCoV,1380000
+EUR,Dev,High income,Member State,Developed economy,No,Lithuania,LTU,2022-10-09T23:00:00.000Z,MULTILATERAL_EU,Novavax,Novavax - Covavax,633000
+EUR,Dev,High income,Member State,Developed economy,No,Lithuania,LTU,2022-10-09T23:00:00.000Z,MULTILATERAL_EU,Sanofi Pasteur - GSK,Sanofi GSK - Vidprevtyn,1500000
+EUR,Dev,High income,Member State,Developed economy,No,Lithuania,LTU,2022-10-09T23:00:00.000Z,MULTILATERAL_EU,Valneva,Valneva - VLA2001,372000
+EUR,Dev,High income,Member State,Developed economy,No,Lithuania,LTU,2022-12-12T00:00:00.000Z,MULTILATERAL_EU,AstraZeneca,AstraZeneca - Vaxzevria,1860000
+EUR,Dev,High income,Member State,Developed economy,No,Lithuania,LTU,2022-12-12T00:00:00.000Z,MULTILATERAL_EU,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,700000
+EUR,Dev,High income,Member State,Developed economy,No,Lithuania,LTU,2022-12-12T00:00:00.000Z,MULTILATERAL_EU,Moderna,Moderna - Spikevax,517000
+EUR,Dev,High income,Member State,Developed economy,No,Lithuania,LTU,2022-12-12T00:00:00.000Z,MULTILATERAL_EU,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,9296000
+EUR,Dev,High income,Member State,Developed economy,No,Lithuania,LTU,2022-12-12T00:00:00.000Z,NR,NR,All vaccine types,12373000
+EUR,Dev,High income,Member State,Developed economy,No,Norway,NOR,2022-12-12T00:00:00.000Z,MULTILATERAL_EU,AstraZeneca,AstraZeneca - Vaxzevria,3300000
+EUR,Dev,High income,Member State,Developed economy,No,Norway,NOR,2022-12-12T00:00:00.000Z,MULTILATERAL_EU,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,3400000
+EUR,Dev,High income,Member State,Developed economy,No,Norway,NOR,2022-12-12T00:00:00.000Z,MULTILATERAL_EU,Moderna,Moderna - Spikevax,4300000
+EUR,Dev,High income,Member State,Developed economy,No,Norway,NOR,2022-12-12T00:00:00.000Z,MULTILATERAL_EU,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,6000000
+EUR,Dev,High income,Member State,Developed economy,No,Norway,NOR,2022-12-12T00:00:00.000Z,NR,NR,All vaccine types,17000000
+EUR,Dev,High income,Member State,Developed economy,No,Slovenia,SVN,2022-11-11T00:00:00.000Z,MULTILATERAL_EU,AstraZeneca,AstraZeneca - Vaxzevria,525800
+EUR,Dev,High income,Member State,Developed economy,No,Slovenia,SVN,2022-11-11T00:00:00.000Z,MULTILATERAL_EU,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,230400
+EUR,Dev,High income,Member State,Developed economy,No,Slovenia,SVN,2022-11-11T00:00:00.000Z,MULTILATERAL_EU,Moderna,Moderna - Spikevax,392400
+EUR,Dev,High income,Member State,Developed economy,No,Slovenia,SVN,2022-11-11T00:00:00.000Z,MULTILATERAL_EU,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,2379780
+EUR,Dev,High income,Member State,Developed economy,No,Slovenia,SVN,2022-11-11T00:00:00.000Z,NR,NR,All vaccine types,3528380
+EUR,Dev,High income,Member State,Developed economy,No,Spain,ESP,2022-12-12T00:00:00.000Z,MULTILATERAL_EU,AstraZeneca,AstraZeneca - Vaxzevria,31555649
+EUR,Dev,High income,Member State,Developed economy,No,Spain,ESP,2022-12-12T00:00:00.000Z,MULTILATERAL_EU,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,17598400
+EUR,Dev,High income,Member State,Developed economy,No,Spain,ESP,2022-12-12T00:00:00.000Z,MULTILATERAL_EU,Moderna,Moderna - Spikevax,28012919
+EUR,Dev,High income,Member State,Developed economy,No,Spain,ESP,2022-12-12T00:00:00.000Z,MULTILATERAL_EU,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,72215693
+EUR,Dev,High income,Member State,Developed economy,No,Spain,ESP,2022-12-12T00:00:00.000Z,NR,NR,All vaccine types,149382661
+EUR,Dev,High income,Member State,Developed economy,No,Sweden,SWE,2022-11-11T00:00:00.000Z,MULTILATERAL_EU,AstraZeneca,AstraZeneca - Vaxzevria,
+EUR,Dev,High income,Member State,Developed economy,No,Sweden,SWE,2022-11-11T00:00:00.000Z,MULTILATERAL_EU,Moderna,Moderna - Spikevax,
+EUR,Dev,High income,Member State,Developed economy,No,Sweden,SWE,2022-11-11T00:00:00.000Z,MULTILATERAL_EU,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,
+EUR,Dev,High income,Member State,Developed economy,No,Sweden,SWE,2022-11-11T00:00:00.000Z,NR,NR,All vaccine types,
+EUR,Dev,High income,Member State,Developed economy,Self-financing,Andorra,AND,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,AstraZeneca,AstraZeneca - Vaxzevria,33000
+EUR,Dev,High income,Member State,Developed economy,Self-financing,Andorra,AND,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,Moderna,Moderna - Spikevax,12000
+EUR,Dev,High income,Member State,Developed economy,Self-financing,Andorra,AND,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,53430
+EUR,Dev,High income,Member State,Developed economy,Self-financing,Andorra,AND,2022-11-11T00:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,26400
+EUR,Dev,High income,Member State,Developed economy,Self-financing,Andorra,AND,2022-11-11T00:00:00.000Z,NR,NR,All vaccine types,124830
+EUR,Dev,High income,Member State,Developed economy,Self-financing,Monaco,MCO,2022-12-12T00:00:00.000Z,BILATERAL_AGREEMENT,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,76050
+EUR,Dev,High income,Member State,Developed economy,Self-financing,Monaco,MCO,2022-12-12T00:00:00.000Z,NR,NR,All vaccine types,76050
+EUR,Dev,High income,Member State,Developed economy,Self-financing,Monaco,MCO,2022-06-05T23:00:00.000Z,OTHER,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,58500
+EUR,Dev,High income,Member State,Developed economy,Self-financing,San Marino,SMR,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,Gamaleya Research Institute,Gamaleya - Gam-Covid-Vac,68000
+EUR,Dev,High income,Member State,Developed economy,Self-financing,San Marino,SMR,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,31590
+EUR,Dev,High income,Member State,Developed economy,Self-financing,San Marino,SMR,2022-11-11T00:00:00.000Z,NR,NR,All vaccine types,99590
+EUR,Dev,High income,Member State,Developed economy,Self-financing,Switzerland,CHE,2022-12-12T00:00:00.000Z,BILATERAL_AGREEMENT,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,150000
+EUR,Dev,High income,Member State,Developed economy,Self-financing,Switzerland,CHE,2022-12-12T00:00:00.000Z,BILATERAL_AGREEMENT,Moderna,Moderna - Spikevax,27500000
+EUR,Dev,High income,Member State,Developed economy,Self-financing,Switzerland,CHE,2022-12-12T00:00:00.000Z,BILATERAL_AGREEMENT,Novavax,Novavax - Covavax,1000000
+EUR,Dev,High income,Member State,Developed economy,Self-financing,Switzerland,CHE,2022-12-12T00:00:00.000Z,BILATERAL_AGREEMENT,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,20000000
+EUR,Dev,High income,Member State,Developed economy,Self-financing,Switzerland,CHE,2022-08-07T23:00:00.000Z,MULTILATERAL_EU,Curevac,Curevac - CVnCoV,5000000
+EUR,Dev,High income,Member State,Developed economy,Self-financing,Switzerland,CHE,2022-10-09T23:00:00.000Z,MULTILATERAL_EU,AstraZeneca,AstraZeneca - Vaxzevria,5300000
+EUR,Dev,High income,Member State,Developed economy,Self-financing,Switzerland,CHE,2022-12-12T00:00:00.000Z,NR,NR,All vaccine types,48650000
+EUR,Dev,High income,Member State,Developing,Self-financing,Israel,ISR,2022-07-06T23:00:00.000Z,NR,NR,All vaccine types,11700000
+EUR,Dev,High income,Member State,Developing,Self-financing,Israel,ISR,2022-09-08T23:00:00.000Z,OTHER,Moderna,Moderna - Spikevax,
+EUR,Dev,High income,Member State,Developing,Self-financing,Israel,ISR,2022-09-08T23:00:00.000Z,OTHER,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,
+EUR,Dev,High income,Member State,Developing,Self-financing,Israel,ISR,2022-10-09T23:00:00.000Z,OTHER,AstraZeneca,AstraZeneca - Vaxzevria,
+SEAR,EAPRO,Middle income,Member State,Developing,AMC,Indonesia,IDN,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,Anhui Zhifei Longcom Biopharmaceutical,Anhui ZL - Recombinant,
+SEAR,EAPRO,Middle income,Member State,Developing,AMC,Indonesia,IDN,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,AstraZeneca,AstraZeneca - Vaxzevria,30298250
+SEAR,EAPRO,Middle income,Member State,Developing,AMC,Indonesia,IDN,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,8200000
+SEAR,EAPRO,Middle income,Member State,Developing,AMC,Indonesia,IDN,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,CanSino Biologicals,CanSino - Convidecia,
+SEAR,EAPRO,Middle income,Member State,Developing,AMC,Indonesia,IDN,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,500000
+SEAR,EAPRO,Middle income,Member State,Developing,AMC,Indonesia,IDN,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,21629010
+SEAR,EAPRO,Middle income,Member State,Developing,AMC,Indonesia,IDN,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,Serum Institute of India,Novavax - Covavax,
+SEAR,EAPRO,Middle income,Member State,Developing,AMC,Indonesia,IDN,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,Sinovac,Sinovac - CoronaVac,203807300
+SEAR,EAPRO,Middle income,Member State,Developing,AMC,Indonesia,IDN,2022-03-03T00:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,4965600
+SEAR,EAPRO,Middle income,Member State,Developing,AMC,Indonesia,IDN,2022-11-11T00:00:00.000Z,NR,NR,All vaccine types,273234720
+SEAR,EAPRO,Middle income,Member State,Developing,AMC,Indonesia,IDN,2022-11-11T00:00:00.000Z,OTHER,Gamaleya Research Institute,Gamaleya - Gam-Covid-Vac,
+SEAR,EAPRO,Middle income,Member State,Developing,AMC,Indonesia,IDN,2022-11-11T00:00:00.000Z,OTHER,Moderna,Moderna - Spikevax,8800160
+SEAR,EAPRO,Middle income,Member State,Developing,No,Thailand,THA,2022-03-03T00:00:00.000Z,BILATERAL_AGREEMENT,AstraZeneca,AstraZeneca - Vaxzevria,117000
+SEAR,EAPRO,Middle income,Member State,Developing,No,Thailand,THA,2022-03-03T00:00:00.000Z,BILATERAL_AGREEMENT,Sinovac,Sinovac - CoronaVac,3500000
+SEAR,EAPRO,Middle income,Member State,Developing,No,Thailand,THA,2022-03-03T00:00:00.000Z,NR,NR,All vaccine types,3617000
+SEAR,EAPRO,Middle income,Member State,Least developed,AMC,Myanmar,MMR,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,24000000
+SEAR,EAPRO,Middle income,Member State,Least developed,AMC,Myanmar,MMR,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,Serum Institute of India,AstraZeneca - Vaxzevria,13400000
+SEAR,EAPRO,Middle income,Member State,Least developed,AMC,Myanmar,MMR,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,Serum Institute of India,SII - Covishield,30000000
+SEAR,EAPRO,Middle income,Member State,Least developed,AMC,Myanmar,MMR,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,Sinovac,Sinovac - CoronaVac,3000000
+SEAR,EAPRO,Middle income,Member State,Least developed,AMC,Myanmar,MMR,2022-03-03T00:00:00.000Z,DONATION,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,500000
+SEAR,EAPRO,Middle income,Member State,Least developed,AMC,Myanmar,MMR,2022-03-03T00:00:00.000Z,DONATION,Serum Institute of India,SII - Covishield,1500000
+SEAR,EAPRO,Middle income,Member State,Least developed,AMC,Myanmar,MMR,2022-11-11T00:00:00.000Z,NR,NR,All vaccine types,70400000
+SEAR,EAPRO,Middle income,Member State,Least developed,AMC,Timor-Leste,TLS,2022-09-08T23:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,
+SEAR,EAPRO,Middle income,Member State,Least developed,AMC,Timor-Leste,TLS,2022-09-08T23:00:00.000Z,COVAX_FACILITY,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,
+SEAR,EAPRO,Middle income,Member State,Least developed,AMC,Timor-Leste,TLS,2022-09-08T23:00:00.000Z,DONATION,AstraZeneca,AstraZeneca - Vaxzevria,
+SEAR,EAPRO,Middle income,Member State,Least developed,AMC,Timor-Leste,TLS,2022-09-08T23:00:00.000Z,DONATION,Sinovac,Sinovac - CoronaVac,
+SEAR,EAPRO,Middle income,Member State,Least developed,AMC,Timor-Leste,TLS,2022-09-08T23:00:00.000Z,NR,NR,All vaccine types,
+SEAR,ROSA,Middle income,Member State,Developing,AMC,India,IND,2022-03-03T00:00:00.000Z,BILATERAL_AGREEMENT,Bharat Biotech,Bharat - Covaxin,20000000
+SEAR,ROSA,Middle income,Member State,Developing,AMC,India,IND,2022-03-03T00:00:00.000Z,BILATERAL_AGREEMENT,Serum Institute of India,SII - Covishield,169000000
+SEAR,ROSA,Middle income,Member State,Developing,AMC,India,IND,2022-03-03T00:00:00.000Z,COVAX_FACILITY,Serum Institute of India,SII - Covishield,9996000
+SEAR,ROSA,Middle income,Member State,Developing,AMC,India,IND,2022-09-08T23:00:00.000Z,NR,NR,All vaccine types,1660000000
+SEAR,ROSA,Middle income,Member State,Developing,AMC,India,IND,2022-09-08T23:00:00.000Z,OTHER,Bharat Biotech,Bharat - Covaxin,360000000
+SEAR,ROSA,Middle income,Member State,Developing,AMC,India,IND,2022-09-08T23:00:00.000Z,OTHER,Serum Institute of India,SII - Covishield,1300000000
+SEAR,ROSA,Middle income,Member State,Developing,AMC,Maldives,MDV,2022-12-12T00:00:00.000Z,BILATERAL_AGREEMENT,AstraZeneca,AstraZeneca - Vaxzevria,700000
+SEAR,ROSA,Middle income,Member State,Developing,AMC,Maldives,MDV,2022-12-12T00:00:00.000Z,BILATERAL_AGREEMENT,Serum Institute of India,SII - Covishield,100000
+SEAR,ROSA,Middle income,Member State,Developing,AMC,Maldives,MDV,2022-12-12T00:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,12000
+SEAR,ROSA,Middle income,Member State,Developing,AMC,Maldives,MDV,2022-12-12T00:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,112000
+SEAR,ROSA,Middle income,Member State,Developing,AMC,Maldives,MDV,2022-12-12T00:00:00.000Z,COVAX_FACILITY,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,5850
+SEAR,ROSA,Middle income,Member State,Developing,AMC,Maldives,MDV,2022-12-12T00:00:00.000Z,COVAX_FACILITY,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,229320
+SEAR,ROSA,Middle income,Member State,Developing,AMC,Maldives,MDV,2022-12-12T00:00:00.000Z,COVAX_FACILITY,Serum Institute of India,SII - Covishield,12000
+SEAR,ROSA,Middle income,Member State,Developing,AMC,Maldives,MDV,2022-12-12T00:00:00.000Z,DONATION,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,250200
+SEAR,ROSA,Middle income,Member State,Developing,AMC,Maldives,MDV,2022-12-12T00:00:00.000Z,DONATION,Serum Institute of India,SII - Covishield,260000
+SEAR,ROSA,Middle income,Member State,Developing,AMC,Maldives,MDV,2022-12-12T00:00:00.000Z,NR,NR,All vaccine types,1681370
+SEAR,ROSA,Middle income,Member State,Developing,AMC,Sri Lanka,LKA,2022-03-03T00:00:00.000Z,BILATERAL_AGREEMENT,Gamaleya Research Institute,Gamaleya - Gam-Covid-Vac,15000
+SEAR,ROSA,Middle income,Member State,Developing,AMC,Sri Lanka,LKA,2022-03-03T00:00:00.000Z,BILATERAL_AGREEMENT,Serum Institute of India,SII - Covishield,500000
+SEAR,ROSA,Middle income,Member State,Developing,AMC,Sri Lanka,LKA,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,
+SEAR,ROSA,Middle income,Member State,Developing,AMC,Sri Lanka,LKA,2022-11-11T00:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,
+SEAR,ROSA,Middle income,Member State,Developing,AMC,Sri Lanka,LKA,2022-11-11T00:00:00.000Z,COVAX_FACILITY,Moderna,Moderna - Spikevax,
+SEAR,ROSA,Middle income,Member State,Developing,AMC,Sri Lanka,LKA,2022-11-11T00:00:00.000Z,COVAX_FACILITY,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,
+SEAR,ROSA,Middle income,Member State,Developing,AMC,Sri Lanka,LKA,2022-11-11T00:00:00.000Z,COVAX_FACILITY,Serum Institute of India,SII - Covishield,
+SEAR,ROSA,Middle income,Member State,Developing,AMC,Sri Lanka,LKA,2022-11-11T00:00:00.000Z,DONATION,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,
+SEAR,ROSA,Middle income,Member State,Developing,AMC,Sri Lanka,LKA,2022-11-11T00:00:00.000Z,DONATION,Serum Institute of India,SII - Covishield,
+SEAR,ROSA,Middle income,Member State,Developing,AMC,Sri Lanka,LKA,2022-11-11T00:00:00.000Z,NR,NR,All vaccine types,
+SEAR,ROSA,Middle income,Member State,Developing,AMC,Sri Lanka,LKA,2022-11-11T00:00:00.000Z,OTHER,Gamaleya Research Institute,Gamaleya - Sputnik-Light,
+SEAR,ROSA,Middle income,Member State,Developing,AMC,Sri Lanka,LKA,2022-11-11T00:00:00.000Z,OTHER,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,
+SEAR,ROSA,Middle income,Member State,Developing,AMC,Sri Lanka,LKA,2022-11-11T00:00:00.000Z,OTHER,Serum Institute of India,SII - Covishield,
+SEAR,ROSA,Middle income,Member State,Least developed,AMC,Bangladesh,BGD,2022-03-03T00:00:00.000Z,BILATERAL_AGREEMENT,Serum Institute of India,SII - Covishield,7000000
+SEAR,ROSA,Middle income,Member State,Least developed,AMC,Bangladesh,BGD,2022-09-08T23:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,7202760
+SEAR,ROSA,Middle income,Member State,Least developed,AMC,Bangladesh,BGD,2022-09-08T23:00:00.000Z,COVAX_FACILITY,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,34878000
+SEAR,ROSA,Middle income,Member State,Least developed,AMC,Bangladesh,BGD,2022-09-08T23:00:00.000Z,COVAX_FACILITY,Moderna,Moderna - Spikevax,7947240
+SEAR,ROSA,Middle income,Member State,Least developed,AMC,Bangladesh,BGD,2022-09-08T23:00:00.000Z,COVAX_FACILITY,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,22927320
+SEAR,ROSA,Middle income,Member State,Least developed,AMC,Bangladesh,BGD,2022-09-08T23:00:00.000Z,COVAX_FACILITY,Serum Institute of India,SII - Covishield,5504000
+SEAR,ROSA,Middle income,Member State,Least developed,AMC,Bangladesh,BGD,2022-09-08T23:00:00.000Z,COVAX_FACILITY,Sinovac,Sinovac - CoronaVac,75010800
+SEAR,ROSA,Middle income,Member State,Least developed,AMC,Bangladesh,BGD,2022-03-03T00:00:00.000Z,DONATION,Serum Institute of India,SII - Covishield,3300000
+SEAR,ROSA,Middle income,Member State,Least developed,AMC,Bangladesh,BGD,2022-09-08T23:00:00.000Z,NR,NR,All vaccine types,153470120
+SEAR,ROSA,Middle income,Member State,Least developed,AMC,Bhutan,BTN,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,AstraZeneca,AstraZeneca - Vaxzevria,
+SEAR,ROSA,Middle income,Member State,Least developed,AMC,Bhutan,BTN,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,Moderna,Moderna - Spikevax,250000
+SEAR,ROSA,Middle income,Member State,Least developed,AMC,Bhutan,BTN,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,198900
+SEAR,ROSA,Middle income,Member State,Least developed,AMC,Bhutan,BTN,2022-11-11T00:00:00.000Z,COVAX_FACILITY,Moderna,Moderna - Spikevax,
+SEAR,ROSA,Middle income,Member State,Least developed,AMC,Bhutan,BTN,2022-11-11T00:00:00.000Z,COVAX_FACILITY,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,
+SEAR,ROSA,Middle income,Member State,Least developed,AMC,Bhutan,BTN,2022-11-11T00:00:00.000Z,DONATION,Serum Institute of India,SII - Covishield,
+SEAR,ROSA,Middle income,Member State,Least developed,AMC,Bhutan,BTN,2022-11-11T00:00:00.000Z,NR,NR,All vaccine types,448900
+SEAR,ROSA,Middle income,Member State,Least developed,AMC,Nepal,NPL,2022-03-03T00:00:00.000Z,DONATION,Serum Institute of India,SII - Covishield,1000000
+SEAR,ROSA,Middle income,Member State,Least developed,AMC,Nepal,NPL,2022-03-03T00:00:00.000Z,DONATION,Sinovac,Sinovac - CoronaVac,800000
+SEAR,ROSA,Middle income,Member State,Least developed,AMC,Nepal,NPL,2022-03-03T00:00:00.000Z,NR,NR,All vaccine types,2148000
+SEAR,ROSA,Middle income,Member State,Least developed,AMC,Nepal,NPL,2022-03-03T00:00:00.000Z,OTHER,Serum Institute of India,SII - Covishield,348000
+WPR,,High income,Territory or Area,,,"China, Macao SAR",MAC,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,1000000
+WPR,,High income,Territory or Area,,,"China, Macao SAR",MAC,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,400000
+WPR,,High income,Territory or Area,,,"China, Macao SAR",MAC,2022-11-11T00:00:00.000Z,NR,NR,All vaccine types,1400000
+WPR,,High income,Territory or Area,Developing,,French Polynesia,PYF,2022-03-03T00:00:00.000Z,DONATION,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,
+WPR,,High income,Territory or Area,Developing,,French Polynesia,PYF,2022-03-03T00:00:00.000Z,DONATION,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,
+WPR,Dev,High income,Member State,Developed economy,Self-financing,Australia,AUS,2022-11-11T00:00:00.000Z,NR,NR,All vaccine types,256800000
+WPR,Dev,High income,Member State,Developed economy,Self-financing,Australia,AUS,2022-11-11T00:00:00.000Z,OTHER,AstraZeneca,AstraZeneca - Vaxzevria,53800000
+WPR,Dev,High income,Member State,Developed economy,Self-financing,Australia,AUS,2022-11-11T00:00:00.000Z,OTHER,Moderna,Moderna - Spikevax,26000000
+WPR,Dev,High income,Member State,Developed economy,Self-financing,Australia,AUS,2022-11-11T00:00:00.000Z,OTHER,Novavax,Novavax - Covavax,51000000
+WPR,Dev,High income,Member State,Developed economy,Self-financing,Australia,AUS,2022-11-11T00:00:00.000Z,OTHER,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,126000000
+WPR,Dev,High income,Member State,Developed economy,Self-financing,Japan,JPN,2022-03-03T00:00:00.000Z,BILATERAL_AGREEMENT,Moderna,Moderna - Spikevax,50000000
+WPR,Dev,High income,Member State,Developed economy,Self-financing,Japan,JPN,2022-03-03T00:00:00.000Z,BILATERAL_AGREEMENT,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,144000000
+WPR,Dev,High income,Member State,Developed economy,Self-financing,Japan,JPN,2022-03-03T00:00:00.000Z,DOMESTIC,AstraZeneca,AstraZeneca - Vaxzevria,120000000
+WPR,Dev,High income,Member State,Developed economy,Self-financing,Japan,JPN,2022-03-03T00:00:00.000Z,DOMESTIC,Novavax,Novavax - Covavax,
+WPR,Dev,High income,Member State,Developed economy,Self-financing,Japan,JPN,2022-03-03T00:00:00.000Z,NR,NR,All vaccine types,314000000
+WPR,Dev,High income,Member State,Developed economy,Self-financing,New Zealand,NZL,2022-10-09T23:00:00.000Z,BILATERAL_AGREEMENT,AstraZeneca,AstraZeneca - Vaxzevria,7800000
+WPR,Dev,High income,Member State,Developed economy,Self-financing,New Zealand,NZL,2022-10-09T23:00:00.000Z,BILATERAL_AGREEMENT,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,2000000
+WPR,Dev,High income,Member State,Developed economy,Self-financing,New Zealand,NZL,2022-10-09T23:00:00.000Z,BILATERAL_AGREEMENT,Novavax,Novavax - Covavax,10720000
+WPR,Dev,High income,Member State,Developed economy,Self-financing,New Zealand,NZL,2022-10-09T23:00:00.000Z,BILATERAL_AGREEMENT,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,15580000
+WPR,Dev,High income,Member State,Developed economy,Self-financing,New Zealand,NZL,2022-10-09T23:00:00.000Z,NR,NR,All vaccine types,36100000
+WPR,Dev,High income,Territory or Area,Developing,,"China, Hong Kong SAR",HKG,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,
+WPR,Dev,High income,Territory or Area,Developing,,"China, Hong Kong SAR",HKG,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,Sinovac,Sinovac - CoronaVac,
+WPR,Dev,High income,Territory or Area,Developing,,"China, Hong Kong SAR",HKG,2022-11-11T00:00:00.000Z,NR,NR,All vaccine types,
+WPR,EAPRO,High income,Member State,Developing,Self-financing,Brunei Darussalam,BRN,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,AstraZeneca,AstraZeneca - Vaxzevria,45600
+WPR,EAPRO,High income,Member State,Developing,Self-financing,Brunei Darussalam,BRN,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,Moderna,Moderna - Spikevax,200400
+WPR,EAPRO,High income,Member State,Developing,Self-financing,Brunei Darussalam,BRN,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,300690
+WPR,EAPRO,High income,Member State,Developing,Self-financing,Brunei Darussalam,BRN,2022-11-11T00:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,100800
+WPR,EAPRO,High income,Member State,Developing,Self-financing,Brunei Darussalam,BRN,2022-11-11T00:00:00.000Z,DONATION,AstraZeneca,AstraZeneca - Vaxzevria,
+WPR,EAPRO,High income,Member State,Developing,Self-financing,Brunei Darussalam,BRN,2022-11-11T00:00:00.000Z,DONATION,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,
+WPR,EAPRO,High income,Member State,Developing,Self-financing,Brunei Darussalam,BRN,2022-11-11T00:00:00.000Z,DONATION,Moderna,Moderna - Spikevax,
+WPR,EAPRO,High income,Member State,Developing,Self-financing,Brunei Darussalam,BRN,2022-11-11T00:00:00.000Z,NR,NR,All vaccine types,647490
+WPR,EAPRO,High income,Member State,Developing,Self-financing,Nauru,NRU,2022-04-03T23:00:00.000Z,NR,NR,All vaccine types,17200
+WPR,EAPRO,High income,Member State,Developing,Self-financing,Nauru,NRU,2022-04-03T23:00:00.000Z,OTHER,AstraZeneca,AstraZeneca - Vaxzevria,7200
+WPR,EAPRO,High income,Member State,Developing,Self-financing,Nauru,NRU,2022-04-03T23:00:00.000Z,OTHER,Serum Institute of India,SII - Covishield,10000
+WPR,EAPRO,Middle income,Member State,Developing,AMC,Micronesia (Federated States of),FSM,2022-03-03T00:00:00.000Z,BILATERAL_AGREEMENT,Moderna,Moderna - Spikevax,10
+WPR,EAPRO,Middle income,Member State,Developing,AMC,Micronesia (Federated States of),FSM,2022-03-03T00:00:00.000Z,NR,NR,All vaccine types,10
+WPR,EAPRO,Middle income,Member State,Developing,AMC,Mongolia,MNG,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,Gamaleya Research Institute,Gamaleya - Gam-Covid-Vac,120000
+WPR,EAPRO,Middle income,Member State,Developing,AMC,Mongolia,MNG,2022-11-11T00:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,48000
+WPR,EAPRO,Middle income,Member State,Developing,AMC,Mongolia,MNG,2022-11-11T00:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,64800
+WPR,EAPRO,Middle income,Member State,Developing,AMC,Mongolia,MNG,2022-11-11T00:00:00.000Z,COVAX_FACILITY,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,1214460
+WPR,EAPRO,Middle income,Member State,Developing,AMC,Mongolia,MNG,2022-11-11T00:00:00.000Z,DONATION,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,300000
+WPR,EAPRO,Middle income,Member State,Developing,AMC,Mongolia,MNG,2022-11-11T00:00:00.000Z,DONATION,Serum Institute of India,SII - Covishield,150000
+WPR,EAPRO,Middle income,Member State,Developing,AMC,Mongolia,MNG,2022-11-11T00:00:00.000Z,MULTILATERAL_OTHER,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,4000000
+WPR,EAPRO,Middle income,Member State,Developing,AMC,Mongolia,MNG,2022-11-11T00:00:00.000Z,MULTILATERAL_OTHER,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,1765530
+WPR,EAPRO,Middle income,Member State,Developing,AMC,Mongolia,MNG,2022-11-11T00:00:00.000Z,NR,NR,All vaccine types,7662790
+WPR,EAPRO,Middle income,Member State,Developing,AMC,Papua New Guinea,PNG,2022-06-05T23:00:00.000Z,BILATERAL_AGREEMENT,AstraZeneca,AstraZeneca - Vaxzevria,146400
+WPR,EAPRO,Middle income,Member State,Developing,AMC,Papua New Guinea,PNG,2022-12-12T00:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,116400
+WPR,EAPRO,Middle income,Member State,Developing,AMC,Papua New Guinea,PNG,2022-12-12T00:00:00.000Z,COVAX_FACILITY,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,604800
+WPR,EAPRO,Middle income,Member State,Developing,AMC,Papua New Guinea,PNG,2022-12-12T00:00:00.000Z,COVAX_FACILITY,Serum Institute of India,SII - Covishield,133000
+WPR,EAPRO,Middle income,Member State,Developing,AMC,Papua New Guinea,PNG,2022-12-12T00:00:00.000Z,DONATION,AstraZeneca,AstraZeneca - Vaxzevria,8480
+WPR,EAPRO,Middle income,Member State,Developing,AMC,Papua New Guinea,PNG,2022-12-12T00:00:00.000Z,DONATION,AstraZeneca,AstraZeneca - Vaxzevria,186500
+WPR,EAPRO,Middle income,Member State,Developing,AMC,Papua New Guinea,PNG,2022-12-12T00:00:00.000Z,DONATION,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,200000
+WPR,EAPRO,Middle income,Member State,Developing,AMC,Papua New Guinea,PNG,2022-04-03T23:00:00.000Z,MULTILATERAL_EU,AstraZeneca,AstraZeneca - Vaxzevria,8000
+WPR,EAPRO,Middle income,Member State,Developing,AMC,Papua New Guinea,PNG,2022-12-12T00:00:00.000Z,NR,NR,All vaccine types,1249180
+WPR,EAPRO,Middle income,Member State,Developing,AMC,Philippines,PHL,2022-06-05T23:00:00.000Z,BILATERAL_AGREEMENT,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,6000000
+WPR,EAPRO,Middle income,Member State,Developing,AMC,Philippines,PHL,2022-06-05T23:00:00.000Z,BILATERAL_AGREEMENT,Novavax,Novavax - Covavax,10000000
+WPR,EAPRO,Middle income,Member State,Developing,AMC,Philippines,PHL,2022-12-12T00:00:00.000Z,BILATERAL_AGREEMENT,Gamaleya Research Institute,Gamaleya - Gam-Covid-Vac,10000000
+WPR,EAPRO,Middle income,Member State,Developing,AMC,Philippines,PHL,2022-12-12T00:00:00.000Z,BILATERAL_AGREEMENT,Moderna,Moderna - Spikevax,13000000
+WPR,EAPRO,Middle income,Member State,Developing,AMC,Philippines,PHL,2022-12-12T00:00:00.000Z,BILATERAL_AGREEMENT,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,40001130
+WPR,EAPRO,Middle income,Member State,Developing,AMC,Philippines,PHL,2022-12-12T00:00:00.000Z,BILATERAL_AGREEMENT,Sinovac,Sinovac - CoronaVac,51130400
+WPR,EAPRO,Middle income,Member State,Developing,AMC,Philippines,PHL,2022-12-12T00:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,
+WPR,EAPRO,Middle income,Member State,Developing,AMC,Philippines,PHL,2022-12-12T00:00:00.000Z,COVAX_FACILITY,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,
+WPR,EAPRO,Middle income,Member State,Developing,AMC,Philippines,PHL,2022-12-12T00:00:00.000Z,COVAX_FACILITY,Moderna,Moderna - Spikevax,
+WPR,EAPRO,Middle income,Member State,Developing,AMC,Philippines,PHL,2022-12-12T00:00:00.000Z,COVAX_FACILITY,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,
+WPR,EAPRO,Middle income,Member State,Developing,AMC,Philippines,PHL,2022-12-12T00:00:00.000Z,DONATION,AstraZeneca,AstraZeneca - Vaxzevria,
+WPR,EAPRO,Middle income,Member State,Developing,AMC,Philippines,PHL,2022-12-12T00:00:00.000Z,DONATION,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,
+WPR,EAPRO,Middle income,Member State,Developing,AMC,Philippines,PHL,2022-12-12T00:00:00.000Z,DONATION,Gamaleya Research Institute,Gamaleya - Sputnik-Light,
+WPR,EAPRO,Middle income,Member State,Developing,AMC,Philippines,PHL,2022-12-12T00:00:00.000Z,DONATION,Julphar,Julphar - Hayat-Vax,
+WPR,EAPRO,Middle income,Member State,Developing,AMC,Philippines,PHL,2022-12-12T00:00:00.000Z,DONATION,Sinovac,Sinovac - CoronaVac,
+WPR,EAPRO,Middle income,Member State,Developing,AMC,Philippines,PHL,2022-05-04T23:00:00.000Z,MULTILATERAL_OTHER,Novavax,Novavax - Covavax,15000000
+WPR,EAPRO,Middle income,Member State,Developing,AMC,Philippines,PHL,2022-12-12T00:00:00.000Z,MULTILATERAL_OTHER,AstraZeneca,AstraZeneca - Vaxzevria,17000000
+WPR,EAPRO,Middle income,Member State,Developing,AMC,Philippines,PHL,2022-12-12T00:00:00.000Z,MULTILATERAL_OTHER,Moderna,Moderna - Spikevax,7016760
+WPR,EAPRO,Middle income,Member State,Developing,AMC,Philippines,PHL,2022-12-12T00:00:00.000Z,MULTILATERAL_OTHER,Sinovac,Sinovac - CoronaVac,900000
+WPR,EAPRO,Middle income,Member State,Developing,AMC,Philippines,PHL,2022-12-12T00:00:00.000Z,NR,NR,All vaccine types,139048290
+WPR,EAPRO,Middle income,Member State,Developing,AMC,Samoa,WSM,2022-11-11T00:00:00.000Z,DONATION,AstraZeneca,AstraZeneca - Vaxzevria,112000
+WPR,EAPRO,Middle income,Member State,Developing,AMC,Samoa,WSM,2022-11-11T00:00:00.000Z,DONATION,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,55860
+WPR,EAPRO,Middle income,Member State,Developing,AMC,Samoa,WSM,2022-11-11T00:00:00.000Z,NR,NR,All vaccine types,167860
+WPR,EAPRO,Middle income,Member State,Developing,AMC,Tonga,TON,2022-04-03T23:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,43200
+WPR,EAPRO,Middle income,Member State,Developing,AMC,Tonga,TON,2022-04-03T23:00:00.000Z,NR,NR,All vaccine types,43200
+WPR,EAPRO,Middle income,Member State,Developing,AMC,Viet Nam,VNM,2022-03-03T00:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,918800
+WPR,EAPRO,Middle income,Member State,Developing,AMC,Viet Nam,VNM,2022-03-03T00:00:00.000Z,NR,NR,All vaccine types,918800
+WPR,EAPRO,Middle income,Member State,Developing,No,Malaysia,MYS,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,AstraZeneca,AstraZeneca - Vaxzevria,6400000
+WPR,EAPRO,Middle income,Member State,Developing,No,Malaysia,MYS,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,
+WPR,EAPRO,Middle income,Member State,Developing,No,Malaysia,MYS,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,CanSino Biologicals,CanSino - Convidecia,3500000
+WPR,EAPRO,Middle income,Member State,Developing,No,Malaysia,MYS,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,44799300
+WPR,EAPRO,Middle income,Member State,Developing,No,Malaysia,MYS,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,Sinovac,Sinovac - CoronaVac,7300000
+WPR,EAPRO,Middle income,Member State,Developing,No,Malaysia,MYS,2022-11-11T00:00:00.000Z,BILATERAL_AGREEMENT,Sinovac,Sinovac - CoronaVac,13100000
+WPR,EAPRO,Middle income,Member State,Developing,No,Malaysia,MYS,2022-11-11T00:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,1387200
+WPR,EAPRO,Middle income,Member State,Developing,No,Malaysia,MYS,2022-11-11T00:00:00.000Z,DONATION,AstraZeneca,AstraZeneca - Vaxzevria,
+WPR,EAPRO,Middle income,Member State,Developing,No,Malaysia,MYS,2022-11-11T00:00:00.000Z,DONATION,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,
+WPR,EAPRO,Middle income,Member State,Developing,No,Malaysia,MYS,2022-11-11T00:00:00.000Z,DONATION,Sinovac,Sinovac - CoronaVac,
+WPR,EAPRO,Middle income,Member State,Developing,No,Malaysia,MYS,2022-11-11T00:00:00.000Z,NR,NR,All vaccine types,76486500
+WPR,EAPRO,Middle income,Member State,Least developed,AMC,Cambodia,KHM,2022-05-04T23:00:00.000Z,BILATERAL_AGREEMENT,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,1000000
+WPR,EAPRO,Middle income,Member State,Least developed,AMC,Cambodia,KHM,2022-05-04T23:00:00.000Z,BILATERAL_AGREEMENT,Sinovac,Sinovac - CoronaVac,5500000
+WPR,EAPRO,Middle income,Member State,Least developed,AMC,Cambodia,KHM,2022-05-04T23:00:00.000Z,COVAX_FACILITY,AstraZeneca,SII - Covishield,
+WPR,EAPRO,Middle income,Member State,Least developed,AMC,Cambodia,KHM,2022-04-03T23:00:00.000Z,DONATION,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,1700000
+WPR,EAPRO,Middle income,Member State,Least developed,AMC,Cambodia,KHM,2022-05-04T23:00:00.000Z,NR,NR,All vaccine types,6500000
+WPR,EAPRO,Middle income,Member State,Least developed,AMC,Lao People's Democratic Republic,LAO,2022-08-07T23:00:00.000Z,COVAX_FACILITY,AstraZeneca,AstraZeneca - Vaxzevria,616820
+WPR,EAPRO,Middle income,Member State,Least developed,AMC,Lao People's Democratic Republic,LAO,2022-08-07T23:00:00.000Z,COVAX_FACILITY,Janssen Pharmaceuticals,Janssen - Ad26.COV 2-S,1008000
+WPR,EAPRO,Middle income,Member State,Least developed,AMC,Lao People's Democratic Republic,LAO,2022-08-07T23:00:00.000Z,COVAX_FACILITY,Pfizer BioNTech,Pfizer BioNTech - Comirnaty,100620
+WPR,EAPRO,Middle income,Member State,Least developed,AMC,Lao People's Democratic Republic,LAO,2022-08-07T23:00:00.000Z,COVAX_FACILITY,Serum Institute of India,SII - Covishield,132000
+WPR,EAPRO,Middle income,Member State,Least developed,AMC,Lao People's Democratic Republic,LAO,2022-08-07T23:00:00.000Z,DONATION,AstraZeneca,AstraZeneca - Vaxzevria,415000
+WPR,EAPRO,Middle income,Member State,Least developed,AMC,Lao People's Democratic Republic,LAO,2022-08-07T23:00:00.000Z,DONATION,Beijing Bio-Institute Biological Products (CNBG),Beijing CNBG - BBIBP-CorV,3302000
+WPR,EAPRO,Middle income,Member State,Least developed,AMC,Lao People's Democratic Republic,LAO,2022-08-07T23:00:00.000Z,DONATION,Gamaleya Research Institute,Gamaleya - Gam-Covid-Vac,1000
+WPR,EAPRO,Middle income,Member State,Least developed,AMC,Lao People's Democratic Republic,LAO,2022-08-07T23:00:00.000Z,DONATION,Serum Institute of India,SII - Covishield,1000
+WPR,EAPRO,Middle income,Member State,Least developed,AMC,Lao People's Democratic Republic,LAO,2022-08-07T23:00:00.000Z,NR,NR,All vaccine types,5576440
